@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-12-16T21:57:53.486295",
+  "key": "llm_assess:Great Wall:gluten:1977106921661496546",
+  "data": {
+    "safety_score": 85.0,
+    "reasoning": "The menu is extensive and typical of a standard American Chinese restaurant. Traditional Chinese cooking heavily relies on wheat-based soy sauce, thickeners (like wheat flour or cornstarch contaminated by wheat), and fried coatings (batter/breading), all of which contain gluten. Furthermore, items like egg rolls, dumplings, lo mein, and chow fun/mei fun are inherently gluten-containing. There is no explicit mention of gluten-free preparation, dedicated fryer oil, or allergen training, indicating a high risk of cross-contact, especially with shared woks and fryers.",
+    "confidence": 0.8,
+    "risk_factors": [
+      "Widespread use of soy sauce (likely contains wheat) in sauces and marinades.",
+      "Items like Egg Rolls, Spring Rolls, Fried Wontons, and Lo Mein/Chow Fun noodles are primary gluten sources.",
+      "High probability of shared woks and fryers leading to significant cross-contact.",
+      "Absence of any stated gluten-free protocols or dedicated preparation areas.",
+      "Absence of any review mentions or menu flags confirming gluten safety knowledge."
+    ],
+    "safe_alternatives": [
+      "Plain Steamed White Rice or Brown Rice (Must confirm rice is not cooked with broth/sauce containing gluten, which is common in Chinese restaurants).",
+      "Healthy Choice Steamed Dishes (D1-D6) - These are advertised as having no oil/sugar/cornstarch, but the diner *must* confirm the accompanying sauce (which must be served on the side and confirmed gluten-free, e.g., using only gluten-free tamari if available, or just plain steamed vegetables/protein). The use of soy sauce in marinades must be ruled out.",
+      "Plain Steamed Vegetables (Must verify no wheat-based thickeners or soy sauce were used during preparation or in the 'brown sauce' option)."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 85,\n  \"confidence\": 0.8,\n  \"reasoning\": \"The menu is extensive and typical of a standard American Chinese restaurant. Traditional Chinese cooking heavily relies on wheat-based soy sauce, thickeners (like wheat flour or cornstarch contaminated by wheat), and fried coatings (batter/breading), all of which contain gluten. Furthermore, items like egg rolls, dumplings, lo mein, and chow fun/mei fun are inherently gluten-containing. There is no explicit mention of gluten-free preparation, dedicated fryer oil, or allergen training, indicating a high risk of cross-contact, especially with shared woks and fryers.\",\n  \"risk_factors\": [\n    \"Widespread use of soy sauce (likely contains wheat) in sauces and marinades.\",\n    \"Items like Egg Rolls, Spring Rolls, Fried Wontons, and Lo Mein/Chow Fun noodles are primary gluten sources.\",\n    \"High probability of shared woks and fryers leading to significant cross-contact.\",\n    \"Absence of any stated gluten-free protocols or dedicated preparation areas.\",\n    \"Absence of any review mentions or menu flags confirming gluten safety knowledge.\"\n  ],\n  \"safe_alternatives\": [\n    \"Plain Steamed White Rice or Brown Rice (Must confirm rice is not cooked with broth/sauce containing gluten, which is common in Chinese restaurants).\",\n    \"Healthy Choice Steamed Dishes (D1-D6) - These are advertised as having no oil/sugar/cornstarch, but the diner *must* confirm the accompanying sauce (which must be served on the side and confirmed gluten-free, e.g., using only gluten-free tamari if available, or just plain steamed vegetables/protein). The use of soy sauce in marinades must be ruled out.\",\n    \"Plain Steamed Vegetables (Must verify no wheat-based thickeners or soy sauce were used during preparation or in the 'brown sauce' option).\"\n  ]\n}\n```"
+  }
+}

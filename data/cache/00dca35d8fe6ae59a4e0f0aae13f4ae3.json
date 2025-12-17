@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-12-16T21:45:29.466224",
+  "key": "details:ChIJDRnhO64d6IkRwW888Nr149I",
+  "data": {
+    "name": "Thai Spice",
+    "place_id": "ChIJDRnhO64d6IkRwW888Nr149I",
+    "address": "345 Main Ave #2, Norwalk, CT 06851, USA",
+    "rating": 4.5,
+    "total_ratings": 390,
+    "phone": "(203) 846-3533",
+    "website": "http://www.thaispicect.com/",
+    "price_level": 2,
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author": "justin wagner",
+        "rating": 5,
+        "text": "I had mango chicken curry with hot sake the perfect dinner for a quit night. The vegetables complimented the dish well and the mango was so fresh. The rice oh the rice. Simple yet perfect and sticky. Great for dipping in curry. I also want to thank the staff for serving me an hr before closing. I definitely recommend.",
+        "time": 1762484233
+      },
+      {
+        "author": "christian uy",
+        "rating": 5,
+        "text": "Absolutely loved our meal here! We were honestly surprised to see a few negative reviews, because our experience was the exact opposite. The food was flavorful, fresh, and plated beautifully. We ordered the shrimp pad Thai, crispy tofu with dipping sauces, papaya salad, and a savory beef stir-fry with rice\u2014and everything tasted homemade and authentic.\n\nThe portion sizes were more than fair, and for the quality, this place is actually one of the most affordable Thai spots we\u2019ve tried. You can see the care that goes into each dish. Even small things like the balance of veggies (yes, including tomatoes!) added to the flavors\u2014not just filler.\n\nService was friendly and the atmosphere felt cozy and welcoming. Whether you\u2019re dining in or thinking about takeout, don\u2019t let one negative review sway you. Give it a try\u2014we\u2019ll definitely be back!",
+        "time": 1747160761
+      },
+      {
+        "author": "Kamol Uttarapas",
+        "rating": 5,
+        "text": "This restaurant is one of our go-to places when we want some authentic Thai food! Everything is fresh and tasty. The service is good and friendly.\nThey have a good thai food.",
+        "time": 1760218019
+      },
+      {
+        "author": "Laxmi Prasanna",
+        "rating": 5,
+        "text": "Food is great. Tried chicken satay, drunken noodles with shrimp and basil fried rice with shrimp. Chicken satay was awesome with peanut sauce. Drunken noodles and fried rice are yummy and spicy as well. It\u2019s like gem in the corner..",
+        "time": 1747264358
+      },
+      {
+        "author": "Richard Davenport",
+        "rating": 5,
+        "text": "Best Thai meal since my visit to Thailand a few years back. We got pad Thai with duck,  tom yum soup, pork dumplings, and calamari. Loved them all!\n\nAlso, the restaurant is clean and the staff is patient and kind. Would love to come back again on my next drive through CT!",
+        "time": 1760546977
+      }
+    ],
+    "photos": [
+      "AZLasHqPMmDtA4EwzQBvXu0WDREh5KDmT014cYT8R3SzbNHXZ2Qyq8EdyFzrmQnFt9-Er1cFYAEtElytALdu0bVCuckw2DBibqQouoFwE3Qah1_hgXceZzgUSiW5mbiZM8WeoLJWHQDU1cQfpWJAlK0nFDHqeFyjBbDjrLV-SjuzPbNv1oh75WdRiriN7DmgfvWhqCDBkzOAtD_NVSraSNcAqEU8FW_ffjRAkC7GXBaToF9YMH5Qr-hOxRrVK_hiV3S8K2XwfQuDYPx5RYu4bhcG_QL_SdjZWC6zHYhLh8uES3jNEQ",
+      "AZLasHp5n2eXrJmFHx88mO_jbkM7uVYLEHhsLy35hwgQdQlV_4l29iqTsB6qBsawho7KLcYK3QVat_EZo2gNnigLf6YLg1PRG1sccU-kNJkg4de809zg55T14F-8rDDr8RnLkP-3Mu2OKmTckI4JnTCMDdkZFSaAOg-B3QhZ0rVzq4fxOLJx9afRNN5n-IS-vlJFfQ97DFu53N7Fvc-ULM5K1Wg6tVxEev-mNQjicQXxv2LVBR0eDE_pDtY0_c1P_hidQFpi2s58ORUGVKL6ac8G-N8qLB9qar5YLsyOg4kuM4F4EQ",
+      "AZLasHrRjMugyfk1J6WKc41zsg5pqCXioadSe4MgyepGSG8G01d3d84CSi_lnO7i97Cquky-MIfGhKrGu1gCarg6UxNQEtQNkGuc34m6sei03hfTuSybOkC9bRyMsO4d-0ysKQJvz-KxoKmH-PQzXG9Va-YEPkx1rKTPR1N00DDo2M-XFxspgVQ_ySFMhFXD1G0mTOLE7niw8N4zjbVfTrYCP5ayNadmCdaXm7VLHW_2ykvVawvFq9vcVY037Y42yJQLLZqbxDyCE1OpqZrG1_5bs3tlPaJE203S9DFwHqMe9t6IJw",
+      "AZLasHoYUY5FKlPakj8e3TBjko-bAPidWAJWMQdF4xxdxWnpsjq5oObekDlZ1_-chhSXSlUi-iOxwfmYHzAKgL9ODt-32AEt7KjVwnqnbEUYUMgJCvk8d-t5A_Uu3-Ue1IhOfzncaBIjk_moEw0FJVXa9SF0d2EOaTCwDiMq9lGwux4E-iGVD7O-aDxGfNlcfZEX6JNNobpY8HUqoWGyStVEemD1jRixcLn81qUiYa9anOK1KxxBlJqM-DhmVik3UBvuRv4znuhHhl_aWriWrHForckKduBhqsb5Klxl1YQyOyckhYihi5cDdpuaxujVXn1AL9Z2hWT2QJRJUCFs9s8NbVCCxR6lsctF-pgUClIAldvUqPSx6nOeC6c-RpcXlNCXoEK93p9PvCMreLZeAVrE-dce0d8uWXTGGNCkifVBAJR_VQ",
+      "AZLasHp11-ztt9ba9sQemU1FnQ-Q6K-0-7gihDgbviy7v7J80CPDtUHHDTvaJFKtuxT5OuvVoK4LKrRtv6WJyl0nMTNEu1DekT28MV9oQmGbdAHp5ybS7_FZhkSsnnyTHGPgGX-2ca8u_yjNyieKytjIDWS9SZ-67ZAn3uEo6N7EWeL3cwcKy9XlchhzeoSrWwS2DgSIY2Ntk8buPwHq189fOjQFzNaQI0gEGhv2xcA5aUE8z1o0EeuWy_tQMq4DJ78pDsFsOkqIvDk3NINQIj2O5VBc6n3n1crxfSz2_vimlmoPudbNXtBtEcIt9-WNTDN02DFJZfKFxvqNiLtDrKBx2f-S0z-w8X8xuMK4N-MDRonz-aF6vzMCRk9s33dCftyqeI4qeBDk3Dlzsu3WZJU5vIxAqkVIyxPgJDFxHNNvYcO5Xg"
+    ]
+  }
+}

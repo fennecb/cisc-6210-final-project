@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-12-16T22:08:19.003235",
+  "key": "llm_assess:sweetgreen - Healthy Salads, Bowls and Plates:gluten:4596084309674873184",
+  "data": {
+    "safety_score": 50.0,
+    "reasoning": "sweetgreen is generally known for accommodating gluten-free diets due to its salad-focused menu. However, the provided data only lists menu items and ingredients without explicit gluten-free certification or specific preparation protocols. Several items contain definite gluten sources: 'Rosemary Focaccia' and 'zaatar breadcrumbs' in the Chicken Pesto Parm. The 'Buffalo Chicken' contains 'garlic breadcrumbs,' which are a high cross-contamination risk unless certified GF. The absence of specific safety indicators or warnings means we must rely on general industry knowledge for this type of establishment, leaning towards moderate caution.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "Presence of Rosemary Focaccia (direct gluten source)",
+      "Presence of zaatar breadcrumbs (direct gluten source)",
+      "Presence of garlic breadcrumbs (potential direct gluten source or high cross-contact risk)",
+      "Lack of confirmation regarding ingredient sourcing for dressings/sauces (e.g., pesto, hot sauce, caesar)",
+      "Lack of confirmed dedicated preparation areas or procedures for celiac customers."
+    ],
+    "safe_alternatives": [
+      "Kale Caesar (if dressing and parmesan crisps are confirmed GF/made without gluten)",
+      "Guacamole Greens (if tortilla chips are certified GF/omitted)",
+      "Shroomami (appears naturally gluten-free based on visible ingredients)",
+      "Roasted Sweet Potatoes (if dipping sauces are confirmed GF)"
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 50,\n  \"confidence\": 0.7,\n  \"reasoning\": \"sweetgreen is generally known for accommodating gluten-free diets due to its salad-focused menu. However, the provided data only lists menu items and ingredients without explicit gluten-free certification or specific preparation protocols. Several items contain definite gluten sources: 'Rosemary Focaccia' and 'zaatar breadcrumbs' in the Chicken Pesto Parm. The 'Buffalo Chicken' contains 'garlic breadcrumbs,' which are a high cross-contamination risk unless certified GF. The absence of specific safety indicators or warnings means we must rely on general industry knowledge for this type of establishment, leaning towards moderate caution.\",\n  \"risk_factors\": [\n    \"Presence of Rosemary Focaccia (direct gluten source)\",\n    \"Presence of zaatar breadcrumbs (direct gluten source)\",\n    \"Presence of garlic breadcrumbs (potential direct gluten source or high cross-contact risk)\",\n    \"Lack of confirmation regarding ingredient sourcing for dressings/sauces (e.g., pesto, hot sauce, caesar)\",\n    \"Lack of confirmed dedicated preparation areas or procedures for celiac customers.\"\n  ],\n  \"safe_alternatives\": [\n    \"Kale Caesar (if dressing and parmesan crisps are confirmed GF/made without gluten)\",\n    \"Guacamole Greens (if tortilla chips are certified GF/omitted)\",\n    \"Shroomami (appears naturally gluten-free based on visible ingredients)\",\n    \"Roasted Sweet Potatoes (if dipping sauces are confirmed GF)\"\n  ]\n}\n```"
+  }
+}

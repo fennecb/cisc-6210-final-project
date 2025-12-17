@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-12-16T21:46:46.232770",
+  "key": "details:ChIJTRyW5eahwokRCbwGO4dLRRI",
+  "data": {
+    "name": "Great Wall",
+    "place_id": "ChIJTRyW5eahwokRCbwGO4dLRRI",
+    "address": "219 Atlantic St, Stamford, CT 06901, USA",
+    "rating": 3.7,
+    "total_ratings": 160,
+    "phone": "(203) 327-7188",
+    "website": "https://greatwallchinesestamford.com/",
+    "price_level": 1,
+    "types": [
+      "establishment",
+      "food",
+      "meal_delivery",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author": "Angela Pensiero",
+        "rating": 1,
+        "text": "I ordered chicken with vegetables and shrimp fried rice on Grubhub. The chicken and vegetables came in a white gooey disgusting sauce with overcooked chicken. I could not eat it. It was not edible. I called the restaurant and they put me through to the manager twice she did not respond left her a voicemail then I tried to call back third time and they blocked me. I will never order from here again.",
+        "time": 1764460947
+      },
+      {
+        "author": "Ankita Ajjampur",
+        "rating": 5,
+        "text": "Good Chinese carry out!! Dinner special was a good deal and they use fresh vegetables in their food",
+        "time": 1763081903
+      },
+      {
+        "author": "ANIYAH DUBUISSON",
+        "rating": 1,
+        "text": "if i could leave a 0 STAR review i would. my boyfriend ordered our food from here and im highly disappointed. i got white rice w a side of shrimp and broccoli. i took about 2 bites and noticed a piece of hair on the fork and in my rice. i\u2019m upset that we spent damn near $40 in total on both of our meals in exchange for these people not even being the slightest bit of sanitary. please do not order from here. this place is disgusting .",
+        "time": 1746324299
+      },
+      {
+        "author": "CareBear",
+        "rating": 2,
+        "text": "First time was disappointed. Tasted the chicken and broccoli this time and it tasted like solely corn Starch . I couldn't taste anything else but massive corn Strach it was sooo thick much more than usual. Usually it's a light sauce. Was disappointed because I ordered for a large group who felt the same about their dishes who has never eaten here before.",
+        "time": 1742520370
+      },
+      {
+        "author": "Aaron Hammer",
+        "rating": 5,
+        "text": "The perfect local Chinese\u2019s food. Not much more to add",
+        "time": 1764285034
+      }
+    ],
+    "photos": [
+      "AZLasHqp0eWzdG1-T2oaEjvNCtfqeHBgGTMLnrZY438ushKdXTeveCgjbDbLdBhWBs1JQxZ79erIQmRHe6mh041kVwYjJ2CfUJv1pFkyxeDbjbkIS_P27-QeujTj8mw0vRjYE1pEWrrhsSeUvtMgRif1lG3wnqb622V5YVobyviYKFpeQsrCH9wULtdjLkagYuPu76Zr8J8bstdZmUnuP8LuqQ_7AbVYa5XFjsdcMzDRadZPfIKqVL3CB6ndHPVnT3YR74D3kItqCbScqaP_XJ9V1zhQ6E9-d76HiuohfygOGANSrF1WDiVKj5pQsp9D4bOPtgy55ruWxE1qXMKQFYA8a3eCP5qUvHyq2G4HhkfV0cT-mlxUHykU3hruyFkfI6vw97OcI4TyjvByLGPKeLHMWvifS7ugQrmt5cReB62Gg3ZBqA",
+      "AZLasHoO1KkxIlzK7Bpfi5A1PpskWzRuLuko6SJs8MxCiV5Agr8do1wYt6d3rmMk7iftUVqZe-wzK0ZksnrKr29mZqLj0v3bv4kZl8vTCJ7cKr16D2QQkKH7_dZFdwYqJGAuNtHrjrlZkX_1LHVc-sZAr58TNf-UMH_u_smaKBendWJlGqix18WeIjCu54x1q_-oMrG3yorXxlCOnAUORYBvVD3ncr0I4rc8wAslVq21MheJwWDgSbV15jvox94o9v3d4TyUZbappP-kZQtNsNvr6zEHv-_ZIdY6t_2yYJutIVr6TC92LHNGNL9b7_gSU79nTHIEEC57_keVOn_UybXJbL59_jk_Snt06sI-HmtfVPNwjivYD-rj752kodmlwZ1tcL0n_AzcWp2ctv8s_KBbWfFqkgR6dBzC04LY4n8OiixFGQ",
+      "AZLasHra7Pg2YtyYa-54h_1i5rB1XDv1iY4Z7BcEt0pTxyuviOot4fpe6dG40CjZtAzjKEJnImjY_H14UvOLKO_0GQk4LVZq7RtbdmwNxG7ngZwu5uZOKsbnXf9XbaBKEVprXxyExbvbDp2paEmuwoeYb-Zl5a05eVFK3M3dS48rmh_NMdBhlH1GejLloYj8CglzrkoMZDt6BC-8ySvI2d4dzTcvV5XUjchW-T9aJ-pyAYguFRKHBHwPVHHBowYTgyEeBouiuy5dFyF7Cs2ZuurpEkfBMXU8-MKmvrNtiLQeTYD9pVyNa7b8hDmyTqeFgn6LgFsocknxN_rYqP_aLSPpIaZD6UMrYgJTsXoX-hhhsJE86PBfqgdhXnzy1UJ-Vyat67Q3rkUuA54-p6-x5zZLwaf7GTLi6zXs87cW_Q8R3l_OLbDA",
+      "AZLasHpPTXZ-Yb-VpHA-Gy4x7UNjeQHQXgJGQj3sVBE-y8VLSSjb9A727A5eDrYsl0hzmNyuyG48RzajTeFYAtPazTz-vk9O-n6EDpcsjCIfsh4v-0ehwqYLQEv6Hf_qtq6K_KfKyFnsM7qYXcA8m851PB8ZHhDFIa_kmXqCeIXtrmaC9nUXYm7tQmUaqlpzts6GVZkTKCeu4jTOaSJKHjrD2XCj6jNpRLTaUZtTm3J4pn2_oxlcIInMN6MgHZheIsQrgKxFSgc_TAZcTuaKbHzXHeajpakdDDLMpcjIlbckDT1BNe8F8K5OkLvk_-YXieuSLFOU-CrwkZ_oOvvr3pUjooqAzCjv0_Dc4cwM9Ww-ucTHF7e-T0FkVziRvOSvpuMw4vhD_1xJ4jVnCgnD2lRn1wBMVgtFnnxqdZUBU_4XEDcb_Qdb",
+      "AZLasHp8SiJxSPb_lBPf0YDbE21Eqk0DRx9wEWF7bArcVBrLzL1zN4WTKvumrRYc1q2QwFfi_Fpvq2oi7zPJ9K5zawT0D4gMFeE--_J39PFiUibq3XucBJ9uJd1wR_t-C1dNMu2Ah5hRnsGonIYF6bMbLrjb7nYsuNphBtwwkuBOaYuOx_Q8Ro3GUSys13GCbzIY4WF0N0VkIwuhbimwXaklj08EB5H-3hR2XMetiX0tDumeD0fZXVfVrWLb4DJHnDXUjYUepTYfwdg3f2n2ZzmnwL8RIWKdiIob-pMdCNc2oYqJTt-uGN7X6_5pv0-CbjaA707wc7WKAPQsXOz7z_mmDmMTzs2CHrflT-Qa6Xop7nLFfqDkwrEpu4jfH2rMXJxSWy8mWdg_pptrGWGAlUnKUmNcHlxeY0swSWXwpKfeoRAA6myE"
+    ]
+  }
+}

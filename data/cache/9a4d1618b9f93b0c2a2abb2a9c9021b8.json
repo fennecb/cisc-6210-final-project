@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-12-16T21:57:44.459170",
+  "key": "llm_assess:Thai Spice:gluten:-3581486873495368271",
+  "data": {
+    "safety_score": 75.0,
+    "reasoning": "The provided data consists only of restaurant contact information and basic business details. There is no menu information, review text, or direct statement regarding gluten-free protocols. Therefore, the risk assessment must be highly conservative. Standard Thai cuisine often relies on soy sauce (which contains wheat) and thickening agents that may contain gluten. The lack of explicit gluten-free protocols or positive feedback forces a high-risk score based on assumption of standard preparation.",
+    "confidence": 0.3,
+    "risk_factors": [
+      "No menu information available to confirm ingredient sourcing.",
+      "No mentions of dedicated gluten-free preparation areas or processes.",
+      "Standard Thai sauces (like soy sauce) typically contain wheat unless specified otherwise.",
+      "High likelihood of shared fryers and cooking surfaces for deep-fried items."
+    ],
+    "safe_alternatives": [
+      "None can be confirmed as safe without further investigation into ingredient sourcing and preparation protocols."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 75,\n  \"confidence\": 0.3,\n  \"reasoning\": \"The provided data consists only of restaurant contact information and basic business details. There is no menu information, review text, or direct statement regarding gluten-free protocols. Therefore, the risk assessment must be highly conservative. Standard Thai cuisine often relies on soy sauce (which contains wheat) and thickening agents that may contain gluten. The lack of explicit gluten-free protocols or positive feedback forces a high-risk score based on assumption of standard preparation.\",\n  \"risk_factors\": [\n    \"No menu information available to confirm ingredient sourcing.\",\n    \"No mentions of dedicated gluten-free preparation areas or processes.\",\n    \"Standard Thai sauces (like soy sauce) typically contain wheat unless specified otherwise.\",\n    \"High likelihood of shared fryers and cooking surfaces for deep-fried items.\"\n  ],\n  \"safe_alternatives\": [\n    \"None can be confirmed as safe without further investigation into ingredient sourcing and preparation protocols.\"\n  ]\n}\n```"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-12-16T22:10:15.771813",
+  "key": "llm_assess:Great Wall:gluten:-4374520668954433784",
+  "data": {
+    "safety_score": 85.0,
+    "reasoning": "This is a standard Chinese restaurant menu, which presents a high inherent risk for gluten cross-contact and contamination due to the widespread use of wheat-based ingredients (soy sauce, thickeners, noodles, batter) in most dishes. There is no indication of dedicated gluten-free preparation, ingredient substitution policies, or staff training mentioned in the provided text. Dishes like 'Fried' items, 'Lo Mein,' 'Chow Fun,' and 'Egg Rolls' are almost certain to contain wheat. While rice noodles ('Mei Fun') and plain rice are possibilities, the risk of cross-contact in a shared kitchen is substantial.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "Widespread use of soy sauce (containing wheat) in virtually all savory sauces.",
+      "Presence of wheat-based noodles (Lo Mein, Chow Fun).",
+      "Fried items likely use wheat-based batter or share fryers with battered items.",
+      "Egg Rolls and Wontons are made with wheat wrappers.",
+      "No explicit mention of gluten-free soy sauce or dedicated preparation areas.",
+      "High potential for cross-contact in woks and cooking surfaces."
+    ],
+    "safe_alternatives": [
+      "White Rice (If confirmed plain, no sauce added)",
+      "Brown Rice (If confirmed plain, no sauce added)",
+      "Plain Steamed Vegetables (If sauces are served strictly on the side and confirmed GF, like plain rice vinegar or citrus)",
+      "Healthy Choice Steamed Dishes (HIGH RISK: Only if the customer can confirm the side sauce is GF and the preparation environment is safe, which is unlikely without direct communication)."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 85,\n  \"confidence\": 0.7,\n  \"reasoning\": \"This is a standard Chinese restaurant menu, which presents a high inherent risk for gluten cross-contact and contamination due to the widespread use of wheat-based ingredients (soy sauce, thickeners, noodles, batter) in most dishes. There is no indication of dedicated gluten-free preparation, ingredient substitution policies, or staff training mentioned in the provided text. Dishes like 'Fried' items, 'Lo Mein,' 'Chow Fun,' and 'Egg Rolls' are almost certain to contain wheat. While rice noodles ('Mei Fun') and plain rice are possibilities, the risk of cross-contact in a shared kitchen is substantial.\",\n  \"risk_factors\": [\n    \"Widespread use of soy sauce (containing wheat) in virtually all savory sauces.\",\n    \"Presence of wheat-based noodles (Lo Mein, Chow Fun).\",\n    \"Fried items likely use wheat-based batter or share fryers with battered items.\",\n    \"Egg Rolls and Wontons are made with wheat wrappers.\",\n    \"No explicit mention of gluten-free soy sauce or dedicated preparation areas.\",\n    \"High potential for cross-contact in woks and cooking surfaces.\"\n  ],\n  \"safe_alternatives\": [\n    \"White Rice (If confirmed plain, no sauce added)\",\n    \"Brown Rice (If confirmed plain, no sauce added)\",\n    \"Plain Steamed Vegetables (If sauces are served strictly on the side and confirmed GF, like plain rice vinegar or citrus)\",\n    \"Healthy Choice Steamed Dishes (HIGH RISK: Only if the customer can confirm the side sauce is GF and the preparation environment is safe, which is unlikely without direct communication).\"\n  ]\n}\n```"
+  }
+}

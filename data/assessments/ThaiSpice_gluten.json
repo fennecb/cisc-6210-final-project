@@ -1,0 +1,31 @@
+{
+  "restaurant_name": "Thai Spice",
+  "allergen_type": "gluten",
+  "overall_safety_score": 75.0,
+  "confidence_score": 0.3,
+  "risk_factors": [
+    "Lack of explicit menu data prevents identifying high-risk ingredients (e.g., soy sauce, wheat noodles, flour coatings).",
+    "No information provided regarding dedicated preparation areas or fryer usage.",
+    "No review mentions confirming positive or negative experiences regarding gluten-free accommodation.",
+    "Standard Thai cooking techniques (stir-frying, use of soy sauce) inherently carry a high baseline risk of gluten cross-contact."
+  ],
+  "safety_indicators": [
+    "LLM identified safe options"
+  ],
+  "recommended_actions": [
+    "HIGH RISK - Not recommended for severe gluten allergies",
+    "Consider alternative restaurants",
+    "Key concerns: Lack of explicit menu data prevents identifying high-risk ingredients (e.g., soy sauce, wheat noodles, flour coatings)., No information provided regarding dedicated preparation areas or fryer usage."
+  ],
+  "safe_menu_items": [
+    "Cannot determine based on provided data."
+  ],
+  "data_sources_used": [
+    "llm_reasoning",
+    "reviews",
+    "menu"
+  ],
+  "reviews_analyzed": 5,
+  "menu_items_found": 5,
+  "relevant_review_excerpts": []
+}

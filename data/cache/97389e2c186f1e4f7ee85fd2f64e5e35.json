@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-12-16T22:08:13.285901",
+  "key": "llm_assess:Great Wall:gluten:888213667438970008",
+  "data": {
+    "safety_score": 85.0,
+    "reasoning": "The menu is typical of a standard Americanized Chinese restaurant, which inherently carries a very high risk of gluten cross-contact and contamination. Most sauces (e.g., brown sauce, garlic sauce, Hunan sauce, Szechuan sauce, oyster sauce, soy sauce) in this cuisine almost always contain wheat/gluten unless explicitly stated otherwise. Many appetizers (Egg Rolls, Fried Wontons, Dumplings, etc.) use wheat-based wrappers and batter. Furthermore, the menu lacks any explicit mention of gluten-free preparation, dedicated fryers, or ingredient substitution options. The rule-based detector found no specific safety or warning indicators, which is common for a standard menu review, but it does not confirm safety.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "Ubiquitous use of soy sauce (contains wheat) in nearly all savory dishes (Fried Rice, Lo Mein, Chow Fun, most sauces).",
+      "Use of wheat-based wrappers for Egg Rolls, Dumplings, and Wontons.",
+      "Potential use of wheat-based thickeners (flour/cornstarch) in sauces, despite some dishes listing 'no cornstarch'.",
+      "High risk of cross-contact due to shared woks, fryers, cutting boards, and utensils, especially since items like 'Fried Chicken Wings' and 'French Fries' are listed, suggesting shared deep fryers.",
+      "Lack of any certified Gluten-Free (GF) section or allergen matrix."
+    ],
+    "safe_alternatives": [
+      "Steamed plain white or brown rice (Item 3.18/3.74) *IF* the kitchen uses a dedicated steamer and there is no contamination from sauces or cross-contact.",
+      "Healthy Choice Steamed Dishes (D1-D6) *ONLY* if the customer can confirm that the side 'brown sauce' is 100% GF (i.e., made only with tamari or GF soy sauce) and there is no cross-contact during steaming. This is highly unlikely without explicit confirmation.",
+      "Plain French Fries (4.26) are high risk due to shared fryers with battered items (e.g., Fried Shrimp, Fried Wontons)."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 85,\n  \"confidence\": 0.7,\n  \"reasoning\": \"The menu is typical of a standard Americanized Chinese restaurant, which inherently carries a very high risk of gluten cross-contact and contamination. Most sauces (e.g., brown sauce, garlic sauce, Hunan sauce, Szechuan sauce, oyster sauce, soy sauce) in this cuisine almost always contain wheat/gluten unless explicitly stated otherwise. Many appetizers (Egg Rolls, Fried Wontons, Dumplings, etc.) use wheat-based wrappers and batter. Furthermore, the menu lacks any explicit mention of gluten-free preparation, dedicated fryers, or ingredient substitution options. The rule-based detector found no specific safety or warning indicators, which is common for a standard menu review, but it does not confirm safety.\",\n  \"risk_factors\": [\n    \"Ubiquitous use of soy sauce (contains wheat) in nearly all savory dishes (Fried Rice, Lo Mein, Chow Fun, most sauces).\",\n    \"Use of wheat-based wrappers for Egg Rolls, Dumplings, and Wontons.\",\n    \"Potential use of wheat-based thickeners (flour/cornstarch) in sauces, despite some dishes listing 'no cornstarch'.\",\n    \"High risk of cross-contact due to shared woks, fryers, cutting boards, and utensils, especially since items like 'Fried Chicken Wings' and 'French Fries' are listed, suggesting shared deep fryers.\",\n    \"Lack of any certified Gluten-Free (GF) section or allergen matrix.\"\n  ],\n  \"safe_alternatives\": [\n    \"Steamed plain white or brown rice (Item 3.18/3.74) *IF* the kitchen uses a dedicated steamer and there is no contamination from sauces or cross-contact.\",\n    \"Healthy Choice Steamed Dishes (D1-D6) *ONLY* if the customer can confirm that the side 'brown sauce' is 100% GF (i.e., made only with tamari or GF soy sauce) and there is no cross-contact during steaming. This is highly unlikely without explicit confirmation.\",\n    \"Plain French Fries (4.26) are high risk due to shared fryers with battered items (e.g., Fried Shrimp, Fried Wontons).\"\n  ]\n}\n```"
+  }
+}

@@ -147,10 +147,10 @@ class GooglePlacesCollector:
             if data.get('status') == 'OK':
                 result = data['result']
                 
-                # Extract photo references
+                # Extract photo references (increased limit for better menu coverage)
                 photos = []
                 if 'photos' in result:
-                    for photo in result['photos'][:5]:  # Limit to 5 photos
+                    for photo in result['photos'][:10]:  # Increased to 10 photos
                         photos.append(photo.get('photo_reference', ''))
                 
                 # Extract reviews

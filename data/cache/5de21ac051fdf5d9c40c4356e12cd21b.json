@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-12-16T21:45:32.715563",
+  "key": "llm_assess:Thai Spice:gluten:2367739235673176380",
+  "data": {
+    "safety_score": 65.0,
+    "reasoning": "The provided data is extremely limited, containing only restaurant contact information and no actual menu details or customer reviews mentioning allergens or preparation methods. Thai cuisine inherently carries high gluten risk due to the common use of soy sauce (contains wheat) in many sauces and marinades, and potential use of wheat flour in fried items or noodles. Without confirmation of dedicated gluten-free protocols, the risk of cross-contact is assumed to be high.",
+    "confidence": 0.3,
+    "risk_factors": [
+      "No menu items provided to assess inherent gluten content.",
+      "No information regarding staff knowledge or dedication to allergen protocols.",
+      "High inherent risk of gluten cross-contact in a typical Thai kitchen (soy sauce, woks, fryers).",
+      "Lack of specific safety or warning indicators in the provided (but irrelevant) review summary."
+    ],
+    "safe_alternatives": [
+      "None can be reliably identified without menu or protocol details."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 65,\n  \"confidence\": 0.3,\n  \"reasoning\": \"The provided data is extremely limited, containing only restaurant contact information and no actual menu details or customer reviews mentioning allergens or preparation methods. Thai cuisine inherently carries high gluten risk due to the common use of soy sauce (contains wheat) in many sauces and marinades, and potential use of wheat flour in fried items or noodles. Without confirmation of dedicated gluten-free protocols, the risk of cross-contact is assumed to be high.\",\n  \"risk_factors\": [\n    \"No menu items provided to assess inherent gluten content.\",\n    \"No information regarding staff knowledge or dedication to allergen protocols.\",\n    \"High inherent risk of gluten cross-contact in a typical Thai kitchen (soy sauce, woks, fryers).\",\n    \"Lack of specific safety or warning indicators in the provided (but irrelevant) review summary.\"\n  ],\n  \"safe_alternatives\": [\n    \"None can be reliably identified without menu or protocol details.\"\n  ]\n}\n```"
+  }
+}

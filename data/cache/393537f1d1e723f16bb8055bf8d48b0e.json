@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-12-16T22:10:19.421043",
+  "key": "llm_assess:sweetgreen - Healthy Salads, Bowls and Plates:gluten:-7969509655235104182",
+  "data": {
+    "safety_score": 55.0,
+    "reasoning": "The menu explicitly lists items containing gluten, such as 'garlic breadcrumbs' in the Buffalo Chicken salad, 'zaatar breadcrumbs' in the Chicken Pesto Parm, and 'Rosemary Focaccia'. While sweetgreen generally offers many naturally gluten-free ingredients (like base greens, proteins, and vegetables), the presence of these baked/breadcrumb components indicates a high risk of gluten contamination in the kitchen environment. The absence of explicit safety protocols or dedicated gluten-free preparation methods in the provided data necessitates a moderate to high caution level for celiac disease.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "Presence of breadcrumbs (garlic breadcrumbs, zaatar breadcrumbs) used in multiple items, which are high-risk for cross-contact.",
+      "Presence of Rosemary Focaccia, indicating fresh gluten-containing bread is handled.",
+      "Standard salad/bowl assembly line operations increase the risk of cross-contact from shared utensils, cutting surfaces, and toppings bins.",
+      "No explicit mention of gluten-free protocols, dedicated fryers, or allergen training in the provided data snippets."
+    ],
+    "safe_alternatives": [
+      "Simple combinations of base greens, plain proteins (chicken, tofu), vegetables, and verified gluten-free dressings (e.g., Balsamic Vinaigrette, Miso Sesame Ginger).",
+      "Roasted Sweet Potatoes (if sauces like hot honey mustard and green goddess ranch are confirmed GF and separated during preparation)."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 55,\n  \"confidence\": 0.7,\n  \"reasoning\": \"The menu explicitly lists items containing gluten, such as 'garlic breadcrumbs' in the Buffalo Chicken salad, 'zaatar breadcrumbs' in the Chicken Pesto Parm, and 'Rosemary Focaccia'. While sweetgreen generally offers many naturally gluten-free ingredients (like base greens, proteins, and vegetables), the presence of these baked/breadcrumb components indicates a high risk of gluten contamination in the kitchen environment. The absence of explicit safety protocols or dedicated gluten-free preparation methods in the provided data necessitates a moderate to high caution level for celiac disease.\",\n  \"risk_factors\": [\n    \"Presence of breadcrumbs (garlic breadcrumbs, zaatar breadcrumbs) used in multiple items, which are high-risk for cross-contact.\",\n    \"Presence of Rosemary Focaccia, indicating fresh gluten-containing bread is handled.\",\n    \"Standard salad/bowl assembly line operations increase the risk of cross-contact from shared utensils, cutting surfaces, and toppings bins.\",\n    \"No explicit mention of gluten-free protocols, dedicated fryers, or allergen training in the provided data snippets.\"\n  ],\n  \"safe_alternatives\": [\n    \"Simple combinations of base greens, plain proteins (chicken, tofu), vegetables, and verified gluten-free dressings (e.g., Balsamic Vinaigrette, Miso Sesame Ginger).\",\n    \"Roasted Sweet Potatoes (if sauces like hot honey mustard and green goddess ranch are confirmed GF and separated during preparation).\"\n  ]\n}\n```"
+  }
+}

@@ -1,21 +1,32 @@
 {
   "restaurant_name": "Chipotle Mexican Grill",
   "allergen_type": "gluten",
-  "overall_safety_score": 17.5,
-  "confidence_score": 0.5,
+  "overall_safety_score": 14.0,
+  "confidence_score": 0.5875,
   "rule_based_score": 0.0,
-  "llm_safety_score": 50.0,
+  "llm_safety_score": 40.0,
   "review_sentiment_score": 0,
   "menu_analysis_score": 0,
-  "risk_factors": [],
+  "risk_factors": [
+    "Insufficient data provided for a thorough analysis.",
+    "High inherent risk of cross-contact due to open assembly line preparation (scoops, shared surfaces).",
+    "No specific review mentions confirming staff training or successful allergen mitigation."
+  ],
   "safety_indicators": [],
   "recommended_actions": [
     "This restaurant appears relatively safe for gluten allergies",
     "No explicit allergen-free mentions found in reviews"
   ],
-  "safe_menu_items": [],
+  "safe_menu_items": [
+    "Steak/Chicken/Carnitas/Sofritas (check for marinade ingredients/potential shared fryers if applicable, though meats are usually safe)",
+    "Rice (Cilantro-Lime or Brown)",
+    "Beans (Black or Pinto)",
+    "Lettuce (as a wrap base)",
+    "Salsa/Guacamole (must verify specific preparation/scoop handling)"
+  ],
   "data_sources_used": [
     "rule_based_analysis",
+    "llm_reasoning",
     "reviews",
     "menu"
   ],

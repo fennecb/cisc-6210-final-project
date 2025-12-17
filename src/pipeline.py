@@ -116,18 +116,8 @@ class AllergenSafetyPipeline:
         
         logger.info(f"Total reviews collected: {len(all_reviews)}")
         
-        # Step 3: Rule-based allergen detection
-        logger.info("\nSTEP 3: Running rule-based allergen detection...")
-        review_summary = self.allergen_detector.analyze_reviews(
-            all_reviews,
-            focus_allergen=allergen_type
-        )
-        
-        logger.info(f"[OK] Analyzed {review_summary['reviews_analyzed']} reviews")
-        logger.info(f"  Total allergen mentions: {review_summary['total_mentions']}")
-        logger.info(f"  Safety indicators: {len(review_summary['safety_indicators'])}")
-        logger.info(f"  Warning indicators: {len(review_summary['warning_indicators'])}")
-        logger.info(f"  Rule-based risk score: {review_summary['average_risk_score']:.1f}/100")
+        # Step 3: Store reviews for LLM analysis and keyword search
+        logger.info(f"\nSTEP 3: Prepared {len(all_reviews)} reviews for LLM analysis")
         
         # Step 4: Extract menu information
         logger.info("\nSTEP 4: Extracting menu information...")
@@ -136,51 +126,74 @@ class AllergenSafetyPipeline:
         # Try OCR on photos if available
         if restaurant_data.photos and self.google_places:
             logger.info("Attempting OCR on menu photos...")
-            for i, photo_ref in enumerate(restaurant_data.photos[:2]):  # Limit to 2 photos
+            # Process up to 5 photos (increased from 2 for better coverage)
+            photos_to_process = min(5, len(restaurant_data.photos))
+            logger.info(f"Processing {photos_to_process} photos out of {len(restaurant_data.photos)} available")
+
+            for i, photo_ref in enumerate(restaurant_data.photos[:photos_to_process]):
                 try:
                     # Download photo
                     photo_path = f"data/temp/menu_{i}.jpg"
                     Path("data/temp").mkdir(parents=True, exist_ok=True)
-                    
+
                     if self.google_places.download_photo(photo_ref, photo_path):
                         # Try OCR
                         menu_text = self.menu_ocr.extract_text(photo_path)
                         if menu_text:
                             # Split into items (simple heuristic)
-                            items = [line.strip() for line in menu_text.split('\n') 
+                            items = [line.strip() for line in menu_text.split('\n')
                                    if len(line.strip()) > 10]
-                            menu_items.extend(items)
-                            logger.info(f"  [OK] Extracted {len(items)} items from photo {i+1}")
+                            if items:  # Only add if we got items
+                                menu_items.extend(items)
+                                logger.info(f"  [OK] Extracted {len(items)} items from photo {i+1}")
+                            else:
+                                logger.info(f"  [SKIP] No valid items extracted from photo {i+1}")
+                        else:
+                            logger.info(f"  [SKIP] No text extracted from photo {i+1}")
+                    else:
+                        logger.warning(f"  [FAIL] Could not download photo {i+1}")
                 except Exception as e:
-                    logger.warning(f"Could not process photo {i}: {e}")
+                    logger.warning(f"Could not process photo {i+1}: {e}")
+                    continue  # Continue processing remaining photos
         
-        # Try website menu extraction
+        # Try website menu extraction with retry logic
         if restaurant_data.website and self.review_scraper:
-            website_menu = self.review_scraper.extract_menu_text_from_page(
-                restaurant_data.website
+            logger.info(f"Attempting to extract menu from website: {restaurant_data.website}")
+            website_menu = self.review_scraper.extract_menu_with_retry(
+                restaurant_data.website,
+                max_retries=2
             )
             if website_menu:
-                items = [line.strip() for line in website_menu.split('\n') 
+                items = [line.strip() for line in website_menu.split('\n')
                         if len(line.strip()) > 10]
                 menu_items.extend(items)
                 logger.info(f"  [OK] Extracted {len(items)} items from website")
+            else:
+                logger.info("  [SKIP] Could not extract menu from website")
         
         # Remove duplicates
         menu_items = list(set(menu_items))
         logger.info(f"Total unique menu items: {len(menu_items)}")
         
-        # Step 5: LLM reasoning (optional)
+        # Step 5: LLM reasoning (required)
         llm_response = None
         if use_llm and self.llm_reasoner:
             logger.info("\nSTEP 5: Running LLM reasoning...")
             try:
+                # Create a simple review summary for LLM (just count and text)
+                review_texts = [r.get('text', '') for r in all_reviews if r.get('text')]
+                simple_review_summary = {
+                    'reviews_analyzed': len(review_texts),
+                    'review_texts': review_texts[:20]  # Pass up to 20 reviews to LLM
+                }
+
                 llm_response = self.llm_reasoner.assess_safety(
                     menu_items,
-                    review_summary,
+                    simple_review_summary,
                     allergen_type,
                     restaurant_data.name
                 )
-                
+
                 if llm_response:
                     logger.info(f"[OK] LLM analysis complete")
                     logger.info(f"  LLM safety score: {llm_response.safety_score:.1f}/100")
@@ -191,13 +204,13 @@ class AllergenSafetyPipeline:
                 logger.error(f"Error in LLM reasoning: {e}")
         else:
             logger.info("\nSTEP 5: Skipping LLM reasoning (disabled or unavailable)")
-        
-        # Step 6: Score aggregation
-        logger.info("\nSTEP 6: Aggregating scores...")
+            logger.warning("WARNING: LLM reasoning is required for meaningful assessment")
+
+        # Step 6: Create LLM-based assessment
+        logger.info("\nSTEP 6: Creating LLM-based assessment...")
         assessment = self.scorer.aggregate_scores(
-            rule_based_score=review_summary['average_risk_score'],
             llm_response=llm_response,
-            review_summary=review_summary,
+            reviews=all_reviews,
             menu_items=menu_items,
             restaurant_name=restaurant_data.name,
             allergen_type=allergen_type
@@ -222,41 +235,41 @@ class AllergenSafetyPipeline:
         print(f"ALLERGEN SAFETY ASSESSMENT: {assessment.restaurant_name}")
         print("="*60)
         print(f"\nAllergen Type: {assessment.allergen_type.upper()}")
-        print(f"\n[*] OVERALL SAFETY SCORE: {assessment.overall_safety_score:.1f}/100")
+        print(f"\n[*] LLM SAFETY SCORE: {assessment.overall_safety_score:.1f}/100")
         print(f"   Rating: {assessment.get_rating()}")
-        print(f"   Confidence: {assessment.confidence_score:.0%}")
-        
-        print(f"\n[SCORES] COMPONENT SCORES:")
-        print(f"   Rule-based Analysis: {assessment.rule_based_score:.1f}/100")
-        print(f"   LLM Reasoning: {assessment.llm_safety_score:.1f}/100")
-        print(f"   Review Sentiment: {assessment.review_sentiment_score:.1f}/100")
-        print(f"   Menu Analysis: {assessment.menu_analysis_score:.1f}/100")
-        
+        print(f"   LLM Confidence: {assessment.confidence_score:.0%}")
+
         if assessment.risk_factors:
-            print(f"\n[!] RISK FACTORS:")
+            print(f"\n[!] RISK FACTORS (from LLM):")
             for factor in assessment.risk_factors[:5]:
                 print(f"   • {factor}")
-        
+
         if assessment.safety_indicators:
-            print(f"\n[+] SAFETY INDICATORS:")
+            print(f"\n[+] SAFETY INDICATORS (from LLM):")
             for indicator in assessment.safety_indicators[:5]:
                 print(f"   • {indicator}")
-        
+
         if assessment.recommended_actions:
-            print(f"\n[>] RECOMMENDATIONS:")
+            print(f"\n[>] RECOMMENDATIONS (from LLM):")
             for action in assessment.recommended_actions:
                 print(f"   • {action}")
-        
+
         if assessment.safe_menu_items:
-            print(f"\n[FOOD] POTENTIALLY SAFE ITEMS:")
+            print(f"\n[FOOD] POTENTIALLY SAFE ITEMS (from LLM):")
             for item in assessment.safe_menu_items[:5]:
                 print(f"   • {item}")
-        
+
+        if assessment.relevant_review_excerpts:
+            print(f"\n[REVIEWS] RELEVANT REVIEW EXCERPTS:")
+            for i, excerpt in enumerate(assessment.relevant_review_excerpts[:5], 1):
+                print(f"   {i}. {excerpt}")
+
         print(f"\n[DATA] DATA SOURCES:")
         print(f"   Reviews analyzed: {assessment.reviews_analyzed}")
         print(f"   Menu items found: {assessment.menu_items_found}")
+        print(f"   Keyword matches in reviews: {len(assessment.relevant_review_excerpts)}")
         print(f"   Sources used: {', '.join(assessment.data_sources_used)}")
-        
+
         print("="*60 + "\n")
     
     def batch_analyze(self,

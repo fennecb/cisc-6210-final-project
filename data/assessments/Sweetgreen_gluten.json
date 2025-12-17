@@ -1,0 +1,33 @@
+{
+  "restaurant_name": "sweetgreen - Healthy Salads, Bowls and Plates",
+  "allergen_type": "gluten",
+  "overall_safety_score": 60.0,
+  "confidence_score": 0.7,
+  "risk_factors": [
+    "Presence of ingredients containing gluten (breadcrumbs in Buffalo Chicken and Chicken Pesto Parm).",
+    "Presence of 'Rosemary Focaccia' which is a gluten source.",
+    "High potential for cross-contact due to assembly line/salad bar style preparation (shared scoops, surfaces, toasters/ovens if applicable).",
+    "Lack of explicit information regarding gluten-free certifications, dedicated prep areas, or staff training for celiac safety."
+  ],
+  "safety_indicators": [
+    "LLM identified safe options"
+  ],
+  "recommended_actions": [
+    "HIGH RISK - Not recommended for severe gluten allergies",
+    "Consider alternative restaurants",
+    "Key concerns: Presence of ingredients containing gluten (breadcrumbs in Buffalo Chicken and Chicken Pesto Parm)., Presence of 'Rosemary Focaccia' which is a gluten source."
+  ],
+  "safe_menu_items": [
+    "Roasted Sweet Potatoes (if sauces are verified gluten-free: hot honey mustard or green goddess ranch).",
+    "Hibiscus Clover Tea.",
+    "Base components like Kale, Romaine, Spring Mix, Wild Rice, Quinoa (must verify seasoning/dressing contamination)."
+  ],
+  "data_sources_used": [
+    "llm_reasoning",
+    "reviews",
+    "menu"
+  ],
+  "reviews_analyzed": 5,
+  "menu_items_found": 5,
+  "relevant_review_excerpts": []
+}

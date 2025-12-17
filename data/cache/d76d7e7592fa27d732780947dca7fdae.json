@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-12-16T22:15:27.372086",
+  "key": "llm_assess:Great Wall:gluten:-6094637634425791992",
+  "data": {
+    "safety_score": 85.0,
+    "reasoning": "This is a standard Chinese restaurant whose menu inherently contains numerous gluten-containing ingredients (soy sauce, wheat noodles, breading/batter). There is no explicit evidence (menu notations, dedicated GF section, staff training indicators) suggesting they can safely accommodate celiac disease. High risk of cross-contact due to shared woks, fryers, and preparation surfaces.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "Heavy reliance on soy sauce (contains wheat) in sauces, marinades, and seasonings across almost all categories (Fried Rice, Lo Mein, Chow Fun, General Tso's, etc.).",
+      "Presence of wheat-based noodles (Lo Mein, Chow Mei Fun).",
+      "Fried items (Fried Wings, Egg Rolls, Fried Shrimp, Dumplings) are likely prepared in shared fryers or with wheat-containing batters.",
+      "No explicit gluten-free menu or labeling found in the provided data.",
+      "Standard Chinese kitchen environment implies high risk of cross-contact (shared woks, utensils, cutting boards)."
+    ],
+    "safe_alternatives": [
+      "The 'Healthy Choice Steamed Dishes' section *might* be modifiable (D1-D6) if prepared strictly with rice/cornstarch thickening and gluten-free soy sauce (tamari), but this requires explicit confirmation and rigorous kitchen protocols which are not confirmed here.",
+      "Plain steamed white rice or brown rice (if confirmed to be pure rice without added seasoning/sauce) are the only items potentially safe by default, but must be confirmed for cross-contact."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 85,\n  \"confidence\": 0.7,\n  \"reasoning\": \"This is a standard Chinese restaurant whose menu inherently contains numerous gluten-containing ingredients (soy sauce, wheat noodles, breading/batter). There is no explicit evidence (menu notations, dedicated GF section, staff training indicators) suggesting they can safely accommodate celiac disease. High risk of cross-contact due to shared woks, fryers, and preparation surfaces.\",\n  \"risk_factors\": [\n    \"Heavy reliance on soy sauce (contains wheat) in sauces, marinades, and seasonings across almost all categories (Fried Rice, Lo Mein, Chow Fun, General Tso's, etc.).\",\n    \"Presence of wheat-based noodles (Lo Mein, Chow Mei Fun).\",\n    \"Fried items (Fried Wings, Egg Rolls, Fried Shrimp, Dumplings) are likely prepared in shared fryers or with wheat-containing batters.\",\n    \"No explicit gluten-free menu or labeling found in the provided data.\",\n    \"Standard Chinese kitchen environment implies high risk of cross-contact (shared woks, utensils, cutting boards).\"\n  ],\n  \"safe_alternatives\": [\n    \"The 'Healthy Choice Steamed Dishes' section *might* be modifiable (D1-D6) if prepared strictly with rice/cornstarch thickening and gluten-free soy sauce (tamari), but this requires explicit confirmation and rigorous kitchen protocols which are not confirmed here.\",\n    \"Plain steamed white rice or brown rice (if confirmed to be pure rice without added seasoning/sauce) are the only items potentially safe by default, but must be confirmed for cross-contact.\"\n  ]\n}\n```"
+  }
+}

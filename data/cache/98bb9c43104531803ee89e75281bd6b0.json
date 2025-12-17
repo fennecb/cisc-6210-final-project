@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-12-16T22:10:11.075120",
+  "key": "llm_assess:Thai Spice:gluten:-5503144616255997444",
+  "data": {
+    "safety_score": 75.0,
+    "reasoning": "The provided data contains only contact information and business hours, with no menu details, specific allergen policies, or customer reviews mentioning gluten. Thai cuisine frequently uses gluten in soy sauce, thickeners, and marinades (e.g., oyster sauce, certain curry pastes). Without explicit confirmation of gluten-free options or dedicated preparation procedures, the inherent risk associated with standard Thai cooking practices mandates a conservative high-risk score.",
+    "confidence": 0.3,
+    "risk_factors": [
+      "Lack of menu data detailing ingredients (common gluten sources like soy sauce, wheat-based noodles, and some curry pastes are highly probable in Thai cuisine).",
+      "No information available regarding gluten-free certification, dedicated fryers, or ingredient substitution policies.",
+      "No review data available to assess staff knowledge or confirmed safe handling practices.",
+      "High inherent cross-contact risk typical in shared kitchens preparing traditional Thai food."
+    ],
+    "safe_alternatives": [
+      "None can be identified based on the provided data."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 75,\n  \"confidence\": 0.3,\n  \"reasoning\": \"The provided data contains only contact information and business hours, with no menu details, specific allergen policies, or customer reviews mentioning gluten. Thai cuisine frequently uses gluten in soy sauce, thickeners, and marinades (e.g., oyster sauce, certain curry pastes). Without explicit confirmation of gluten-free options or dedicated preparation procedures, the inherent risk associated with standard Thai cooking practices mandates a conservative high-risk score.\",\n  \"risk_factors\": [\n    \"Lack of menu data detailing ingredients (common gluten sources like soy sauce, wheat-based noodles, and some curry pastes are highly probable in Thai cuisine).\",\n    \"No information available regarding gluten-free certification, dedicated fryers, or ingredient substitution policies.\",\n    \"No review data available to assess staff knowledge or confirmed safe handling practices.\",\n    \"High inherent cross-contact risk typical in shared kitchens preparing traditional Thai food.\"\n  ],\n  \"safe_alternatives\": [\n    \"None can be identified based on the provided data.\"\n  ]\n}\n```"
+  }
+}

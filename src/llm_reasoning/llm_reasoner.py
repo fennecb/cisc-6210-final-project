@@ -48,7 +48,11 @@ class LLMReasoner:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=Config.GOOGLE_GEMINI_API_KEY)
-                self.client = genai.GenerativeModel('gemini-1.5-flash')
+                # print("Available Gemini models:")
+                # import pprint
+                # for model in genai.list_models():
+                #     pprint.pprint(model)
+                self.client = genai.GenerativeModel('gemini-flash-lite-latest')
                 logger.info("Initialized Gemini client")
             except Exception as e:
                 logger.error(f"Failed to initialize Gemini: {e}")

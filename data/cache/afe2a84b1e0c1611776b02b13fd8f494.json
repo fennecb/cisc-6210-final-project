@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-12-16T22:15:31.168541",
+  "key": "llm_assess:sweetgreen - Healthy Salads, Bowls and Plates:gluten:-8877710777538694756",
+  "data": {
+    "safety_score": 60.0,
+    "reasoning": "The menu explicitly lists items containing gluten ingredients, such as 'garlic breadcrumbs' in the Buffalo Chicken salad and 'zaatar breadcrumbs' in the Chicken Pesto Parm, as well as 'rosemary focaccia'. The presence of these items, along with the general nature of a salad bar/bowl assembly line, suggests a high inherent risk of cross-contact, even if some items appear naturally gluten-free. No specific gluten-free protocols or dedicated preparation areas are mentioned in the provided data.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "Presence of ingredients containing gluten (breadcrumbs in Buffalo Chicken and Chicken Pesto Parm).",
+      "Presence of 'Rosemary Focaccia' which is a gluten source.",
+      "High potential for cross-contact due to assembly line/salad bar style preparation (shared scoops, surfaces, toasters/ovens if applicable).",
+      "Lack of explicit information regarding gluten-free certifications, dedicated prep areas, or staff training for celiac safety."
+    ],
+    "safe_alternatives": [
+      "Roasted Sweet Potatoes (if sauces are verified gluten-free: hot honey mustard or green goddess ranch).",
+      "Hibiscus Clover Tea.",
+      "Base components like Kale, Romaine, Spring Mix, Wild Rice, Quinoa (must verify seasoning/dressing contamination)."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 60,\n  \"confidence\": 0.7,\n  \"reasoning\": \"The menu explicitly lists items containing gluten ingredients, such as 'garlic breadcrumbs' in the Buffalo Chicken salad and 'zaatar breadcrumbs' in the Chicken Pesto Parm, as well as 'rosemary focaccia'. The presence of these items, along with the general nature of a salad bar/bowl assembly line, suggests a high inherent risk of cross-contact, even if some items appear naturally gluten-free. No specific gluten-free protocols or dedicated preparation areas are mentioned in the provided data.\",\n  \"risk_factors\": [\n    \"Presence of ingredients containing gluten (breadcrumbs in Buffalo Chicken and Chicken Pesto Parm).\",\n    \"Presence of 'Rosemary Focaccia' which is a gluten source.\",\n    \"High potential for cross-contact due to assembly line/salad bar style preparation (shared scoops, surfaces, toasters/ovens if applicable).\",\n    \"Lack of explicit information regarding gluten-free certifications, dedicated prep areas, or staff training for celiac safety.\"\n  ],\n  \"safe_alternatives\": [\n    \"Roasted Sweet Potatoes (if sauces are verified gluten-free: hot honey mustard or green goddess ranch).\",\n    \"Hibiscus Clover Tea.\",\n    \"Base components like Kale, Romaine, Spring Mix, Wild Rice, Quinoa (must verify seasoning/dressing contamination).\"\n  ]\n}\n```"
+  }
+}

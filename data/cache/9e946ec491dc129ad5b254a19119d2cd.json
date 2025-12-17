@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-12-16T21:46:48.431246",
+  "key": "llm_assess:Great Wall:gluten:4052202866683352972",
+  "data": {
+    "safety_score": 85.0,
+    "reasoning": "There is insufficient data (no menu or reviews mentioning allergens) to make a definitive safety assessment. The lack of any data results in a neutral, but cautious, initial score. Without a menu or specific mention of gluten-free protocols, cross-contact risk in a traditional Chinese restaurant (Great Wall) is inherently high due to soy sauce, flour, and shared fryers.",
+    "confidence": 0.3,
+    "risk_factors": [
+      "No menu data available to screen for gluten-containing ingredients (e.g., soy sauce, wheat noodles, batter).",
+      "No review data confirming staff knowledge or dedicated gluten-free procedures.",
+      "High inherent risk of cross-contact in standard Chinese restaurant kitchens (shared woks, utensils, soy sauce contact)."
+    ],
+    "safe_alternatives": [
+      "Cannot determine any safe alternatives without a menu."
+    ],
+    "raw_response": "{\n  \"safety_score\": 85,\n  \"confidence\": 0.3,\n  \"reasoning\": \"There is insufficient data (no menu or reviews mentioning allergens) to make a definitive safety assessment. The lack of any data results in a neutral, but cautious, initial score. Without a menu or specific mention of gluten-free protocols, cross-contact risk in a traditional Chinese restaurant (Great Wall) is inherently high due to soy sauce, flour, and shared fryers.\",\n  \"risk_factors\": [\n    \"No menu data available to screen for gluten-containing ingredients (e.g., soy sauce, wheat noodles, batter).\",\n    \"No review data confirming staff knowledge or dedicated gluten-free procedures.\",\n    \"High inherent risk of cross-contact in standard Chinese restaurant kitchens (shared woks, utensils, soy sauce contact).\"\n  ],\n  \"safe_alternatives\": [\n    \"Cannot determine any safe alternatives without a menu.\"\n  ]\n}"
+  }
+}

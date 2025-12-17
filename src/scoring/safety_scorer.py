@@ -16,32 +16,27 @@ class SafetyAssessment:
     """Final safety assessment for a restaurant."""
     restaurant_name: str
     allergen_type: str
-    
-    # Final scores
-    overall_safety_score: float  # 0-100, lower is safer
-    confidence_score: float  # 0-1
-    
-    # Component scores
-    rule_based_score: float
-    llm_safety_score: float
-    review_sentiment_score: float
-    menu_analysis_score: float
-    
-    # Detailed findings
+
+    # LLM-based scores
+    overall_safety_score: float  # 0-100, lower is safer (from LLM)
+    confidence_score: float  # 0-1 (from LLM)
+
+    # Detailed findings (from LLM)
     risk_factors: List[str]
     safety_indicators: List[str]
     recommended_actions: List[str]
     safe_menu_items: List[str]
-    
+
     # Metadata
     data_sources_used: List[str]
     reviews_analyzed: int
     menu_items_found: int
-    
+    relevant_review_excerpts: List[str]  # NEW: keyword-matched review snippets
+
     def to_dict(self) -> Dict:
         """Convert to dictionary."""
         return asdict(self)
-    
+
     def get_rating(self) -> str:
         """Get human-readable safety rating."""
         if self.overall_safety_score < 20:
@@ -57,251 +52,165 @@ class SafetyAssessment:
 
 class SafetyScorer:
     """
-    Ensemble scoring system that combines multiple signals.
-    This is YOUR algorithm - a key technical contribution.
+    LLM-based scoring system with review keyword search.
+    Simplified to focus on LLM reasoning quality.
     """
-    
+
     def __init__(self):
-        """Initialize scorer with configured weights."""
-        self.weights = Config.WEIGHTS
-        logger.info(f"Initialized scorer with weights: {self.weights}")
-    
-    def _normalize_score(self, score: float, reverse: bool = False) -> float:
+        """Initialize scorer."""
+        logger.info("Initialized LLM-focused scorer")
+
+    def search_review_keywords(self,
+                               reviews: List[Dict],
+                               keywords: List[str],
+                               context_window: int = 100) -> List[str]:
         """
-        Normalize score to 0-100 range.
-        
+        Search reviews for specific keywords and extract context.
+
         Args:
-            score: Input score
-            reverse: If True, reverse the scale (higher input = lower output)
-        
+            reviews: List of review dictionaries with 'text' field
+            keywords: Keywords to search for (allergen-related terms)
+            context_window: Characters of context around each match
+
         Returns:
-            Normalized score
+            List of relevant review excerpts
         """
-        normalized = max(0, min(100, score))
-        if reverse:
-            normalized = 100 - normalized
-        return normalized
-    
-    def calculate_review_sentiment_score(self, 
-                                        review_summary: Dict,
-                                        allergen_type: str) -> float:
-        """
-        Calculate score based on review sentiment and mentions.
-        
-        Args:
-            review_summary: Summary from allergen detector
-            allergen_type: Type of allergen
-        
-        Returns:
-            Risk score (0-100, higher = more risk)
-        """
-        # Extract metrics
-        total_mentions = review_summary.get('total_mentions', 0)
-        safety_indicators = len(review_summary.get('safety_indicators', []))
-        warning_indicators = len(review_summary.get('warning_indicators', []))
-        avg_risk = review_summary.get('average_risk_score', 50)
-        
-        # Weight different signals
-        mention_risk = min(40, total_mentions * 3)  # More mentions = more risk
-        warning_risk = min(30, warning_indicators * 15)  # Warnings are serious
-        safety_bonus = min(20, safety_indicators * 5)  # Safety mentions help
-        
-        # Combine
-        score = (mention_risk + warning_risk + avg_risk - safety_bonus) / 2
-        
-        return self._normalize_score(score)
-    
-    def calculate_menu_analysis_score(self, 
-                                     menu_items: List[str],
-                                     allergen_type: str) -> float:
-        """
-        Calculate score based on menu analysis.
-        
-        Args:
-            menu_items: List of menu items
-            allergen_type: Type of allergen
-        
-        Returns:
-            Risk score (0-100, higher = more risk)
-        """
-        if not menu_items:
-            return 50.0  # Neutral score if no data
-        
-        # Get allergen keywords
-        allergen_keywords = Config.ALLERGEN_KEYWORDS.get(allergen_type, [])
-        
-        # Count allergen mentions in menu
-        allergen_count = 0
-        for item in menu_items:
-            item_lower = item.lower()
-            for keyword in allergen_keywords:
-                if keyword in item_lower:
-                    allergen_count += 1
-                    break
-        
-        # Calculate risk
-        if len(menu_items) == 0:
-            proportion = 0
-        else:
-            proportion = allergen_count / len(menu_items)
-        
-        # High proportion of allergen items = higher risk
-        base_score = proportion * 60
-        
-        # Penalty for many allergen items (suggests limited safe options)
-        if allergen_count > 10:
-            base_score += 20
-        elif allergen_count > 5:
-            base_score += 10
-        
-        return self._normalize_score(base_score)
-    
-    def _calculate_confidence(self,
-                            data_sources: List[str],
-                            reviews_count: int,
-                            menu_items_count: int,
-                            llm_confidence: float) -> float:
-        """
-        Calculate overall confidence in the assessment.
-        
-        Args:
-            data_sources: List of data sources used
-            reviews_count: Number of reviews analyzed
-            menu_items_count: Number of menu items found
-            llm_confidence: LLM's self-reported confidence
-        
-        Returns:
-            Confidence score (0-1)
-        """
-        # Base confidence from data availability
-        data_score = len(data_sources) / 4.0  # Assume max 4 sources
-        
-        # Review confidence (more reviews = higher confidence)
-        review_score = min(1.0, reviews_count / 20.0)
-        
-        # Menu confidence (having menu data helps)
-        menu_score = 1.0 if menu_items_count > 5 else 0.5
-        
-        # Average all confidence signals
-        confidence = (data_score + review_score + menu_score + llm_confidence) / 4.0
-        
-        return min(1.0, max(0.0, confidence))
+        excerpts = []
+
+        for review in reviews:
+            text = review.get('text', '')
+            if not text:
+                continue
+
+            text_lower = text.lower()
+
+            for keyword in keywords:
+                keyword_lower = keyword.lower()
+                if keyword_lower in text_lower:
+                    # Find all occurrences
+                    start = 0
+                    while True:
+                        pos = text_lower.find(keyword_lower, start)
+                        if pos == -1:
+                            break
+
+                        # Extract context
+                        context_start = max(0, pos - context_window)
+                        context_end = min(len(text), pos + len(keyword) + context_window)
+                        excerpt = text[context_start:context_end].strip()
+
+                        # Add ellipsis if truncated
+                        if context_start > 0:
+                            excerpt = "..." + excerpt
+                        if context_end < len(text):
+                            excerpt = excerpt + "..."
+
+                        excerpts.append(f"[{keyword}]: {excerpt}")
+                        start = pos + 1
+
+        return excerpts
     
     def aggregate_scores(self,
-                        rule_based_score: float,
                         llm_response: Optional[object],
-                        review_summary: Dict,
+                        reviews: List[Dict],
                         menu_items: List[str],
                         restaurant_name: str,
                         allergen_type: str = "gluten") -> SafetyAssessment:
         """
-        Aggregate all scores using ensemble method.
-        
-        This is the core of YOUR algorithm.
-        
+        Create assessment based on LLM response only.
+        Simplified to focus on LLM reasoning quality.
+
         Args:
-            rule_based_score: Score from rule-based detector
             llm_response: LLMResponse object (or None)
-            review_summary: Summary from allergen detection
+            reviews: List of reviews for keyword search
             menu_items: List of menu items
             restaurant_name: Restaurant name
             allergen_type: Type of allergen
-        
+
         Returns:
             SafetyAssessment object
         """
-        logger.info(f"Aggregating scores for {restaurant_name}")
-        
-        # Calculate component scores
-        review_sentiment_score = self.calculate_review_sentiment_score(
-            review_summary, 
-            allergen_type
-        )
-        
-        menu_analysis_score = self.calculate_menu_analysis_score(
-            menu_items,
-            allergen_type
-        )
-        
+        logger.info(f"Creating LLM-based assessment for {restaurant_name}")
+
         # Get LLM score (or use neutral if unavailable)
-        llm_safety_score = 50.0
-        llm_confidence = 0.5
+        overall_score = 50.0
+        confidence = 0.5
         risk_factors = []
+        safety_indicators = []
         safe_alternatives = []
-        
+        recommendations = []
+
         if llm_response:
-            llm_safety_score = llm_response.safety_score
-            llm_confidence = llm_response.confidence
+            overall_score = llm_response.safety_score
+            confidence = llm_response.confidence
             risk_factors = llm_response.risk_factors
             safe_alternatives = llm_response.safe_alternatives
+
+            # Generate safety indicators from LLM response
+            # (assuming the LLM might provide these)
+            if hasattr(llm_response, 'safety_indicators'):
+                safety_indicators = llm_response.safety_indicators
+            elif hasattr(llm_response, 'reasoning'):
+                # Extract positive mentions from reasoning
+                reasoning_lower = llm_response.reasoning.lower()
+                if 'safe' in reasoning_lower or 'gluten-free' in reasoning_lower:
+                    safety_indicators.append("LLM identified safe options")
+
+            # Use LLM recommendations if available
+            if hasattr(llm_response, 'recommendations'):
+                recommendations = llm_response.recommendations
+            else:
+                # Generate basic recommendations based on score
+                recommendations = self._generate_recommendations(
+                    overall_score,
+                    risk_factors,
+                    safety_indicators,
+                    allergen_type
+                )
         else:
-            logger.warning("LLM response not available, using neutral score")
-        
-        # Weighted ensemble
-        overall_score = (
-            self.weights['rule_based_score'] * rule_based_score +
-            self.weights['llm_reasoning'] * llm_safety_score +
-            self.weights['review_sentiment'] * review_sentiment_score +
-            self.weights['menu_analysis'] * menu_analysis_score
+            logger.warning("LLM response not available - cannot generate assessment")
+            recommendations = ["Unable to assess safety without LLM analysis"]
+
+        # Search reviews for relevant keywords
+        allergen_keywords = Config.ALLERGEN_KEYWORDS.get(allergen_type, [])
+        safety_keywords = Config.SAFETY_KEYWORDS
+        search_keywords = allergen_keywords + safety_keywords + ['allergen', 'allergy', 'celiac']
+
+        review_excerpts = self.search_review_keywords(
+            reviews,
+            search_keywords,
+            context_window=150
         )
-        
-        overall_score = self._normalize_score(overall_score)
-        
+
         # Determine data sources used
-        data_sources = ['rule_based_analysis']
+        data_sources = []
         if llm_response:
             data_sources.append('llm_reasoning')
-        if review_summary.get('reviews_analyzed', 0) > 0:
+        if reviews:
             data_sources.append('reviews')
         if menu_items:
             data_sources.append('menu')
-        
-        # Calculate confidence
-        confidence = self._calculate_confidence(
-            data_sources,
-            review_summary.get('reviews_analyzed', 0),
-            len(menu_items),
-            llm_confidence
-        )
-        
-        # Compile risk factors
-        all_risk_factors = risk_factors.copy()
-        if review_summary.get('warning_indicators'):
-            all_risk_factors.extend(review_summary['warning_indicators'][:3])
-        
-        # Compile safety indicators
-        safety_indicators = review_summary.get('safety_indicators', [])[:5]
-        
-        # Generate recommendations
-        recommendations = self._generate_recommendations(
-            overall_score,
-            all_risk_factors,
-            safety_indicators,
-            allergen_type
-        )
-        
+
         # Create assessment
         assessment = SafetyAssessment(
             restaurant_name=restaurant_name,
             allergen_type=allergen_type,
             overall_safety_score=overall_score,
             confidence_score=confidence,
-            rule_based_score=rule_based_score,
-            llm_safety_score=llm_safety_score,
-            review_sentiment_score=review_sentiment_score,
-            menu_analysis_score=menu_analysis_score,
-            risk_factors=all_risk_factors,
+            risk_factors=risk_factors,
             safety_indicators=safety_indicators,
             recommended_actions=recommendations,
             safe_menu_items=safe_alternatives,
             data_sources_used=data_sources,
-            reviews_analyzed=review_summary.get('reviews_analyzed', 0),
-            menu_items_found=len(menu_items)
+            reviews_analyzed=len(reviews),
+            menu_items_found=len(menu_items),
+            relevant_review_excerpts=review_excerpts[:10]  # Limit to 10 most relevant
         )
-        
-        logger.info(f"Final safety score: {overall_score:.1f}/100 ({assessment.get_rating()})")
-        logger.info(f"Confidence: {confidence:.2f}")
-        
+
+        logger.info(f"Final safety score (LLM): {overall_score:.1f}/100 ({assessment.get_rating()})")
+        logger.info(f"Confidence (LLM): {confidence:.2f}")
+        logger.info(f"Found {len(review_excerpts)} relevant review excerpts")
+
         return assessment
     
     def _generate_recommendations(self,

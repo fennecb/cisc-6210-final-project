@@ -43,9 +43,17 @@ def main():
     # Example restaurants to analyze
     test_restaurants = [
         {
-            "name": "Chipotle",
-            "location": "New York, NY"
+            "name": "ThaiSpice",
+            "location": "Norwalk, CT"
         },
+        {
+            "name": "Great Wall",
+            "location": "Stamford, CT"
+        },
+        {
+            "name": "Sweetgreen",
+            "location": "Darien, CT"
+        }
         # Add more restaurants here for testing
     ]
     
