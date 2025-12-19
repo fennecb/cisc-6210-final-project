@@ -1,5 +1,5 @@
 """
-Scoring and Aggregation Module - YOUR ensemble algorithm.
+Scoring and Aggregation Module - custom ensemble algorithm.
 Combines rule-based analysis with LLM reasoning to produce final safety scores.
 """
 from typing import Dict, List, Optional, Tuple

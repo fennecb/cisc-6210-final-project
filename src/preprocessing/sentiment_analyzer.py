@@ -26,8 +26,8 @@ class SentimentAnalyzer:
     """
     Sentiment analyzer for review text.
 
-    This is YOUR NLP work - analyzing emotional tone to better
-    understand if allergen mentions indicate safety or risk.
+    Analyzes emotional tone to better understand if allergen mentions
+    indicate safety or risk.
     """
 
     def __init__(self):

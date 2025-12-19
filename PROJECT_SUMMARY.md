@@ -2,7 +2,6 @@
 
 ## Project: Allergen Safety Assessment System
 
-**Team Member**: Ben (individual project)
 **Allergen Focus**: Gluten (Celiac Disease)
 
 ---
@@ -15,13 +14,13 @@ Build an intelligent system that analyzes restaurants for allergen safety by:
 3. Using LLM reasoning strategically for complex safety assessment
 4. Producing explainable safety scores with recommendations
 
-**Key Differentiator**: This is NOT just an LLM wrapper - YOU built 70%+ of the system.
+**Key Differentiator**: This is NOT just an LLM wrapper - 70%+ of the system is custom-built code.
 
 ---
 
-## 📊 Work Distribution (Your Technical Contribution)
+## 📊 Work Distribution
 
-### What YOU Built from Scratch (70%):
+### Custom-Built Components (70%):
 
 1. **Data Collection Pipeline (25%)**
    - `src/data_collection/google_places.py` (237 lines)
@@ -64,7 +63,7 @@ Build an intelligent system that analyzes restaurants for allergen safety by:
    - `src/utils/logger.py` (47 lines) - Logging system
    - `config/config.py` (128 lines) - Configuration management
 
-**Total Lines of YOUR Code**: ~2,000+ lines
+**Total Lines of Custom Code**: ~2,000+ lines
 
 ### Strategic LLM Use (20%):
 
@@ -84,7 +83,7 @@ Build an intelligent system that analyzes restaurants for allergen safety by:
 
 ## 🔬 Technical Deep Dive
 
-### 1. Allergen Detection Algorithm (YOUR WORK)
+### 1. Allergen Detection Algorithm
 
 **Key Innovation**: Context-aware confidence scoring
 
@@ -106,10 +105,10 @@ def _calculate_confidence(self, context: str, allergen_type: str) -> float:
 
 **Why This Matters**: Not all allergen mentions are equal. "Great gluten-free options" is different from "Their bread is amazing."
 
-### 2. Ensemble Scoring Method (YOUR WORK)
+### 2. Ensemble Scoring Method
 
 **Components**:
-1. Rule-based score (40% weight): YOUR keyword-based detection
+1. Rule-based score (40% weight): Keyword-based detection
 2. LLM reasoning (35% weight): Complex safety assessment
 3. Review sentiment (15% weight): Aggregate review signals
 4. Menu analysis (10% weight): Allergen presence in menu
@@ -122,18 +121,18 @@ def _calculate_confidence(self, context: str, allergen_type: str) -> float:
 
 **Why This Matters**: Single signal can be wrong; ensemble is robust.
 
-### 3. Prompt Engineering (STRATEGIC LLM USE)
+### 3. Prompt Engineering (Strategic LLM Use)
 
 **Structure**:
 ```
 1. Role definition: "You are an expert food safety analyst..."
-2. Context provision: Menu items, review summary, YOUR analysis
+2. Context provision: Menu items, review summary, preprocessed analysis
 3. Task specification: Assess cross-contamination risk
 4. Output format: Structured JSON
 5. Safety emphasis: "Be conservative, err on side of caution"
 ```
 
-**Why This Matters**: LLM gets YOUR preprocessed data and domain constraints.
+**Why This Matters**: LLM receives preprocessed data and domain constraints.
 
 ---
 
@@ -170,28 +169,28 @@ def _calculate_confidence(self, context: str, allergen_type: str) -> float:
 
 ---
 
-## 🎓 For Your Report & Presentation
+## 🎓 Project Report & Presentation Notes
 
 ### Grading Rubric Alignment:
 
-| Category | % | How You Excel |
+| Category | % | Key Strengths |
 |----------|---|---------------|
-| **Creativity & Novelty** | 25% | Multi-source aggregation + ensemble scoring; personally motivated |
-| **Technical Depth** | 25% | 2000+ lines of YOUR code; custom algorithms; system architecture |
+| **Creativity & Novelty** | 25% | Multi-source aggregation + ensemble scoring |
+| **Technical Depth** | 25% | 2000+ lines of custom code; algorithms; system architecture |
 | **Clarity & Communication** | 20% | Clear documentation; explainable outputs; visual diagrams |
 | **Demo Quality** | 30% | Working system; real restaurant analysis; cost-effective |
 
-### Key Talking Points:
+### Key Points to Emphasize:
 
 1. **Problem Motivation**
-   - "My girlfriend has celiac disease..."
-   - "Existing solutions just ask ChatGPT..."
-   - "I wanted something data-driven and trustworthy"
+   - Real-world problem: Dining safety for individuals with food allergies
+   - Existing solutions are limited or unreliable
+   - Need for data-driven and trustworthy assessments
 
 2. **Technical Approach**
-   - "I built 70% of this system myself..."
-   - "The LLM is only used where it adds unique value..."
-   - "My rule-based algorithms do the heavy lifting..."
+   - 70% custom-built components
+   - Strategic LLM use where it adds unique value
+   - Rule-based algorithms handle primary processing
 
 3. **System Design**
    - Show architecture diagram
@@ -204,48 +203,48 @@ def _calculate_confidence(self, context: str, allergen_type: str) -> float:
    - Highlight cost efficiency ($0-5 total)
 
 5. **Technical Contributions**
-   - "My allergen detection algorithm..."
-   - "My ensemble scoring method..."
-   - "My data collection pipeline..."
+   - Custom allergen detection algorithm
+   - Ensemble scoring method
+   - Data collection pipeline
 
 ---
 
-## 🎬 Demo Video Script (10 minutes)
+## 🎬 Demo Video Structure (10 minutes)
 
 ### Minute 0-1: Introduction
-- "Hi, I'm Ben. My girlfriend has celiac disease..."
-- Show screenshot of unsafe dining experience
-- "I built this system to solve a real problem"
+- Introduce the problem: Food allergy safety when dining out
+- Motivation for building the system
+- Overview of solution approach
 
 ### Minute 1-3: System Overview
 - Show architecture diagram
-- "Here's what makes this different from ChatGPT..."
-- Highlight YOUR technical contributions
+- Explain what makes this different from simple LLM queries
+- Highlight technical contributions
 
 ### Minute 3-7: Live Demo
 - Terminal: `python demo.py`
 - Analyze 2-3 restaurants
 - Show output breakdown:
-  * "Rule-based found 15 allergen mentions..."
-  * "My algorithm calculated 65/100 risk..."
-  * "LLM reasoning confirmed concerns..."
-  * "Final score: 68/100 - HIGH RISK"
+  * Rule-based detection results
+  * Algorithm calculations and scoring
+  * LLM reasoning integration
+  * Final safety score and rating
 
 ### Minute 7-8: Technical Deep Dive
 - Show code snippet: allergen_detector.py
-- Explain confidence calculation
-- Show scoring algorithm
-- "This is MY code, not just calling an API"
+- Explain confidence calculation algorithm
+- Show scoring algorithm implementation
+- Emphasize custom implementation
 
 ### Minute 8-9: Results & Evaluation
 - Table comparing 5 restaurants
-- "Cost analysis: $2 total for 10 restaurants"
-- "Test results: 95% detection accuracy"
+- Cost analysis for restaurant assessments
+- Test results and accuracy metrics
 
 ### Minute 9-10: Conclusion
-- Limitations: "Needs more data sources..."
-- Future work: "Fine-tune model on allergen data..."
-- Call to action: "This is production-ready for demo"
+- Discuss limitations and areas for improvement
+- Future work possibilities
+- Summary of contributions
 
 ---
 
@@ -258,11 +257,11 @@ def _calculate_confidence(self, context: str, allergen_type: str) -> float:
 
 - [x] **Project Report** (up to 8 pages)
   - Abstract: Problem + Solution
-  - Introduction: Motivation (girlfriend's celiac)
+  - Introduction: Motivation and background
   - Related Work: Existing allergen apps, LLM safety
   - Methodology: Architecture diagram + algorithm descriptions
   - Evaluation: Metrics + example outputs
-  - Discussion: What YOU built vs what LLM does
+  - Discussion: Custom implementation vs LLM components
   - Conclusion: Contributions + future work
 
 - [x] **Code Repository** (GitHub)
@@ -276,90 +275,36 @@ def _calculate_confidence(self, context: str, allergen_type: str) -> float:
 
 ## 🎯 Key Takeaways
 
-### What Makes This Project Strong:
+### Project Strengths:
 
-1. **Personal Motivation**: Real problem solving (girlfriend's safety)
-2. **Technical Depth**: 2000+ lines of YOUR algorithms
+1. **Real-World Application**: Solves a practical problem with food allergy safety
+2. **Technical Depth**: 2000+ lines of custom algorithms and implementation
 3. **System Design**: Clean architecture, modular components
-4. **Practical**: Actually works, costs <$5 to demo
-5. **Explainable**: Clear component scores, not black box
+4. **Practical**: Working system, cost-effective (<$5 to demo)
+5. **Explainable**: Clear component scores, not a black box
 6. **Strategic LLM Use**: Only for complex reasoning, not entire system
 
-### What to Emphasize:
+### Key Points to Emphasize:
 
-- "I built the data collection pipeline"
-- "I implemented custom NLP algorithms"
-- "I designed the ensemble scoring method"
-- "The LLM helps, but MY code does most of the work"
-- "This is production-quality software, not a hackathon project"
+- Custom-built data collection pipeline
+- Implemented NLP algorithms from scratch
+- Designed ensemble scoring method
+- LLM is one component, not the entire solution
+- Production-quality software architecture
 
 ---
 
-## 📁 Files You'll Submit
+## 📁 Submission Files
 
 ```
-TeamName_Final_Project.pdf              # Your 8-page report
-TeamName_Demo_Video.mp4                 # 10-minute presentation
-https://github.com/you/repo             # Code repository
+FinalProject_Report.pdf                 # 8-page technical report
+FinalProject_Demo.mp4                   # 10-minute presentation
+[GitHub repository URL]                 # Code repository
 ```
 
-### In the GitHub Repo:
+### Repository Contents:
 - Complete source code
 - README with setup instructions
 - Example outputs (JSON files)
 - Requirements.txt
-- Tests that pass
-
----
-
-## 🚀 Next Steps
-
-1. **Test the system** (2-3 hours)
-   - Get API keys
-   - Run demo.py on 5-10 restaurants
-   - Verify outputs make sense
-   - Run tests: `pytest tests/ -v`
-
-2. **Record demo video** (3-4 hours)
-   - Script your narration
-   - Record terminal sessions
-   - Record code walkthrough
-   - Edit and add narration
-
-3. **Write report** (4-6 hours)
-   - Use this summary as outline
-   - Add architecture diagrams
-   - Include example outputs
-   - Emphasize YOUR technical work
-
-4. **Polish repo** (1-2 hours)
-   - Clean up code comments
-   - Ensure README is clear
-   - Add example outputs
-   - Verify setup instructions work
-
-**Total Time Estimate**: 10-15 hours
-
----
-
-## 💡 Final Advice
-
-**DO**:
-- Emphasize what YOU built (70% of system)
-- Show component-by-component breakdown
-- Explain design decisions
-- Demonstrate cost efficiency
-- Test thoroughly before demo
-
-**DON'T**:
-- Claim the LLM "does everything"
-- Hide your technical contributions
-- Overcomplicate the demo
-- Forget to test error cases
-- Skip the evaluation section
-
-**Remember**: You built a real system that solves a real problem. Own it! 🎉
-
----
-
-Good luck! You've got this. 💪
+- Unit tests

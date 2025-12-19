@@ -1,6 +1,6 @@
 """
 Main Pipeline - Orchestrates the entire allergen safety analysis.
-This is YOUR system architecture in action.
+Demonstrates the complete system architecture and integration.
 """
 from typing import Optional, Dict, List
 from pathlib import Path
@@ -20,8 +20,8 @@ logger = setup_logger(__name__, log_file="logs/pipeline.log")
 class AllergenSafetyPipeline:
     """
     Main pipeline that orchestrates all components.
-    
-    This demonstrates YOUR system design and integration skills.
+
+    Demonstrates modular system design and component integration.
     """
     
     def __init__(self, 
@@ -62,8 +62,8 @@ class AllergenSafetyPipeline:
                           use_llm: bool = True) -> Optional[SafetyAssessment]:
         """
         Perform complete allergen safety analysis for a restaurant.
-        
-        This is the main method that showcases YOUR entire system.
+
+        Main method that executes the complete analysis pipeline.
         
         Args:
             restaurant_name: Name of restaurant

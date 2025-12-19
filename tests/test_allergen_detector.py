@@ -1,6 +1,6 @@
 """
 Unit tests for allergen detector.
-Demonstrates YOUR algorithm's correctness.
+Validates the allergen detection algorithm.
 """
 import pytest
 from src.preprocessing.allergen_detector import AllergenDetector

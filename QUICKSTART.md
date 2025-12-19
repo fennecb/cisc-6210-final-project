@@ -22,11 +22,8 @@ That's it! You can skip OpenAI/Anthropic/Yelp for now.
 ### Step 2: Setup Project
 
 ```bash
-# Clone repo
-cd C:\Users\Ben\cisc-6210-final-project
-
-# Copy files from this demo into your repo
-# (or git clone if starting fresh)
+# Navigate to project directory
+cd allergen-safety-system
 
 # Install dependencies
 pip install -r requirements.txt
@@ -98,7 +95,7 @@ for a in sorted(assessments, key=lambda x: x.overall_safety_score):
 
 ---
 
-## 🎥 Recording Your Demo Video
+## 🎥 Recording Demo Video
 
 ### Suggested Screen Recording Flow
 
@@ -107,12 +104,12 @@ for a in sorted(assessments, key=lambda x: x.overall_safety_score):
    tree -L 2  # or ls -R
    ```
 
-2. **Show config.py** - Point out YOUR keyword dictionaries
+2. **Show config.py** - Highlight allergen keyword dictionaries
    ```python
-   # Highlight the allergen keywords you defined
+   # Display the configured allergen keywords
    ```
 
-3. **Show allergen_detector.py** - Explain YOUR algorithm
+3. **Show allergen_detector.py** - Explain the detection algorithm
    ```python
    # Walk through detect_allergens() method
    ```
@@ -132,12 +129,12 @@ for a in sorted(assessments, key=lambda x: x.overall_safety_score):
    pytest tests/test_allergen_detector.py -v
    ```
 
-### Key Points to Mention
+### Key Points to Highlight
 
-- "This is MY rule-based detection algorithm..."
-- "Here's MY ensemble scoring method..."
-- "The LLM is only used for complex reasoning..."
-- "Notice how I'm caching to minimize costs..."
+- Rule-based detection algorithm implementation
+- Ensemble scoring method design
+- Strategic LLM use for complex reasoning
+- Caching system to minimize costs
 
 ---
 
@@ -145,8 +142,8 @@ for a in sorted(assessments, key=lambda x: x.overall_safety_score):
 
 ### "Module not found" error
 ```bash
-# Make sure you're in project root
-cd C:\Users\Ben\cisc-6210-final-project
+# Make sure in project root directory
+cd allergen-safety-system
 
 # Verify Python path
 python -c "import sys; print('\n'.join(sys.path))"
@@ -170,7 +167,7 @@ python -c "from config.config import Config; print(Config.validate_api_keys())"
 1. **Start Small**: Test with 1-2 restaurants first
 2. **Use Cache**: Saves money and time during development
 3. **Check Logs**: `logs/pipeline.log` has detailed info
-4. **Test Without LLM**: Verify YOUR algorithms work independently
+4. **Test Without LLM**: Verify rule-based algorithms work independently
 5. **Compare Scores**: Run same restaurant with/without LLM to show difference
 
 ---

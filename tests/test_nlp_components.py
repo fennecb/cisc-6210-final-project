@@ -1,5 +1,5 @@
 """
-Tests for NLP components - demonstrates YOUR NLP work.
+Tests for NLP components - validates NLP implementations.
 """
 import pytest
 from src.preprocessing.sentiment_analyzer import SentimentAnalyzer

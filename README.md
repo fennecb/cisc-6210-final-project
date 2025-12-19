@@ -10,7 +10,7 @@ Designed to help people with food allergies (especially celiac disease) make inf
 
 ### Motivation
 For individuals with severe food allergies like celiac disease, dining out can be dangerous. This system aggregates and analyzes data from multiple sources to provide data-driven safety assessments, combining:
-- **Your Rule-Based NLP**: Domain-specific allergen detection algorithms
+- **Rule-Based NLP**: Domain-specific allergen detection algorithms
 - **Strategic LLM Use**: Complex reasoning about cross-contamination and safety
 - **Multi-Source Data**: Reviews, menus, and expert knowledge
 
@@ -31,12 +31,12 @@ Unlike simple LLM query tools, this system does the heavy lifting through:
 └──────────────────────┬──────────────────────────────────────┘
                        │
           ┌────────────┴────────────┐
-          │  Data Collection Layer  │  ← YOUR CODE: Web scraping
+          │  Data Collection Layer  │  ← Custom code: Web scraping
           │   (Google Places, Yelp) │     API integration
           └────────────┬────────────┘
                        │
           ┌────────────┴────────────┐
-          │  Preprocessing Layer    │  ← YOUR CODE: Rule-based NLP
+          │  Preprocessing Layer    │  ← Custom code: Rule-based NLP
           │  - Allergen Detection   │     OCR, keyword matching
           │  - Menu OCR             │     Feature engineering
           │  - Review Analysis      │
@@ -48,7 +48,7 @@ Unlike simple LLM query tools, this system does the heavy lifting through:
           └────────────┬────────────┘
                        │
           ┌────────────┴────────────┐
-          │  Scoring & Aggregation  │  ← YOUR CODE: Ensemble algorithm
+          │  Scoring & Aggregation  │  ← Custom code: Ensemble algorithm
           │   - Weighted scoring    │     Confidence estimation
           │   - Risk assessment     │
           └────────────┬────────────┘
@@ -61,7 +61,7 @@ Unlike simple LLM query tools, this system does the heavy lifting through:
 
 ---
 
-## 📊 Technical Contributions (What YOU Built)
+## 📊 Technical Contributions
 
 ### 1. Data Collection (40% of work)
 - **Google Places API integration** with intelligent caching
@@ -92,7 +92,7 @@ Unlike simple LLM query tools, this system does the heavy lifting through:
 
 ## 🧠 NLP Techniques Implemented
 
-### Classical NLP (YOUR Work - 40% of system)
+### Classical NLP (40% of system)
 
 1. **Rule-Based Pattern Matching**
    - Regex with word boundaries for allergen detection
@@ -146,8 +146,7 @@ The NLP enhancements provide:
 ### Step 1: Clone and Install Dependencies
 
 ```bash
-# Clone repository
-git clone <your-repo-url>
+# Navigate to project directory
 cd allergen-safety-system
 
 # Create virtual environment (recommended)
@@ -227,7 +226,7 @@ for assessment in sorted(assessments, key=lambda x: x.overall_safety_score):
 ### Pure Rule-Based Mode (No LLM)
 
 ```python
-# Useful for demonstrating YOUR algorithms without LLM dependency
+# Useful for demonstrating rule-based algorithms without LLM dependency
 assessment = pipeline.analyze_restaurant(
     restaurant_name="Chipotle",
     location="New York, NY",
@@ -243,15 +242,15 @@ assessment = pipeline.analyze_restaurant(
 ```
 allergen-safety-system/
 ├── src/
-│   ├── data_collection/       # YOUR web scraping & API code
+│   ├── data_collection/       # Web scraping & API code
 │   │   ├── google_places.py   # Google Places integration
 │   │   └── review_scraper.py  # Web scraping utilities
-│   ├── preprocessing/         # YOUR NLP algorithms
+│   ├── preprocessing/         # NLP algorithms
 │   │   ├── allergen_detector.py  # Rule-based detection
 │   │   └── menu_ocr.py        # OCR for menu images
 │   ├── llm_reasoning/         # Strategic LLM use
 │   │   └── llm_reasoner.py    # Prompt engineering
-│   ├── scoring/               # YOUR ensemble algorithm
+│   ├── scoring/               # Ensemble algorithm
 │   │   └── safety_scorer.py   # Score aggregation
 │   ├── utils/                 # Utilities
 │   │   ├── logger.py
@@ -272,9 +271,9 @@ allergen-safety-system/
 
 ---
 
-## 🎓 For Your Project Report
+## 🎓 Project Report Notes
 
-### Technical Highlights to Emphasize
+### Technical Highlights
 
 1. **System Design**
    - Multi-stage pipeline architecture
@@ -358,13 +357,12 @@ cat data/assessments/*.json
 
 ### Structure (10 minutes)
 1. **Introduction** (1 min)
-   - Personal motivation (girlfriend's celiac disease)
-   - Problem statement
+   - Motivation and problem statement
    - Solution overview
 
 2. **System Architecture** (2 min)
    - Show pipeline diagram
-   - Explain YOUR technical contributions
+   - Explain technical contributions
    - Highlight what makes it unique
 
 3. **Live Demo** (4 min)

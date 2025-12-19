@@ -17,7 +17,7 @@ class ReviewRanker:
     """
     Hybrid review ranker combining keyword-based pre-filtering with TF-IDF.
 
-    This is YOUR information retrieval implementation - demonstrating
+    Custom information retrieval implementation demonstrating
     classical NLP techniques for document relevance.
     """
 

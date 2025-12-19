@@ -82,8 +82,8 @@ class LLMReasoner:
                      restaurant_name: str = "") -> str:
         """
         Build a carefully engineered prompt for allergen safety assessment.
-        
-        This is YOUR prompt engineering work - a key technical contribution.
+
+        Custom prompt design - a key technical component.
         """
         prompt = f"""You are an expert food safety analyst specializing in allergen risk assessment for people with {allergen_type} allergies/sensitivities.
 

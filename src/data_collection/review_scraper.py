@@ -1,6 +1,6 @@
 """
 Web scraper for collecting additional restaurant reviews.
-This module demonstrates YOUR web scraping skills.
+Custom implementation for multi-source data collection.
 """
 import re
 import time
@@ -102,7 +102,7 @@ class ReviewScraper:
     def scrape_generic_reviews(self, url: str) -> List[Dict]:
         """
         Generic review scraper for restaurant websites.
-        This demonstrates YOUR ability to parse HTML and extract structured data.
+        Demonstrates HTML parsing and structured data extraction.
         
         Args:
             url: URL to scrape

@@ -28,7 +28,7 @@ class Config:
     RAW_DATA_DIR = os.path.join(DATA_DIR, "raw")
     PROCESSED_DATA_DIR = os.path.join(DATA_DIR, "processed")
     
-    # Allergen keywords (YOUR domain knowledge)
+    # Allergen keywords (domain-specific)
     ALLERGEN_KEYWORDS = {
         "gluten": [
             "wheat", "barley", "rye", "gluten", "flour", "bread", "pasta",
@@ -53,7 +53,7 @@ class Config:
         ]
     }
     
-    # Cross-contamination risk indicators (YOUR domain expertise)
+    # Cross-contamination risk indicators (domain-specific)
     CROSS_CONTAMINATION_KEYWORDS = [
         "shared fryer", "shared equipment", "may contain traces",
         "processed in facility", "cross-contact", "same kitchen",
@@ -71,7 +71,7 @@ class Config:
     MAX_REVIEWS_PER_RESTAURANT = 50
     REVIEW_MIN_LENGTH = 20  # characters
     
-    # Scoring weights (YOUR algorithm design)
+    # Scoring weights (ensemble algorithm configuration)
     WEIGHTS = {
         "llm_reasoning": 0.35,
         "rule_based_score": 0.40,

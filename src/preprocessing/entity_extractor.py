@@ -15,8 +15,8 @@ class EntityExtractor:
     """
     Named Entity Recognition for food and allergen contexts.
 
-    This is YOUR NLP work - extracting structured information from
-    unstructured text using linguistic analysis.
+    Extracts structured information from unstructured text
+    using linguistic analysis.
     """
 
     def __init__(self):

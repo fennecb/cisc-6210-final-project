@@ -1,5 +1,5 @@
 """
-Allergen detection module - YOUR NLP implementation.
+Allergen detection module - rule-based NLP implementation.
 This demonstrates domain-specific text analysis without relying on LLMs.
 """
 import re
@@ -36,7 +36,7 @@ class AllergenAnalysis:
 class AllergenDetector:
     """
     Rule-based allergen detection system.
-    This is YOUR technical contribution - no LLM required.
+    Custom implementation using pattern matching and NLP - no LLM required.
     """
     
     def __init__(self):

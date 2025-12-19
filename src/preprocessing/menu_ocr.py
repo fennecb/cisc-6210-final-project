@@ -1,5 +1,5 @@
 """
-Menu image OCR module - YOUR image processing implementation.
+Menu image OCR module - custom image processing implementation.
 Extracts text from menu images before sending to LLM.
 """
 import os
