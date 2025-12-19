@@ -1,0 +1,35 @@
+{
+  "restaurant_name": "Xi'an Famous Foods \u897f\u5b89\u540d\u5403 | Financial District",
+  "allergen_type": "gluten",
+  "overall_safety_score": 14.0,
+  "confidence_score": 0.6,
+  "risk_factors": [
+    "Presence of wheat-based hand-ripped noodles throughout the menu.",
+    "Potential for cross-contamination in a kitchen heavily focused on noodle dishes.",
+    "Lack of information regarding dedicated gluten-free preparation areas.",
+    "Limited information about staff knowledge on gluten allergies.",
+    "The menu includes 'Stir-Fried Liang Pi Cold-Skin Noodles' introducing a cross-contamination risk to a potential safe option."
+  ],
+  "safety_indicators": [
+    "LLM identified safe options"
+  ],
+  "recommended_actions": [
+    "HIGH RISK - Not recommended for severe gluten allergies",
+    "Consider alternative restaurants",
+    "Key concerns: Presence of wheat-based hand-ripped noodles throughout the menu., Potential for cross-contamination in a kitchen heavily focused on noodle dishes."
+  ],
+  "safe_menu_items": [
+    "Potentially the Liang Pi Cold-Skin Noodles, but with HIGH caution due to the risk of cross contamination.",
+    "Contacting the restaurant directly to inquire about dedicated gluten-free preparation is HIGHLY recommended."
+  ],
+  "data_sources_used": [
+    "llm_reasoning",
+    "reviews",
+    "menu"
+  ],
+  "reviews_analyzed": 5,
+  "menu_items_found": 3,
+  "relevant_review_excerpts": [
+    "[allergy]: ...e to die for. The texture of the noodles and the flavor of spices all go together incredibly well. Not a lot of seating in this busy spot and not nut allergy friendly."
+  ]
+}

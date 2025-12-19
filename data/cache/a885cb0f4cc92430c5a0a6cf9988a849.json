@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-12-19T12:57:29.486704",
+  "key": "llm_assess:Chipotle Mexican Grill:gluten:-7954731904942435400",
+  "data": {
+    "safety_score": 50.0,
+    "reasoning": "Chipotle offers some gluten-free options, and explicitly states \"Gluten Free\" for some lifestyle bowls. However, they use flour tortillas, which pose a significant cross-contamination risk. The lack of allergen mentions in reviews does not guarantee safety. There's no information about dedicated gluten-free preparation areas or staff knowledge regarding gluten allergies. Overall, there's a moderate risk of cross-contamination.",
+    "confidence": 0.6,
+    "risk_factors": [
+      "Use of flour tortillas in close proximity to other ingredients",
+      "Potential for cross-contamination from shared preparation surfaces and utensils",
+      "Lack of information regarding dedicated gluten-free preparation areas",
+      "Unknown staff knowledge regarding gluten allergies",
+      "Roasted Chili-Corn Salsa, may contain traces of gluten or be cross-contaminated depending on supplier."
+    ],
+    "safe_alternatives": [
+      "Lifestyle Bowl (Gluten Free) with steak, Supergreen Lettuce Blend, Fajita Veggies, Cheese, Guacamole, and Tomatillo Red-Chili Salsa",
+      "Burrito Bowl (without Roasted Chili-Corn Salsa and confirming no cross-contamination of other items with tortillas).",
+      "Request to change gloves and use fresh utensils."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 50,\n  \"confidence\": 0.6,\n  \"reasoning\": \"Chipotle offers some gluten-free options, and explicitly states \\\"Gluten Free\\\" for some lifestyle bowls. However, they use flour tortillas, which pose a significant cross-contamination risk. The lack of allergen mentions in reviews does not guarantee safety. There's no information about dedicated gluten-free preparation areas or staff knowledge regarding gluten allergies. Overall, there's a moderate risk of cross-contamination.\",\n  \"risk_factors\": [\n    \"Use of flour tortillas in close proximity to other ingredients\",\n    \"Potential for cross-contamination from shared preparation surfaces and utensils\",\n    \"Lack of information regarding dedicated gluten-free preparation areas\",\n    \"Unknown staff knowledge regarding gluten allergies\",\n    \"Roasted Chili-Corn Salsa, may contain traces of gluten or be cross-contaminated depending on supplier.\"\n  ],\n  \"safe_alternatives\": [\n    \"Lifestyle Bowl (Gluten Free) with steak, Supergreen Lettuce Blend, Fajita Veggies, Cheese, Guacamole, and Tomatillo Red-Chili Salsa\",\n    \"Burrito Bowl (without Roasted Chili-Corn Salsa and confirming no cross-contamination of other items with tortillas).\",\n    \"Request to change gloves and use fresh utensils.\"\n  ]\n}\n```"
+  }
+}

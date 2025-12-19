@@ -1,0 +1,41 @@
+{
+  "restaurant_name": "Friedman's",
+  "allergen_type": "gluten",
+  "overall_safety_score": 52.5,
+  "confidence_score": 0.7,
+  "risk_factors": [
+    "Lack of specific menu item information to assess cross-contamination risks.",
+    "Uncertainty regarding dedicated gluten-free preparation areas.",
+    "Unknown staff knowledge regarding celiac disease and cross-contamination prevention."
+  ],
+  "safety_indicators": [
+    "LLM identified safe options"
+  ],
+  "recommended_actions": [
+    "Exercise caution - moderate risk for gluten allergies",
+    "Speak with server/manager about allergen handling",
+    "Ask about dedicated preparation areas"
+  ],
+  "safe_menu_items": [
+    "Due to data limitations, specific safe alternatives cannot be identified. Requesting a gluten-free menu and inquiring about preparation methods is essential before ordering."
+  ],
+  "data_sources_used": [
+    "llm_reasoning",
+    "reviews",
+    "menu"
+  ],
+  "reviews_analyzed": 5,
+  "menu_items_found": 3,
+  "relevant_review_excerpts": [
+    "[gluten]: Ricc was my server and he was wonderful! With so many dietary restrictions I was so pleased to be able to enjoy a delicious gluten-free seed oil free burger here! The gluten-free bun was very moist and not at all dry, which is rare for gluten-free things",
+    "[gluten]: ...r and he was wonderful! With so many dietary restrictions I was so pleased to be able to enjoy a delicious gluten-free seed oil free burger here! The gluten-free bun was very moist and not at all dry, which is rare for gluten-free things",
+    "[gluten]: ...eased to be able to enjoy a delicious gluten-free seed oil free burger here! The gluten-free bun was very moist and not at all dry, which is rare for gluten-free things",
+    "[gluten-free]: Ricc was my server and he was wonderful! With so many dietary restrictions I was so pleased to be able to enjoy a delicious gluten-free seed oil free burger here! The gluten-free bun was very moist and not at all dry, which is rare for gluten-free things",
+    "[gluten-free]: ...r and he was wonderful! With so many dietary restrictions I was so pleased to be able to enjoy a delicious gluten-free seed oil free burger here! The gluten-free bun was very moist and not at all dry, which is rare for gluten-free things",
+    "[gluten-free]: ...eased to be able to enjoy a delicious gluten-free seed oil free burger here! The gluten-free bun was very moist and not at all dry, which is rare for gluten-free things",
+    "[gluten]: My friend and I needed to find a celiac friendly restaurant and came across this place. My friend was so beyond excited because the dumplings were gluten free and they haven\u2019t had a dumpling in ages. Their joy and genuine excitement made my whole day. The food tasted delicious and was filling enough to...",
+    "[celiac]: My friend and I needed to find a celiac friendly restaurant and came across this place. My friend was so beyond excited because the dumplings were gluten free and they haven\u2019t had a dumplin...",
+    "[gluten]: I had a genuinely fantastic experience at Friedman\u2019s special East Meets West location! They have tons of celiac safe gluten free options, so I was in heaven. I got a lot and it was all good. Especially the sesame chicken and rock shrimp tempura \ud83d\ude2d\ud83d\ude0d\n\nThis is a very good spot...",
+    "[celiac]: I had a genuinely fantastic experience at Friedman\u2019s special East Meets West location! They have tons of celiac safe gluten free options, so I was in heaven. I got a lot and it was all good. Especially the sesame chicken and rock shrimp tempura \ud83d\ude2d\ud83d\ude0d\n\nThis is a ve..."
+  ]
+}

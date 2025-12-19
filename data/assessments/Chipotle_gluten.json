@@ -1,0 +1,34 @@
+{
+  "restaurant_name": "Chipotle Mexican Grill",
+  "allergen_type": "gluten",
+  "overall_safety_score": 35.0,
+  "confidence_score": 0.6,
+  "risk_factors": [
+    "Use of flour tortillas in close proximity to other ingredients",
+    "Potential for cross-contamination from shared preparation surfaces and utensils",
+    "Lack of information regarding dedicated gluten-free preparation areas",
+    "Unknown staff knowledge regarding gluten allergies",
+    "Roasted Chili-Corn Salsa, may contain traces of gluten or be cross-contaminated depending on supplier."
+  ],
+  "safety_indicators": [
+    "LLM identified safe options"
+  ],
+  "recommended_actions": [
+    "Exercise caution - moderate risk for gluten allergies",
+    "Speak with server/manager about allergen handling",
+    "Ask about dedicated preparation areas"
+  ],
+  "safe_menu_items": [
+    "Lifestyle Bowl (Gluten Free) with steak, Supergreen Lettuce Blend, Fajita Veggies, Cheese, Guacamole, and Tomatillo Red-Chili Salsa",
+    "Burrito Bowl (without Roasted Chili-Corn Salsa and confirming no cross-contamination of other items with tortillas).",
+    "Request to change gloves and use fresh utensils."
+  ],
+  "data_sources_used": [
+    "llm_reasoning",
+    "reviews",
+    "menu"
+  ],
+  "reviews_analyzed": 5,
+  "menu_items_found": 1,
+  "relevant_review_excerpts": []
+}

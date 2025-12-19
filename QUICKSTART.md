@@ -29,6 +29,11 @@ cd allergen-safety-system
 pip install -r requirements.txt
 ```
 
+There may be an error with downloading/building spaCy since it can have issues with build dependencies. If there is a problem, you can try downloading it directly with
+```bash
+python -m spacy download en_core_web_sm
+```
+
 ### Step 3: Configure
 
 ```bash
@@ -44,6 +49,10 @@ GOOGLE_GEMINI_API_KEY=your_key_here
 
 ```bash
 python demo.py
+```
+or
+```bash
+python sample_usage.py
 ```
 
 That's it! 🎉

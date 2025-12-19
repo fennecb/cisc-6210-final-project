@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-12-19T12:58:09.751998",
+  "key": "llm_assess:Friedman's:gluten:-4155925896325072841",
+  "data": {
+    "safety_score": 65.0,
+    "reasoning": "Friedman's explicitly mentions \"GLUTEN-FREE\" multiple times, potentially indicating awareness and accommodation of gluten-free needs. The safety indicators from reviews mention \"gluten-free\" frequently, further supporting this. However, the provided menu data is noisy and doesn't list specific menu items, making a detailed analysis of potential gluten-containing ingredients impossible. While there are no explicit warning indicators, the lack of information on dedicated gluten-free preparation areas or staff knowledge about celiac disease necessitates a somewhat cautious approach. The average risk score from the rule-based detector also suggests a moderate level of risk.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "Lack of specific menu item information to assess cross-contamination risks.",
+      "Uncertainty regarding dedicated gluten-free preparation areas.",
+      "Unknown staff knowledge regarding celiac disease and cross-contamination prevention."
+    ],
+    "safe_alternatives": [
+      "Due to data limitations, specific safe alternatives cannot be identified. Requesting a gluten-free menu and inquiring about preparation methods is essential before ordering."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 65,\n  \"confidence\": 0.7,\n  \"reasoning\": \"Friedman's explicitly mentions \\\"GLUTEN-FREE\\\" multiple times, potentially indicating awareness and accommodation of gluten-free needs. The safety indicators from reviews mention \\\"gluten-free\\\" frequently, further supporting this. However, the provided menu data is noisy and doesn't list specific menu items, making a detailed analysis of potential gluten-containing ingredients impossible. While there are no explicit warning indicators, the lack of information on dedicated gluten-free preparation areas or staff knowledge about celiac disease necessitates a somewhat cautious approach. The average risk score from the rule-based detector also suggests a moderate level of risk.\",\n  \"risk_factors\": [\n    \"Lack of specific menu item information to assess cross-contamination risks.\",\n    \"Uncertainty regarding dedicated gluten-free preparation areas.\",\n    \"Unknown staff knowledge regarding celiac disease and cross-contamination prevention.\"\n  ],\n  \"safe_alternatives\": [\n    \"Due to data limitations, specific safe alternatives cannot be identified. Requesting a gluten-free menu and inquiring about preparation methods is essential before ordering.\"\n  ]\n}\n```"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-12-19T13:00:36.837299",
+  "key": "llm_assess:Xi'an Famous Foods \u897f\u5b89\u540d\u5403 | Financial District:gluten:-5918018350796806790",
+  "data": {
+    "safety_score": 20.0,
+    "reasoning": "Based on the menu data, almost all items appear to contain gluten, specifically hand-ripped noodles and burgers (served on buns). While the OCR included a single instance of 'GLUTEN-FREE', it is difficult to tell what that refers to, as it appears at the beginning of the menu as a header (e.g. from website html). There is no evidence of dedicated gluten-free preparation areas, gluten-free menu options or staff knowledge regarding gluten allergies. The risk of cross-contamination is likely high given the extensive use of wheat-based noodles and buns across the menu.",
+    "confidence": 0.6,
+    "risk_factors": [
+      "High probability of gluten contamination due to shared equipment and preparation areas.",
+      "Menu heavily features wheat-based noodles and buns.",
+      "Lack of identified gluten-free menu items.",
+      "No indication of dedicated gluten-free preparation procedures or staff training."
+    ],
+    "safe_alternatives": [],
+    "raw_response": "```json\n{\n  \"safety_score\": 20,\n  \"confidence\": 0.6,\n  \"reasoning\": \"Based on the menu data, almost all items appear to contain gluten, specifically hand-ripped noodles and burgers (served on buns). While the OCR included a single instance of 'GLUTEN-FREE', it is difficult to tell what that refers to, as it appears at the beginning of the menu as a header (e.g. from website html). There is no evidence of dedicated gluten-free preparation areas, gluten-free menu options or staff knowledge regarding gluten allergies. The risk of cross-contamination is likely high given the extensive use of wheat-based noodles and buns across the menu.\",\n  \"risk_factors\": [\n    \"High probability of gluten contamination due to shared equipment and preparation areas.\",\n    \"Menu heavily features wheat-based noodles and buns.\",\n    \"Lack of identified gluten-free menu items.\",\n    \"No indication of dedicated gluten-free preparation procedures or staff training.\"\n  ],\n  \"safe_alternatives\": []\n}\n```"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-12-19T12:59:13.970580",
+  "key": "details:ChIJ03Ng85FZwokRAn7njPV6FfA:most_relevant",
+  "data": {
+    "name": "Senza Gluten",
+    "place_id": "ChIJ03Ng85FZwokRAn7njPV6FfA",
+    "address": "206 Sullivan St, New York, NY 10012, USA",
+    "rating": 4.4,
+    "total_ratings": 1448,
+    "phone": "(212) 475-7775",
+    "website": "http://www.senzaglutennyc.com/",
+    "price_level": 2,
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author": "Libby Albaugh",
+        "rating": 5,
+        "text": "Romantic atmosphere, amazing service, the drinks are strong and well worth the price, all of the food is so delicious. The lamb was tender, mashed potatoes were rich, green beans perfectly cooked, chicken parmesan was incredible and the DESSERT!!!! The chocolate cake with raspberry sorbet is to die for. Will be coming back over and over again, such a wonderful experience. I can eat gluten but my husband can\u2019t and this is the most delicious gluten free restaurant I\u2019ve ever been to.",
+        "time": 1763939045
+      },
+      {
+        "author": "Nicole",
+        "rating": 5,
+        "text": "Wow! My aunt is gluten free/dairy free and was in town visiting when we came here for an early dinner on a Saturday night. Lovely setting and interior. The service was great and the food was amazing. Incredibly delicious and the warm bread, this is always where they win me over. So good. Pleasantly surprised and I can't wait to come back again.",
+        "time": 1763266733
+      },
+      {
+        "author": "Olivia",
+        "rating": 5,
+        "text": "I had such an amazing anniversary dinner at Senza. Eating authentic Italian food was never something I imagined I could ever do after being diagnosed with celiac disease. It was not only the best gluten free food I have ever eaten but my favorite restaurant of all time now. The atmosphere was perfect, quiet little spot that feels like a slice out of Italy. I cannot wait to return!!! Round of applause, seriously. Thank you so much!!",
+        "time": 1754662476
+      },
+      {
+        "author": "Ash Elise",
+        "rating": 5,
+        "text": "We had the best meal at Senza. I\u2019ve eaten and cooked so many gluten free recipes and honestly these were some of the best desserts and calamari I\u2019ve had. NGL the tiramisu was better than what I had in Italy. Don\u2019t tell Nonna. Totally worth a visit.",
+        "time": 1762731513
+      },
+      {
+        "author": "Mariah carpenter",
+        "rating": 5,
+        "text": "Great gluten-free experience in New York. I had a great weight staff and cute little blankets for sitting outside. The fried calamari was out of this world I hadn\u2019t had any for almost 6 years!",
+        "time": 1761940557
+      }
+    ],
+    "photos": [
+      "AZLasHr-xJ9Zk0HR77ghftWQ4PoWkssg7ca2paaXLIvO46BX-NkSmOgf4pfiHF807U0QrtAhxdggsCiARbuvNyTBok1egohZyNdPj81gnuFEB5rrq71QrG0Jc9CwdWBa3MRqPsNCr9cwhA6bd7hvphoDLmS3bD7bSgkCiVXO7gj4B32-vzh7gm_dgQmFpq_LBpXoZ8ms76WwNMzr0ofSayJAMqYSm0AUlxAz7bKSord7E23BH-dTjHstan_fYyiPoKSCnkrgJ-4eHVFStUf-2fwnStRg1BTzJftyp4NCsOfp5HJau6gsu-18E2sDLkgqRcubxe46jqdicVt16gf8SsEjatVj0ppwKD4hIB2m-pC7oGS-FfecHo89zlOe_QHkPdXvZofbW5GU5rlwSmraRAhiI8dP2fS7VBZlPqvm04OyM5Y",
+      "AZLasHqiAypn3MJri1H54kjdiWZ6kwGjnBhviYGpUvXzmRGh3jYdS6cd5XEHmDK6HB1RT9FVfV_QttJgw2tq72pe_ytvfphJl3oLxuXfcPxN1huL6PlWj8NRoz60OEWHncui2dpjJodVIjMBC0BFM5WwnhCq09CBKaBRp3aDj0fYVT_2Tjxo6tyFclMTsAel6Ffkup2Av3KlWrlaJ1b596nSArhq5teYFCQUSaBdR_03YqIrWXruSQF95GNEhtLXwgp3wBuOPFHEfRIw4UVhnfzKEoJNJPsPcdyO0nio9JZ1OJizweaWZOaxnpjQgC7RylIRNi3TxdyaLrqQ2MQkUvOrt1Cm9BQwUmAgRlnrCPIpvrDwHaUrzAtl2w84JVOzmMadcy-GcnaOysPAXRAT0PWfWVAKT3AAGkc5dx8pm_bfHmkXdJ58LfEkEnyoGmrUM8gN",
+      "AZLasHoNPHhHhnFAU6292hXX0qlR5tlhe9sSCgQ8zfOFYClhmrFGmrcfDBZt4La7Qpf52tMffV0hLFvA7jNp0KSBWF7b9h6bDGlYUCT0PD1FY1VpzcWV6sv4LWCbq3fggiTlYILTxG0O_cCL98dYD2JlPpZFE8atySWIJUz40nBrApNmeIHvv7VUe_T6Rv31UYhUnMpSlRi7rX7Z47V0CGqZGe-3U797oNKzebtXjfUQKkSWEDv9EodE_4VdAHu2IS2M7gjXciRsCt51ReZ2G6hQo6qE-D-HZ2tZOfoJA93WGYHHMYohjPO-Z-3hOEAwZNpnMPJrpkc-m25eR0iyXmzMhQUEutqyLTw8Dmbox9BJi2zTcWO9dfwUnFb2Oiof-p4ab-a5AMLEwlxopRQ8n1UZ-TK_TSNq-KMAW7kz5D64JnCBnjcJXJkSJW0D654oQOkg",
+      "AZLasHpG4aAnwQdh63gQFCAlDY85uOgln9cLRqDBO1kOckbfBZyfSIgA9ztvct3T3oO47N3i530GgPc7I-nO4KY1qX4tQB89_uukXqlqruNf1lHIYowuMRgjZtfoOpBEOhPXbiyO09dmpS35qtZNUMNeMT0NFGjmZ-AL53s1kxpPsQDaPIbOmhV3otV4dCK_rHX9sXj5VxLRFgIJBeD9y0x9IyXuOWCIrsqWgJ3KrTcsBpk4dO1ikFPG2hyLnCipqingaaJXT6wZIi8ctdrH0AZxXgoz86M-2GaZeczhJWNRgEiH0W8XfHKBr-TouwZMgYsQknI3OMWOFupFJyQoH_q-46UlbMIWyMXa1u1c1WzGKtvBd2U3P753wjcV3XtnOB5dMFgsl9MP-zUwWZSqowVPcYjQ1Bmk80iY_P-gQSIFAVuUGFjY-_g1apFVjQxOE3z4",
+      "AZLasHoN89711GbXL_gmuou0OPDH3yNcqI5mxEZk9HK7n2kQkoN-fmVEgPOm8gZC2jqJRZwM3QwCRCSD-zb5-_ymcJdyd6hGUDbG9Bq9NDSsx3TGa9FooAmKuNwsI4Yd0FX6Etpt_3nOoi6b330_UCmvcmFDq6mPI83193KFCjt4nPnYO8grT37TJtCV5VVy-x1MuWtdGxln6guDN7JWOJ-mj62Mk2whhU8NeSXU-eX29kZV3EpqC5I7cZW61RfLThXtiy_Ouw_jvLInCZrRMDH4c44ffOIR_gTmixWKBsOdSyVam7a-LltSfhKIcqrbweJXL4t7LVoh9_NnAQwlrJcUa0XMjeyguUnUDUj-5rrdW_3M71ZeLb1lggsN7ZJJl5hRZnUDXQAo_QYdx5v9ryTwBI6IRC33yXZDob8Sd7oeKtKHN_ueBFE_JhbTeQptSChu",
+      "AZLasHpRSf6uOlYtbRDi67CWew4zoVYytKbJtCgJioB-SZSq9a4pWb0OBJM6SV7lX_zCHN9CZn8UZIIE_Nak8GA5DRO8nmE_oHk1pjRxZCUzwoWUlw9zFjAOH957pQw-7ce3fiQthrHdk7_JNulE4bnFwi4UcfRyB_AdFx14bJ4Fl4U1jq5-fUiTXNejUav0T8tmnBPDBxmaBjLtoLCpUoSo2D9pepA1xVIju-cnrhGVN5k5596xVKhN45K4n1pKrm2zu4jTeMPUbSBSjR8g2yzwC_j274wKt6-lo9cpiT-0Hx2V-V7AiAo1xhaI91sSPHkT2eLaxAQyomvzbd3SxY8itdZf_49o7iOEYMFXuS33H_l4PxU9zIct-RO3ed2L-HGblSZ25t1wFPaW_ucXq0qdzFfyAY4IcePxsuUjgsjzHqDqXZOXjNerX_MKi_2AGz55",
+      "AZLasHojzvnrgG_NLOW-4XgdYaRhCtX1llbaTB3zrXrNHDn9n7LYVlI8OIny0ycT6CPvflua_veoDzkdtNgU_a-6DfFjhIQpKe0VGk53_sGZPzB_sfLRqiRAthqcFIAzYviWDLt4tRp72OZXR7oQmAdYeC1cSzapqdjnRe1oQxRG5QiwmG3NJT3nwuYA1osxgXkWai7yOJAYY2rOssua0n4MZ-zRwOjwGDwcn8oeunN28S9pjwuu9fjaeZkT_H6Fyw3062gF-PppTIgPBuaKCFzDtSazfrNH-clBNCI-QRPkF7FxtKhXo96zqCkN0MYFm04Z0iJik0tirYRGvpIxF31c0OjbUV7MZSXTsyaHTioEfnsBoJTg83go24KHfzI0hO0EOZreXXKH3Y87kCFHqB9rOK76qpk8W6OO-sXhBXhweBRlSesUBY2yX0YJKTn8r8Y1",
+      "AZLasHpZTvj8rZ13xZOBDykErR8QFHTpfSbEdDK_CPQ5AJRJ2P4LS4jWEOHR3aN5E2gpKH4SRP3ugOVMiu1xBzSU5hrWcV6ZrZps1kHyYasXiIJMZX0dzw3DK_tyU2CC7yDFPsnHNl7eWivxUyW5dRWccLeWeDYdX42AtazPyhrTrIjJGVDAdxEoKLD_8nGQFpFqaghQBTKzC3bdfxlQQ08hFun9yQ1FTOuBPsfOuLY3y7qU0YBOlaVJnQ-Z3ySRhqZ18ItqG_8hLAexE-dfcVltSVk7THh5LCYZAOaeuMF7h2khcgO14tLWuEbuEEkLXWqzgEg1zCfIFNmTPB7RmUMHBnPEMciIpCnNwRcYKi2ZATVdzLbkWeKU57jGqKiUZgIKUtl4Ofetb35PNq6WcM9SV_yzZ7NlPrxW9y5alZIFem2oToDJmQ5JmCiycMu14Mmg",
+      "AZLasHqbo89lTXBW2VNjOvynvdEmUzDjXLYguQCSV9BQFDfayE4DqxpbaSr5sjkcn-PihendrylVfZVfl2aBNKkFmEJFMj_Kk1KBY7pSYq4i933FPA6iC58T9XT-pN-c8KWWmUatOhEUACjW9P3RA4hhKgtnN9r8LUfidDc9v1AN0JL6FfxhhvShvThoEUi0VQJyKu1LuaLTsWwSF6jBs71bwNg-r4A6zIVjPrq6xVw2nRJ8-huSJ6bEhTrf-aDwYYH8wBaUYcY6IItUWJbNWxIrf_cmQ_-xaOVrmoZWkPPn8pTRIIc-MIAV5Z3xMk2MIJK2Rk3ecm9TVUCLJ5InkCanVwnYjY4I5L1zJ-WuEPrCKNgx4ZhN1P0bIzN_xlWBoOEmrU0pRQ12hQm5J4HPy3TIa6eSNiTPrVv54tsrgIWbIbEWpy8PyLyZ46YVOnqqAQd6",
+      "AZLasHqGJ4Y8Izb1WvJ5EeSQVZHiNWvs4cBXsMe7sGumo2WfRfbjgmuXUYXULvmR11gs5RePWJOaSw_8HB2dnJOY_xqDt7MzrkC09MRYWVe-k6so0nR4Xhj1tXUW0ujwxTAqeGNQ6kX8lOl4odSdfWDSQUfVI684YT5u8ntcscta2SLolzvN8HM2Ml85NCr-I2caOmARhIo6DFlXaWRLHJeG6P89qtFXtekm80jWLB8ipi-t3pYJyiIQ3c7gJSbAxEEQHpHVp9xN68VZmliH1_t5WsO3997oMtIzJTvEoELeDGh6YqC1d1r73Nvh-P_sog9Z-j84vsWJNR72rqg08B6VzLkJMS7uGI0Fl2nTRyujATSzjTl04HYam9AprIH2t8lydAwbodevTbk_VtA_PW7oy3duMhwbwTEuqnMVf7UuvnfemTr9Xn6omCKyGTresg"
+    ]
+  }
+}

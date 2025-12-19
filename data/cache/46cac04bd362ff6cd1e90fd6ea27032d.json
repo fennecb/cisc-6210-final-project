@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-12-19T12:58:02.699569",
+  "key": "details:ChIJ-SnUQsZbwokRVelfRIPAYcQ:most_relevant",
+  "data": {
+    "name": "Friedman's",
+    "place_id": "ChIJ-SnUQsZbwokRVelfRIPAYcQ",
+    "address": "245 Murray St, New York, NY 10282, USA",
+    "rating": 4.5,
+    "total_ratings": 175,
+    "phone": "(212) 786-1300",
+    "website": "https://www.friedmansrestaurant.com/",
+    "price_level": 2,
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author": "GlutenBee",
+        "rating": 5,
+        "text": "I had a genuinely fantastic experience at Friedman\u2019s special East Meets West location! They have tons of celiac safe gluten free options, so I was in heaven. I got a lot and it was all good. Especially the sesame chicken and rock shrimp tempura \ud83d\ude2d\ud83d\ude0d\n\nThis is a very good spot to check out in battery park, NYC",
+        "time": 1761665473
+      },
+      {
+        "author": "Samantha Vicha",
+        "rating": 5,
+        "text": "Ricc was my server and he was wonderful! With so many dietary restrictions I was so pleased to be able to enjoy a delicious gluten-free seed oil free burger here! The gluten-free bun was very moist and not at all dry, which is rare for gluten-free things",
+        "time": 1765298512
+      },
+      {
+        "author": "Sophia DeMartino",
+        "rating": 5,
+        "text": "My friend and I needed to find a celiac friendly restaurant and came across this place. My friend was so beyond excited because the dumplings were gluten free and they haven\u2019t had a dumpling in ages. Their joy and genuine excitement made my whole day. The food tasted delicious and was filling enough to keep us content for the rest of the day. Everything tasted absolutely amazing and was packed with flavor. Thank you!",
+        "time": 1756438094
+      },
+      {
+        "author": "Aleksander Amer",
+        "rating": 5,
+        "text": "Me and my gf went here for dinner and drinks on our last night in the city before heading back to Vancouver. It was a great experience and had Kenny as our server. He was very attentive even though he was serving a rather large event as well. Can\u2019t say enough good things about him and the food/drinks were really tasty! Looking forward to returning here and we hope to have him again serving us as he made our visit so much more enjoyable.",
+        "time": 1762498959
+      },
+      {
+        "author": "Maura Fallon",
+        "rating": 5,
+        "text": "Fantastic gluten-free dumplings \u2014 just like in Hong Kong! We ate every GF option and loved them all. Friendly staff, clear GF labeling, and top-notch protocols make this a must.",
+        "time": 1758469797
+      }
+    ],
+    "photos": [
+      "AZLasHqyYhK6Qj1_Ynd03oJU7yK6v-KRmhTvmesOKF_CV6eHZ-scRr7FSbcrok0LBGdJz__YOpnckcz85e352Mu8hjxvhpEgC0Fzj1cLE2-B6PEiJyou2E4i-pJSTv_EriaQhOL_KJfALMh6ke4E1cIhS1UxO_rQgj81d3ZAGRCWlj03BvuZ-JiZ9sDw1fX8Vd6VUQQFxP-A1txwqUkXoQPpdSx2UQcrfbsMDJ7jFPVjwYCUoJV0Bsq-uvRx3Vac3I3WWKLUix8OPzcGFn4UPRzPWCzKrwUGWu_t2udGx9TY2GA2dPe7Td0SaAK-zM4Zrt2jRbu4SmwtJf94vVBHyEad8ltkpSLGIwjEeGgscR9h_SFSg0tmKsSURRCBLArVQFHjlu2Zd88HtkIrVID3laknKytKYPqzv6LpWSVjurAspUqBRWYO",
+      "AZLasHoqqXB3A4iefs_s8uufeRpbgxlYqMadfpyLTtRfRSuOFa2i2ZR0M3fx4zp2WKFnVzFUqWQuodl5wckBVM9qjHh6TEDAju6Ujc9Tqwjbi-9jYKkpUrjY3p30Q4BigtND72Ef1em4BZGS_DXCRMriJS07slFtRdz8JL5qQ6bH2xkPy72vQpj0veA-cdeyhAvPf0uTUAWnDR97RWS3PTIbIL6ciEFsw7FP6AY90rzqpkgN0GV6q80KOKTYn_6qaUASu78DJ5HPm2lfoyuAJVeEy3LRxQJuhQHYtrzEfkaWCxNT_Q",
+      "AZLasHqT_CfGtrP5PvZWnBTPh-yN68cpLcT-N7JmpKdtxBR-X8FZ-tQQvOkGC8cRVEpE-_4XWu15R737Yd7SeFtsFQR2eh7aRuQ9cayIepbwxkWAkRLCjx2pObavZYAm96FQsXECWeVq92CgGCv1zV_BZCwbe-58QFtZbhM1OMA9L4M8OXeG8ZMcrXBRHk-q5bYO_qiDD2y2cstJXGIRl-yP93duJEwxE1annX8UXsOLjIgu_80jfwNlFdYrA-Gwx7UcVNqT4rZMgcn7XiBYGJ13swRwiwzYdlE0qjfY2ooinTKNw_8HkjcbNyJwacNC-_az9ENPTuaenafTgMITHW8Cn8IMaFTlLVwHlUXrOYv4pPNzeCixQXDCoWjbEVRbKJl7P3GCgzIueRQJrr1svPO8LMPgWyPm3oLF7gd_nBHeD2te7-5lS8ctTK8MGyl6mx-S",
+      "AZLasHpdJoW4H6pJsywCTKezbkkLqyYpTYsw1Q7tZmPhSnjn1gtIM__NmBMhGGArvAOhgFs_HxQKHmPRChmANL0Nf2W6HAqRyCBlZKgU9cLLCgrtW3FruWY3Uazm2mZnZ4JcstuhWRUR8_q0ylI_HhTjks4SDU7Y_9CZeLYfarUc4Fw6F9SOzNCDVpdXh-_0EVm7vqr1euTdhJja144BGbyKxRGEAcTug1VEVTTCRz9ASd_npHIKa1rAhQ0mf1DRbun7QSpipxqSetSjQY-uVLSq9Y9D9YudvucwK4amKQxQ87mrOw",
+      "AZLasHovvuKpBkmY_eq-uiAzfyTYPslDTY_P8uYlXMl4TRkZLSCn_xBvDIIphG9ooH69mTIlVatuJU9vuJUGbnjiT5cMr2ukkT0GDZso22MQ_Oh7879RtWfSAWGWOJ2IFmpHYhSZW8UEXEbKx3EBHjBw_6Fd8HnG74xTGFRY1Y7f_9FQe-GBzd3iQjYPKz5mA-ammnnimAuqeFZLnfmppMa4duM424ygh_g7ippMdtUG52UjBcFTC_ErbbbaOLN1cNlI1BtyA0MTv76pGrDEg1x2Qov6VhzL03yl1896sS-gbs_vknVJCeERAZBh2M3KRuh2GgiXhtiAoJX4M26DJbi7P3tdTbHHwul7u-msJ2tM57XXmXbnhEwEDOsP6eqUjO1fT2UcJBu8kmkRcwfF2wvFxMZm1Q5qb_seUDtiKiWv4L_RyNbMtTmbdMFalQJ0dA",
+      "AZLasHq401_34_wEC-tD_qKjAzpZyqB1urj1v01bXF3K8spHpIJVbelGRJA5p_9vG2kWmk4xzd9_8Us1P_Q4sKCKugiE2k6uZASl9PZpvJtXwCa8u5W-Sys6hhv02F44_HwN7bnBE-XFfsiLOchCZkMWD2pLR1K0TL-E6D3ne-YU3zaiRnHSLPRJFW7omo30Jchk3eMCDtxGNEUxhyLws4GS-JryF9m04tGAEI1XTL6uPCuyJMxnjI-fL6dGCfiBi1imzU1Bcf-bOROKcGRzbMfkmzivZ1XBlLN1CK1aZkwdshv-ZQ",
+      "AZLasHo1Pc72WMd-FdaZqGdnfDGFXD9gHcMJgKPjge9IGLWwE44f2rDyyJ72Ptdab2oC4kdO23Ezt0IzmTFEh9yLrJz4Rllqqt85svkWUYJLTWzX2VZe4EebWvKbMIQc-6eO4-DWE9vMzZxT1uj877LT5JcyDFVY25KF3rJlgfJqzbl2YbpbwZbWXBF22X3uWhqiptfA0Yl1gwNRWXgqvOy57rjz1UPHoQzF0C_Iaw9tOVyTTsi9MN9i5FH-UDw52hqgLueuP0J_5XcjOR6nM6F_-3pTaV1p33dNbZh_TCNUuFfuEg",
+      "AZLasHrL_FA-tbHXuR4ZqE7RuyOydMqJ4tfpDV8adEUPVeCH3gz05RfD36k3G9F1cQf1I07Fg5DECt3gGi_fug_JZnTUZISiKsYDlAFYH8khqd9E7XGpDO6P28e1Oq0rK5UpZNMl5IZAG8tvofxlZ_-ZsRujCRrrDXCzXx4VQWcl2ASR2Wcftct_mSEdRhNqhwZqXsmr5HJMfkzGWRZnNCfARb-3B4_sH9ue0__Ge5gUBQna12DreNbuvguXLOFlSuy2WLVgNW-y5B_NHmVbRGGQXvQsiW-AG0fUaEo7Ybz1vIG7Pw",
+      "AZLasHqbrbyiVukIq_IUcwqbcGcZYzwHDCTRn5y_eNv-E3suSgXNPJ0hpWIHgS0lh6_aSRt5S3I4dtTaRS-WuHP_72SM4VKHXo0UX55W3t5Kne6IwKqS0Be_R0NskD4Fn7Wc8e2kffFsej0ytejiAu4_QpA9yI_Iw4OuToI2WiKmKSY36xXCV-XXklwKfhS3llrrKPmgF4t5lpnR1Z6uGcorJdrFn8-qOuw3jbYl38k1lKqVxRzeNrdcdxMFbLo8ymlEIkrbZIAntkYE9VifG41Vk4R9xWDUHe2SOxeAtIgu2aB_vQ",
+      "AZLasHqxSQ0gYUkrLQg2OJxiQNoj3NKuW5dz9Uhd4lYWUiKLO6sLLYonmMJem63WFhX9Uwn-gE5a_z3vFiEOcr6svIHx8gIbUcnj6WcgOe5DonkXQHSle1-fYIQXr2ccUuCZQ9HOEnbyU8TYktDSsFEnq-8ikHD1erXjsF-_-vIGklBw8kZLBxhtVaWAUMYnre0YuWGd1DyrRW4zjiZEktVAb2GVe5PStcaqTvFQ3MzfA0cZ9k3EbNWGPQDiCrxkE1baBglnzo31oFc3b7y6DNNvJsf_SN1cuGFklI7cWmbmx8waGajoYzkyGgtUimSua5eGNeZMMnpjntWp_Xq9Vy0RfkyCH0RTgkPjg1zm9CMEMKrHzcmuIkP5aBdYYY3gtB6FOoJEc_G-Eevwd0e_GAV_2zTzsH6q1wIxGYjIegyHxUvQQQ"
+    ]
+  }
+}

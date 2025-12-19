@@ -27,7 +27,7 @@ Unlike simple LLM query tools, this system does the heavy lifting through:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    INPUT: Restaurant Name                    │
+│                    INPUT: Restaurant Name                   │
 └──────────────────────┬──────────────────────────────────────┘
                        │
           ┌────────────┴────────────┐

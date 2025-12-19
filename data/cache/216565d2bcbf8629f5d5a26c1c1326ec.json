@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-12-19T14:13:29.750767",
+  "key": "llm_assess:Senza Gluten:gluten:5753657343415135772",
+  "data": {
+    "safety_score": 90.0,
+    "reasoning": "Senza Gluten explicitly states its mission is to be a 100% gluten-free Italian restaurant and claims to have rigorous safety policies in place. The review analysis found safety indicators relating to being 'gluten-free' which suggests customers perceive this. The lack of warning indicators further supports this. The menu doesn't contain obvious gluten-containing items. While a rule-based detector scored risk at 13.6/100, the overall evidence suggests a high level of safety, especially given the restaurant's explicit dedication to a gluten-free environment and policies.",
+    "confidence": 0.85,
+    "risk_factors": [],
+    "safe_alternatives": [],
+    "raw_response": "```json\n{\n  \"safety_score\": 90,\n  \"confidence\": 0.85,\n  \"reasoning\": \"Senza Gluten explicitly states its mission is to be a 100% gluten-free Italian restaurant and claims to have rigorous safety policies in place. The review analysis found safety indicators relating to being 'gluten-free' which suggests customers perceive this. The lack of warning indicators further supports this. The menu doesn't contain obvious gluten-containing items. While a rule-based detector scored risk at 13.6/100, the overall evidence suggests a high level of safety, especially given the restaurant's explicit dedication to a gluten-free environment and policies.\",\n  \"risk_factors\": [],\n  \"safe_alternatives\": []\n}\n```"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-12-19T12:59:20.742134",
+  "key": "llm_assess:Senza Gluten:gluten:3730464957208440377",
+  "data": {
+    "safety_score": 90.0,
+    "reasoning": "Senza Gluten explicitly states it is a 100% gluten-free Italian restaurant. The menu is designed to be entirely gluten-free, and the restaurant emphasizes rigorous safety policies to prevent cross-contamination. The review analysis also indicates a focus on gluten-free practices. However, staff knowledge and kitchen practices are difficult to verify with the provided information alone, therefore the confidence is slightly reduced.",
+    "confidence": 0.85,
+    "risk_factors": [],
+    "safe_alternatives": [
+      "All menu items should be safe, given the restaurant's claim of being 100% gluten-free."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 90,\n  \"confidence\": 0.85,\n  \"reasoning\": \"Senza Gluten explicitly states it is a 100% gluten-free Italian restaurant. The menu is designed to be entirely gluten-free, and the restaurant emphasizes rigorous safety policies to prevent cross-contamination. The review analysis also indicates a focus on gluten-free practices. However, staff knowledge and kitchen practices are difficult to verify with the provided information alone, therefore the confidence is slightly reduced.\",\n  \"risk_factors\": [],\n  \"safe_alternatives\": [\"All menu items should be safe, given the restaurant's claim of being 100% gluten-free.\"]\n}\n```"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-12-19T13:00:32.596064",
+  "key": "details:ChIJr_kSP5hbwokRCD6pIF3py5c:most_relevant",
+  "data": {
+    "name": "Xi'an Famous Foods \u897f\u5b89\u540d\u5403 | Financial District",
+    "place_id": "ChIJr_kSP5hbwokRCD6pIF3py5c",
+    "address": "8 Liberty Pl, New York, NY 10038, USA",
+    "rating": 4.5,
+    "total_ratings": 1023,
+    "phone": "(212) 786-2068",
+    "website": "https://www.xianfoods.com/",
+    "price_level": 1,
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author": "Artur St",
+        "rating": 4,
+        "text": "The food here is undeniably flavorful \u2014 rich, bold, and full of character. I really enjoyed the taste, but be warned: even the \u201cregular\u201d spice level is very spicy. I could barely finish my soup, and I usually handle heat pretty well.\n\nPrices are reasonable for NYC, and the self-order kiosk makes things quick and convenient. It does get crowded, though, and seating can be hard to find during peak hours. Still, if you\u2019re into authentic, spicy Chinese flavors \u2014 this spot is worth checking out!",
+        "time": 1752459910
+      },
+      {
+        "author": "F'burg Foodie",
+        "rating": 5,
+        "text": "I\u2019ve heard of this chain and have been wanting to try one, so when in Newark for work and learning that there was a Xi\u2019an Famous Food location close to a Path train station, I made time to come check it out.  I got there around 1PM and they were packed; in fact, they stayed very busy the entire time I was in there.  I was worried about finding a place to sit to eat, but I will say that everyone in there was very respectful of their time \u2013 they ate fast and got out!  And they were also very respectful of the signage that says there\u2019s no one who manages and cleans the dining room, so clean up after yourself.  The dining room was perfectly clean.\n\nI placed my order via one of their kiosks and waited about 15 mins for the food to be made.  The kitchen is open, so you can see them all working back there, and they\u2019re hustling!  But the place is just that busy!!\n\nThe food I tried was really good!  The flavors were incredible!!  The cucumber was probably the best I\u2019ve had, mostly because of the incredible flavors of the chili oil, but the very fresh cucumber they smashed was excellent too.  I tried the spicy & tingly beef muscle w/hand-ripped noodles and it was really tasty!  The noodles were pretty good, but they were very long and could be tough to eat, without dipping your head in for each bite.  The only issue I had was the amount of fat/connective tissue was thick and there wasn\u2019t much beef to eat \u2013 so I ended up only eating a little of the actual beef.  But I loved the sauce and noodles!  If I go back, which I will, I\u2019ll get the lamb done in a similar way.\n\nI felt the prices were decent for the amount of food and the great flavors.  Definitely will return!",
+        "time": 1755640501
+      },
+      {
+        "author": "Teck Boon",
+        "rating": 5,
+        "text": "Located in a small alley but the restaurant is usually quite crowded which shows that the food is pretty good. Come in and self-order from the terminals and they\u2019ll call your name and number when the food is ready. Service is decently fast and the lamb dishes are pretty good. Worth dropping by if you\u2019re nearby.",
+        "time": 1756153069
+      },
+      {
+        "author": "Kevin Chen",
+        "rating": 5,
+        "text": "Ordered a Liang Pi Cold Skin noodle with mild spice and a Spicy Cumin Lamb Hand-Ripped Noodles with least spicy and less oil. If you can handle your spice, definitely go for the regular spice levels.The liang pi is a refreshing plate even for spring with cold noodles, tofu, and greens that are calming and pleasant. The mild level spice is find though I would recommend ordering spicier. The Lamb noodles were delicious with thick cuts of lamb on top. It\u2019s a bit hard to chew on the lamb but otherwise, it was a very pleasant noodle dish. The staff here are very efficient with preparing meals, ordering food is all done with digital kiosks.",
+        "time": 1752906384
+      },
+      {
+        "author": "Kshitij Gulati",
+        "rating": 5,
+        "text": "The lamb cumin noodles are to die for. The texture of the noodles and the flavor of spices all go together incredibly well. Not a lot of seating in this busy spot and not nut allergy friendly.",
+        "time": 1765041197
+      }
+    ],
+    "photos": [
+      "AZLasHqNBSlRTXrcIsyu56eU7nLWHT4Rp737GRPIgGKd_31HhlOvlbfAZa8jhiVhjjae0kZC207sLDMs3FjZLmSbS-DqigL67i_qKgvPDi7lHmpE_ixt-rWeUomYRRfDUxPAe5piSxhzgos7TNkTRIKQJYeCDy89Hv74EP3rStgl6fbVuM9hibd65Cw-kaxYjp3SHhYxxL8xMAVnizzFp8RacsD42cPzSqYWJ-4ehXoN583_F0jrwoXTN9GlrBuSnJPj4chG-ZTaCzwtXYJmzN-TqP6aq14E7tR7eHuopA2keZ0RbX44Hq4ars_lFWeqn3hEnyN0YnZVr8ol-97Mv71Tbd72MBl1F7chd_iqURchEWyNvhc6no-er_xDYUJiC6OrPy8aJ1dn8_xwesqKxwbwlrX6j_VZXn_JYFWxliwo-LYEww",
+      "AZLasHohbb0hnPex5gCzXjC2GL0-0rB2Q84MYztH5xDGcTzggtuKnHazOV_30_Y6UejcDKd5hyfP9WtuiwDi1pnbyX3-H9Z4lMEAtzTgsccgWjTN-jfmIP_c1CcpX5_UEdFZ6rX3YGntrKJblwlPStRnGqkborM8j1cUAg1448ik1tukAc27hZarfTa1VegD550N2BDotl4G99MUHF248pGXuw6V0Q-H3lV2s1-lS4s87voS93RGRFVVN_ulTyKr8vWUqdvwvM2zSHb3IpjS1IFhG7m9P42J4vQB0BVI63gIJq9wQA",
+      "AZLasHoQ9HyqbiRfS_PzXkSk2mWZ6g_8d8rhtUJG5lBuewEHGgeJyGEX8RN1IDEqQzcyMRByTOi3GPih0ZAytGH7U8cZEfPLQa4cHHH1WwapdJgyJ15CHnk2Fk0ULQQBrc6ddVbOn4jkgYazIsQ1ev-TqHhyL9qvnlP1fjwxs1aJahyss5yfbdcXMSlO9UziXIttrkqHQ5_qeS217HIWbucFo2GxWixYlPGwa1ynbgr8hy5kVhlZRNSzdMRIY46X969RXgHKYYPIPadLO65gDBMGSsUg_PGOd9aH55X6dLUXVkK5v1U7jYNNJ4BUHCKkX17wtB2zygysqrWdXVcZ99ZjVFKXcnZ-u5jAnwuefmezSU82et1HhKWgrN3vD9dl3Sx5U0lVxSvc7p5eEtBWq_04FSHgrDkh0PlUxWoVMw0HitFG_9MlhyzszKIR7rXLS4PK",
+      "AZLasHqv1BbAiU1WhpG6L6fz9kq2s9g4hqwq4qdNpoVJqlWx-IWcovDI8pdYNdhk8hhUeyiGbWoFeIY4_E1drHYVEHXU8bW0BmisSnQnV0JUfchHq5eONY186eqvccFAN3dQY5MPPJN04F4R2pQ_Stl_FXFC69VeJvUzUSay0_zagSbmtNvzQ5DF1JtQQatByd0xyllEmvIYs4HWCmyDHof-tYGh7oycFb_2h_4m7aGQN66jwOevlTnbeqg-zFFAZuiLBfUnIWwp8DONPHYnABxvdSKuMBydS49qPY0--mxV96wEVpEOnccFoslVcdw3l_kcNNKFWZNQ2AkHTD5rU4dzdLtmv8QzSBKWpovIs7vi2Ui3tto2dx9bucTU-rmgTO4b_qwFEnfZVahSHVdetbZwzWeXp3gz1_bvZH3dFyOkQgUgs9G2",
+      "AZLasHqK6COAqj6Dzdep9qD8_8TpuVRqFnBZqNR49jwhwN6c_ospHwW7vJ2yot6LvbkyXIv_LfSy800e93oTnxQvuF7XQX7Gna_7kJCv6MiuySu4c5Q9OPy9jiPAoyIDARAdsiVGuYY85xv9EEjXJRnahJTXq7jPEe8ULjdO0LzhNdKrYMQjUcUOk1zlz_9iIUJ594mY8kZBxGSM_cCR6ZRenq6nu1LuwlS6fF--bdRmodS4ta7WrluLKhDrP1fEy7TgkL-sR9M95WMofQhkgGZI73UhPDqNRyuhCL1c_KYtYBAyttrUcc1TtmTnyyXt7S89M_Jf-F03_uruGfVBjprglmgRHTIyeCsUHdnxvMAoE5diXMOO47ywkD5KhRjJLEB5x3shpgqtcTEkPF-6Fv2Mq6IRyHlLr1bzZMZi4JDMJHNMGA",
+      "AZLasHo-q54QRvZTNbQvmPxgVONGAig5O1t6mwCeZ6eor3Ki0m7OHVZFknMgYy_SvR50N1UlT-6olMc6PnJLr4z0vQJ6qw7dDJomen5KRc2ZfF6UQ2yZJXZo6hZVSoTJEeHhHC8K7SbdCxc41sdt6hN-s_ry2GYY1qQEzKelG9tBV3dItaWEB3ADnwEUgDhC6qDj8ZE2s6XkgPLuVE34VgHe3A8HQiZ8iwGzSmT54dR18521mxaJSUtGH9xAOXZEtqzHKvPXVnMqogFUqtZ8SRqOCSExGMZPujBq7VApJgJ-N6dfzw",
+      "AZLasHo9Pkeu0rnVL_L1uv9CYwBBPYw9DsqwPzhn0bLAE2rGmf9d9aefOdsWsnZfSw8ZVxxW4ksA8rJyjxDPCEwfox0zb4HbjLKd3WxHcLA957_LLhFNpUuVcf5KvK_X-nX_WxeGST0OrrasGI7hfZQAj2vv3HjlNtY_1k59Xb-g2mS0_yCux4GEZlm3FvTEM9MSxrNjWWGCWpVhzefI_YSXLtn1In3TG3OSsDVJVKH9_GYK0dKkm2G5yoKOl0TtiAAuOc98qHC_ED3SidBiOYPdHlQ3REly4cwHcBrjRuP8Mx33zZfvv3K7h5F0CBPxs4sOzwxvRRtm0DdjtV1ogqBvNR1tGl6uz0GaxPGNYqLbP-H1GwyUE2PLWuKH4QSxwx-9ecsYsbLSoYROhUWG63YsABJ-N9PV5gJFHFGJI7Zw7CQs2pONxak57rygKipjNn6v",
+      "AZLasHohjqZnfVcpaRpWL_7I2Fdi12mdVsJZ5nZ9LDvjC0cUfWnEJXhQL8150d7qrxgRzuA2fiB-CwVY9JjhEcrc3UtuPU9exlrQsCPV6pnvacJqk8-IqBPrieFEcBfv_mwWMXnaApcHchrn5tW8F_LgNTGgqcmwfYh0D5tcASE8uPYT1JCUPUSYF7B3FkBIX74jAJ2a1hE85htOgGqMjsuZ9CRoRU0XYXjcWNo_pQY_MNIOz0T_EuZNUqup-RT8Z18ens6dlQihXx_QCHp_G5gCe5IxP23kD8eTRPVNg_3B2neyj1wf37riGsNeG0mODV08n1bEkFn_qvOw29ObLmyu8jElhE9alAH51IXHQA_GCB0oAEYWAmkNazJCEoJFlEU6q4165qqCT_LRKs1FNuAKoBXRh5q-JfQGzWMR5fGC_nLfmUNU",
+      "AZLasHoS8QP0oUcbpWAzrqAv2Nb_p5YHXEsgCBfPrQkON8t32F6cC4th4SSTuCHvAFWE-RTFGpskPxcx3c6Gs2bFCy3AaVOIsnYifINy7YyVmpvBaLOh-iLm6gQJKTV1AVe8ZLF2S3iRH5zASL1Nb-NAKE1Dkw9ACw99RZ2gFZolhqPzn1jwyBIjeoYLjGjTX7QQWCwk-fyASuUAlBrTwiPEDwZLW_qjFUClN_d_LO0xqlrFx3c20IvRj8fLfZ01ROA1h3EiIWedH0LRdTF7Z47OVHyHQDSP07Ern9dumMSLqTL906Jl7u35UpG0u6GnCMRokpVdBe6B5ILuxiTnf4s6h6p1KURxY0sPjS27gZwpbVjHrEgrV2dDEcjFrU1YJsJhI1tgJbEbjXN2zWJgInfvlx_ap_OhfkdRBoViA0Y5pdU-O31s",
+      "AZLasHoZPzOFkkbBY3UDHBcGpR7kGzDOvnzFZ_HAg5kVPMsYnBN95Bs32SUIbXOZM_Dk8Nr__tpMiGwqdn21Qlvb3Xt7UVFDsim9C2WZWAimjwHjoUCQczTySQFpZSkg1LzLQVQctrS4igvV8sVYfIiOIYFcKShnUW7HikPfMY6zKFwn2Bb9FptdIrJDlMj6MxHWaf4BrnRC6epIA9A69PdCzqM3ckMuC_kxYZYqYDRK3kspbv6kVXkNzUEkFmdqDXP5k0jCiRTWxPYemNo-jyYMem9IxpO-YQBwwu_hGWAXvpSetTbaX0FrrYDegBA-mTdJyb8ED-2YjBWGea57m41O3YjaH1tNXXkOZ1i6JjCETw8qtd1i9HeMU4BHhGD8ifu4iBj26L6fT8jrB6Oy3CGnTR89N3oBvShM72R6e4SMeqk"
+    ]
+  }
+}

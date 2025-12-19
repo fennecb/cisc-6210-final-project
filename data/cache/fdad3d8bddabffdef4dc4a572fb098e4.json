@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-12-19T13:59:21.725836",
+  "key": "llm_assess:Senza Gluten:gluten:2884159109683725279",
+  "data": {
+    "safety_score": 90.0,
+    "reasoning": "Senza Gluten explicitly states it is a 100% gluten-free restaurant, which is a significant safety indicator. The menu mentions 'GLUTEN-FREE' multiple times, and the restaurant's description emphasizes rigorous safety policies and a gluten-free environment. Reviews mention 'gluten-free', suggesting positive experiences. No warning indicators were found. This significantly lowers the risk of gluten exposure. However, despite these strong indicators, achieving a perfect score is difficult without detailed kitchen practices and audit reports, so a small degree of residual risk is assumed. The emphasis on 100% gluten-free status and the stated commitment to safety warrants a high confidence level.",
+    "confidence": 0.85,
+    "risk_factors": [],
+    "safe_alternatives": [
+      "All menu items, assuming no cross-contamination within the supply chain of ingredients. The restaurant states it is 100% gluten-free."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 90,\n  \"confidence\": 0.85,\n  \"reasoning\": \"Senza Gluten explicitly states it is a 100% gluten-free restaurant, which is a significant safety indicator. The menu mentions 'GLUTEN-FREE' multiple times, and the restaurant's description emphasizes rigorous safety policies and a gluten-free environment. Reviews mention 'gluten-free', suggesting positive experiences. No warning indicators were found. This significantly lowers the risk of gluten exposure. However, despite these strong indicators, achieving a perfect score is difficult without detailed kitchen practices and audit reports, so a small degree of residual risk is assumed. The emphasis on 100% gluten-free status and the stated commitment to safety warrants a high confidence level.\",\n  \"risk_factors\": [],\n  \"safe_alternatives\": [\"All menu items, assuming no cross-contamination within the supply chain of ingredients. The restaurant states it is 100% gluten-free.\"]\n}\n```"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "restaurant_name": "Senza Gluten",
+  "allergen_type": "gluten",
+  "overall_safety_score": 70.0,
+  "confidence_score": 0.85,
+  "risk_factors": [],
+  "safety_indicators": [
+    "LLM identified safe options"
+  ],
+  "recommended_actions": [
+    "This restaurant appears relatively safe for gluten allergies",
+    "Look for menu items marked as allergen-free"
+  ],
+  "safe_menu_items": [],
+  "data_sources_used": [
+    "llm_reasoning",
+    "reviews",
+    "menu"
+  ],
+  "reviews_analyzed": 5,
+  "menu_items_found": 3,
+  "relevant_review_excerpts": [
+    "[gluten]: ...e DESSERT!!!! The chocolate cake with raspberry sorbet is to die for. Will be coming back over and over again, such a wonderful experience. I can eat gluten but my husband can\u2019t and this is the most delicious gluten free restaurant I\u2019ve ever been to.",
+    "[gluten]: ...o die for. Will be coming back over and over again, such a wonderful experience. I can eat gluten but my husband can\u2019t and this is the most delicious gluten free restaurant I\u2019ve ever been to.",
+    "[gluten]: Great gluten-free experience in New York. I had a great weight staff and cute little blankets for sitting outside. The fried calamari was out of this world I hadn...",
+    "[gluten-free]: Great gluten-free experience in New York. I had a great weight staff and cute little blankets for sitting outside. The fried calamari was out of this world I hadn\u2019t ha...",
+    "[gluten]: Wow! My aunt is gluten free/dairy free and was in town visiting when we came here for an early dinner on a Saturday night. Lovely setting and interior. The service was grea...",
+    "[bread]: ...r an early dinner on a Saturday night. Lovely setting and interior. The service was great and the food was amazing. Incredibly delicious and the warm bread, this is always where they win me over. So good. Pleasantly surprised and I can't wait to come back again.",
+    "[gluten]: ...nza. Eating authentic Italian food was never something I imagined I could ever do after being diagnosed with celiac disease. It was not only the best gluten free food I have ever eaten but my favorite restaurant of all time now. The atmosphere was perfect, quiet little spot that feels like a slice out of...",
+    "[celiac]: ...such an amazing anniversary dinner at Senza. Eating authentic Italian food was never something I imagined I could ever do after being diagnosed with celiac disease. It was not only the best gluten free food I have ever eaten but my favorite restaurant of all time now. The atmosphere was perfect, quiet li...",
+    "[gluten]: We had the best meal at Senza. I\u2019ve eaten and cooked so many gluten free recipes and honestly these were some of the best desserts and calamari I\u2019ve had. NGL the tiramisu was better than what I had in Italy. Don\u2019t tel..."
+  ]
+}

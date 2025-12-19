@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-12-19T14:14:43.058355",
+  "key": "llm_assess:Xi'an Famous Foods \u897f\u5b89\u540d\u5403 | Financial District:gluten:-438755154286473820",
+  "data": {
+    "safety_score": 20.0,
+    "reasoning": "Based on the menu data, Xi'an Famous Foods heavily features hand-ripped noodles in many of their dishes, which are a clear source of gluten. The menu items include 'Stewed Pork Hand-Ripped Noodles', 'Spicy Cumin Lamb Hand-Ripped Noodles In Soup', and 'Pork Zha Jiang Hand-Ripped Noodles.' The presence of 'Liang Pi Cold-Skin Noodles' *could* potentially be a safe option, but the data also includes 'Stir-Fried Liang Pi Cold-Skin Noodles,' introducing a cross-contamination risk. The restaurant is known for these noodle dishes, meaning there's a high likelihood of gluten flour being present throughout the kitchen. The menu includes 'GLUTEN-FREE' which is a positive sign, but given the numerous noodle dishes, and lack of more information about specific gluten-free practices at this location (e.g., dedicated preparation areas, utensils), the risk of cross-contamination is high. Furthermore, no positive indicators regarding dedicated preparation or staff knowledge were detected in the reviews.",
+    "confidence": 0.6,
+    "risk_factors": [
+      "Presence of wheat-based hand-ripped noodles throughout the menu.",
+      "Potential for cross-contamination in a kitchen heavily focused on noodle dishes.",
+      "Lack of information regarding dedicated gluten-free preparation areas.",
+      "Limited information about staff knowledge on gluten allergies.",
+      "The menu includes 'Stir-Fried Liang Pi Cold-Skin Noodles' introducing a cross-contamination risk to a potential safe option."
+    ],
+    "safe_alternatives": [
+      "Potentially the Liang Pi Cold-Skin Noodles, but with HIGH caution due to the risk of cross contamination.",
+      "Contacting the restaurant directly to inquire about dedicated gluten-free preparation is HIGHLY recommended."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 20,\n  \"confidence\": 0.6,\n  \"reasoning\": \"Based on the menu data, Xi'an Famous Foods heavily features hand-ripped noodles in many of their dishes, which are a clear source of gluten. The menu items include 'Stewed Pork Hand-Ripped Noodles', 'Spicy Cumin Lamb Hand-Ripped Noodles In Soup', and 'Pork Zha Jiang Hand-Ripped Noodles.' The presence of 'Liang Pi Cold-Skin Noodles' *could* potentially be a safe option, but the data also includes 'Stir-Fried Liang Pi Cold-Skin Noodles,' introducing a cross-contamination risk. The restaurant is known for these noodle dishes, meaning there's a high likelihood of gluten flour being present throughout the kitchen. The menu includes 'GLUTEN-FREE' which is a positive sign, but given the numerous noodle dishes, and lack of more information about specific gluten-free practices at this location (e.g., dedicated preparation areas, utensils), the risk of cross-contamination is high. Furthermore, no positive indicators regarding dedicated preparation or staff knowledge were detected in the reviews.\",\n  \"risk_factors\": [\n    \"Presence of wheat-based hand-ripped noodles throughout the menu.\",\n    \"Potential for cross-contamination in a kitchen heavily focused on noodle dishes.\",\n    \"Lack of information regarding dedicated gluten-free preparation areas.\",\n    \"Limited information about staff knowledge on gluten allergies.\",\n    \"The menu includes 'Stir-Fried Liang Pi Cold-Skin Noodles' introducing a cross-contamination risk to a potential safe option.\"\n  ],\n  \"safe_alternatives\": [\n    \"Potentially the Liang Pi Cold-Skin Noodles, but with HIGH caution due to the risk of cross contamination.\",\n    \"Contacting the restaurant directly to inquire about dedicated gluten-free preparation is HIGHLY recommended.\"\n  ]\n}\n```"
+  }
+}
