@@ -109,30 +109,33 @@ class GooglePlacesCollector:
             logger.error(f"Error searching for restaurant: {e}")
             return None
     
-    def get_restaurant_details(self, place_id: str) -> Optional[RestaurantData]:
+    def get_restaurant_details(self, place_id: str, reviews_sort: str = 'most_relevant') -> Optional[RestaurantData]:
         """
         Get detailed information about a restaurant.
-        
+
         Args:
             place_id: Google Places ID
-        
+            reviews_sort: Review sorting method ('most_relevant' or 'newest')
+
         Returns:
             RestaurantData object or None
         """
-        cache_key = f"details:{place_id}"
-        
+        cache_key = f"details:{place_id}:{reviews_sort}"
+
         # Check cache
         if self.cache:
             cached = self.cache.get(cache_key)
             if cached:
                 logger.info(f"Using cached details for place_id: {place_id}")
                 return RestaurantData(**cached)
-        
+
         params = {
             'place_id': place_id,
             'key': self.api_key,
             'fields': 'name,place_id,formatted_address,rating,user_ratings_total,'
-                     'formatted_phone_number,website,price_level,types,reviews,photos'
+                     'formatted_phone_number,website,price_level,types,reviews,photos',
+            'reviews_sort': reviews_sort,  # Request sorted reviews
+            'language': 'en'  # Ensure English reviews for better NLP processing
         }
         
         try:

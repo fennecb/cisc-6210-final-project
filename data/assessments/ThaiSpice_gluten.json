@@ -1,19 +1,27 @@
 {
   "restaurant_name": "Thai Spice",
   "allergen_type": "gluten",
-  "overall_safety_score": 35.0,
-  "confidence_score": 0.5,
-  "risk_factors": [],
-  "safety_indicators": [],
+  "overall_safety_score": 21.0,
+  "confidence_score": 0.4,
+  "risk_factors": [
+    "Unknown menu items and ingredients",
+    "Potential for cross-contamination due to shared cooking equipment"
+  ],
+  "safety_indicators": [
+    "LLM identified safe options"
+  ],
   "recommended_actions": [
-    "Unable to assess safety without LLM analysis"
+    "HIGH RISK - Not recommended for severe gluten allergies",
+    "Consider alternative restaurants",
+    "Key concerns: Unknown menu items and ingredients, Potential for cross-contamination due to shared cooking equipment"
   ],
   "safe_menu_items": [],
   "data_sources_used": [
+    "llm_reasoning",
     "reviews",
     "menu"
   ],
   "reviews_analyzed": 5,
-  "menu_items_found": 6,
+  "menu_items_found": 1,
   "relevant_review_excerpts": []
 }

@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-12-18T19:54:17.730895",
+  "key": "llm_assess:sweetgreen - Healthy Salads, Bowls and Plates:gluten:5377275736866325058",
+  "data": {
+    "safety_score": 40.0,
+    "reasoning": "Sweetgreen presents a moderate risk for individuals with celiac disease due to the presence of gluten-containing ingredients and potential for cross-contamination. Several menu items contain gluten, including the Kale Caesar (parmesan crisps, caesar dressing *may contain gluten*), Buffalo Chicken (garlic breadcrumbs), Chicken Pesto Parm (zaatar breadcrumbs), and Rosemary Focaccia. Although some bowls may appear gluten-free at first glance (e.g., Harvest Bowl, Shroomami), the lack of dedicated gluten-free preparation spaces and equipment increases the risk of cross-contamination. The menu doesn't explicitly advertise gluten-free preparation protocols. While the Guacamole Greens bowl appears to be gluten-free based on ingredients alone, cross-contamination remains a significant concern.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "Shared preparation surfaces",
+      "Cross-contamination from gluten-containing ingredients",
+      "Zaatar breadcrumbs in Chicken Pesto Parm",
+      "Garlic breadcrumbs in Buffalo Chicken",
+      "Parmesan crisps in Kale Caesar",
+      "Caesar dressing potentially containing gluten",
+      "Tortilla chips in Guacamole Greens *may* contain gluten"
+    ],
+    "safe_alternatives": [
+      "Guacamole Greens (request no tortilla chips and confirm vinaigrette ingredients)",
+      "Harvest Bowl (request without apples, as some apples are coated with gluten-containing wax)",
+      "Shroomami (confirm miso sesame ginger sauce is gluten-free)",
+      "Custom bowls (with careful ingredient selection and explicit communication about allergy needs)"
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 40,\n  \"confidence\": 0.7,\n  \"reasoning\": \"Sweetgreen presents a moderate risk for individuals with celiac disease due to the presence of gluten-containing ingredients and potential for cross-contamination. Several menu items contain gluten, including the Kale Caesar (parmesan crisps, caesar dressing *may contain gluten*), Buffalo Chicken (garlic breadcrumbs), Chicken Pesto Parm (zaatar breadcrumbs), and Rosemary Focaccia. Although some bowls may appear gluten-free at first glance (e.g., Harvest Bowl, Shroomami), the lack of dedicated gluten-free preparation spaces and equipment increases the risk of cross-contamination. The menu doesn't explicitly advertise gluten-free preparation protocols. While the Guacamole Greens bowl appears to be gluten-free based on ingredients alone, cross-contamination remains a significant concern.\",\n  \"risk_factors\": [\n    \"Shared preparation surfaces\",\n    \"Cross-contamination from gluten-containing ingredients\",\n    \"Zaatar breadcrumbs in Chicken Pesto Parm\",\n    \"Garlic breadcrumbs in Buffalo Chicken\",\n    \"Parmesan crisps in Kale Caesar\",\n    \"Caesar dressing potentially containing gluten\",\n    \"Tortilla chips in Guacamole Greens *may* contain gluten\"\n  ],\n  \"safe_alternatives\": [\n    \"Guacamole Greens (request no tortilla chips and confirm vinaigrette ingredients)\",\n    \"Harvest Bowl (request without apples, as some apples are coated with gluten-containing wax)\",\n    \"Shroomami (confirm miso sesame ginger sauce is gluten-free)\",\n    \"Custom bowls (with careful ingredient selection and explicit communication about allergy needs)\"\n  ]\n}\n```"
+  }
+}

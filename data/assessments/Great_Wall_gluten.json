@@ -1,19 +1,37 @@
 {
   "restaurant_name": "Great Wall",
   "allergen_type": "gluten",
-  "overall_safety_score": 45.5,
-  "confidence_score": 0.5,
-  "risk_factors": [],
-  "safety_indicators": [],
-  "recommended_actions": [
-    "Unable to assess safety without LLM analysis"
+  "overall_safety_score": 7.0,
+  "confidence_score": 0.6,
+  "risk_factors": [
+    "Shared fryers",
+    "Use of soy sauce (likely containing wheat)",
+    "Wheat-based noodles (Lo Mein, Chow Fun)",
+    "Cross-contamination in kitchen",
+    "Lack of gluten-free menu options",
+    "Egg rolls, Spring Rolls, Fried Wontons all contain wheat",
+    "Most sauces are likely thickened with wheat flour/cornstarch"
   ],
-  "safe_menu_items": [],
+  "safety_indicators": [
+    "LLM identified safe options"
+  ],
+  "recommended_actions": [
+    "HIGH RISK - Not recommended for severe gluten allergies",
+    "Consider alternative restaurants",
+    "Key concerns: Shared fryers, Use of soy sauce (likely containing wheat)"
+  ],
+  "safe_menu_items": [
+    "Steamed dishes with brown sauce on the side (verify gluten-free soy sauce)",
+    "Plain White Rice",
+    "Brown Rice",
+    "Vegetable Mei Fun or Chow Fun (only if rice noodles are prepared separately and cross-contamination is avoided, and soy sauce is gluten-free)"
+  ],
   "data_sources_used": [
+    "llm_reasoning",
     "reviews",
     "menu"
   ],
   "reviews_analyzed": 5,
-  "menu_items_found": 6,
+  "menu_items_found": 1,
   "relevant_review_excerpts": []
 }

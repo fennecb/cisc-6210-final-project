@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-12-18T19:54:03.799023",
+  "key": "llm_assess:Thai Spice:gluten:5474402565313234080",
+  "data": {
+    "safety_score": 30.0,
+    "reasoning": "The data is extremely limited. We only have restaurant contact info, operating hours, and that the menu was accessed. There is no actual menu content provided, so a proper allergen risk assessment is impossible. No review mentions of allergens either. Therefore, the safety score is low, reflecting the high uncertainty.",
+    "confidence": 0.4,
+    "risk_factors": [
+      "Unknown menu items and ingredients",
+      "Potential for cross-contamination due to shared cooking equipment"
+    ],
+    "safe_alternatives": [],
+    "raw_response": "```json\n{\n  \"safety_score\": 30,\n  \"confidence\": 0.4,\n  \"reasoning\": \"The data is extremely limited. We only have restaurant contact info, operating hours, and that the menu was accessed. There is no actual menu content provided, so a proper allergen risk assessment is impossible. No review mentions of allergens either. Therefore, the safety score is low, reflecting the high uncertainty.\",\n  \"risk_factors\": [\"Unknown menu items and ingredients\", \"Potential for cross-contamination due to shared cooking equipment\"],\n  \"safe_alternatives\": []\n}\n```"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-12-18T19:54:12.011733",
+  "key": "llm_assess:Great Wall:gluten:4381520663230102733",
+  "data": {
+    "safety_score": 25.0,
+    "reasoning": "Based on the menu, this restaurant poses a significant risk to individuals with celiac disease. Many items are fried, indicating a high probability of shared fryers and cross-contamination. Lo Mein dishes contain wheat noodles. Soy sauce, a common ingredient in Chinese cuisine, often contains wheat. There is no mention of gluten-free options or dedicated preparation areas. The rule-based analysis found no helpful indicators, further lowering confidence. While some steamed dishes are listed, without confirmation of gluten-free soy sauce and preparation methods, they cannot be considered definitively safe.",
+    "confidence": 0.6,
+    "risk_factors": [
+      "Shared fryers",
+      "Use of soy sauce (likely containing wheat)",
+      "Wheat-based noodles (Lo Mein, Chow Fun)",
+      "Cross-contamination in kitchen",
+      "Lack of gluten-free menu options",
+      "Egg rolls, Spring Rolls, Fried Wontons all contain wheat",
+      "Most sauces are likely thickened with wheat flour/cornstarch"
+    ],
+    "safe_alternatives": [
+      "Steamed dishes with brown sauce on the side (verify gluten-free soy sauce)",
+      "Plain White Rice",
+      "Brown Rice",
+      "Vegetable Mei Fun or Chow Fun (only if rice noodles are prepared separately and cross-contamination is avoided, and soy sauce is gluten-free)"
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 25,\n  \"confidence\": 0.6,\n  \"reasoning\": \"Based on the menu, this restaurant poses a significant risk to individuals with celiac disease. Many items are fried, indicating a high probability of shared fryers and cross-contamination. Lo Mein dishes contain wheat noodles. Soy sauce, a common ingredient in Chinese cuisine, often contains wheat. There is no mention of gluten-free options or dedicated preparation areas. The rule-based analysis found no helpful indicators, further lowering confidence. While some steamed dishes are listed, without confirmation of gluten-free soy sauce and preparation methods, they cannot be considered definitively safe.\",\n  \"risk_factors\": [\n    \"Shared fryers\",\n    \"Use of soy sauce (likely containing wheat)\",\n    \"Wheat-based noodles (Lo Mein, Chow Fun)\",\n    \"Cross-contamination in kitchen\",\n    \"Lack of gluten-free menu options\",\n    \"Egg rolls, Spring Rolls, Fried Wontons all contain wheat\",\n    \"Most sauces are likely thickened with wheat flour/cornstarch\"\n  ],\n  \"safe_alternatives\": [\n    \"Steamed dishes with brown sauce on the side (verify gluten-free soy sauce)\",\n    \"Plain White Rice\",\n    \"Brown Rice\",\n    \"Vegetable Mei Fun or Chow Fun (only if rice noodles are prepared separately and cross-contamination is avoided, and soy sauce is gluten-free)\"\n  ]\n}\n```"
+  }
+}

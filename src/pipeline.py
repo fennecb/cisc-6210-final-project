@@ -11,6 +11,7 @@ from src.data_collection.google_places import GooglePlacesCollector
 from src.data_collection.review_scraper import ReviewScraper, YelpAPICollector
 from src.preprocessing.allergen_detector import AllergenDetector
 from src.preprocessing.menu_ocr import MenuOCR
+from src.preprocessing.review_ranker import ReviewRanker
 from src.llm_reasoning.llm_reasoner import LLMReasoner
 from src.scoring.safety_scorer import SafetyScorer, SafetyAssessment
 
@@ -45,6 +46,7 @@ class AllergenSafetyPipeline:
         self.yelp_collector = YelpAPICollector(use_cache=use_cache) if api_status['yelp'] else None
         self.allergen_detector = AllergenDetector()
         self.menu_ocr = MenuOCR(use_cache=use_cache)
+        self.review_ranker = None  # Will be initialized per-request with specific allergen type
         self.llm_reasoner = LLMReasoner(provider=llm_provider, use_cache=use_cache)
         self.scorer = SafetyScorer()
         
@@ -116,6 +118,35 @@ class AllergenSafetyPipeline:
         
         logger.info(f"Total reviews collected: {len(all_reviews)}")
 
+        # Step 2.5: Rank and filter reviews by allergen relevance
+        logger.info("\nSTEP 2.5: Ranking reviews by allergen relevance...")
+        self.review_ranker = ReviewRanker(
+            max_features=Config.TFIDF_MAX_FEATURES,
+            allergen_type=allergen_type
+        )
+
+        # Use hybrid ranking to prioritize allergen-relevant reviews
+        ranked_reviews = self.review_ranker.hybrid_rank_reviews(
+            all_reviews,
+            use_keyword_prefilter=True,
+            keyword_threshold=0.5,  # Low threshold to be inclusive
+            tfidf_weight=0.6,
+            keyword_weight=0.4,
+            top_k=Config.MAX_REVIEWS_PER_RESTAURANT  # Limit to configured max
+        )
+
+        # Log ranking results
+        review_stats = self.review_ranker.get_enhanced_review_summary(all_reviews)
+        logger.info(f"[OK] Ranked {len(all_reviews)} reviews")
+        logger.info(f"  Allergen-relevant: {review_stats.get('allergen_relevant_count', 0)}")
+        logger.info(f"  Total allergen mentions: {review_stats.get('total_allergen_mentions', 0)}")
+        logger.info(f"  Safety mentions: {review_stats.get('total_safety_mentions', 0)}")
+        logger.info(f"  Risk mentions: {review_stats.get('total_risk_mentions', 0)}")
+        logger.info(f"  Using top {len(ranked_reviews)} reviews for analysis")
+
+        # Use ranked reviews for subsequent analysis
+        analysis_reviews = ranked_reviews if ranked_reviews else all_reviews
+
         # Step 3: Enhanced NLP-based allergen detection
         logger.info("\nSTEP 3: Running enhanced NLP allergen detection...")
         logger.info("  - TF-IDF review ranking")
@@ -123,7 +154,7 @@ class AllergenSafetyPipeline:
         logger.info("  - Named entity recognition")
 
         review_summary = self.allergen_detector.analyze_reviews_enhanced(
-            all_reviews,
+            analysis_reviews,
             focus_allergen=allergen_type
         )
 
@@ -226,7 +257,7 @@ class AllergenSafetyPipeline:
         logger.info("\nSTEP 6: Creating LLM-based assessment with NLP enhancements...")
         assessment = self.scorer.aggregate_scores(
             llm_response=llm_response,
-            reviews=all_reviews,
+            reviews=analysis_reviews,  # Use ranked/filtered reviews
             menu_items=menu_items,
             restaurant_name=restaurant_data.name,
             allergen_type=allergen_type,
