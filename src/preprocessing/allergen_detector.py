@@ -9,6 +9,9 @@ from dataclasses import dataclass
 
 from config.config import Config
 from src.utils.logger import setup_logger
+from src.preprocessing.sentiment_analyzer import SentimentAnalyzer
+from src.preprocessing.review_ranker import ReviewRanker
+from src.preprocessing.entity_extractor import EntityExtractor
 
 logger = setup_logger(__name__)
 
@@ -37,13 +40,22 @@ class AllergenDetector:
     """
     
     def __init__(self):
-        """Initialize detector with keyword dictionaries."""
+        """Initialize detector with keyword dictionaries and NLP tools."""
         self.allergen_keywords = Config.ALLERGEN_KEYWORDS
         self.cross_contamination_keywords = Config.CROSS_CONTAMINATION_KEYWORDS
         self.safety_keywords = Config.SAFETY_KEYWORDS
-        
+
         # Build regex patterns for efficient matching
         self._build_patterns()
+
+        # Initialize advanced NLP components
+        self.sentiment_analyzer = SentimentAnalyzer()
+        self.review_ranker = ReviewRanker()
+        try:
+            self.entity_extractor = EntityExtractor()
+        except Exception as e:
+            logger.warning(f"EntityExtractor initialization failed: {e}")
+            self.entity_extractor = None
     
     def _build_patterns(self):
         """Build compiled regex patterns for each allergen type."""
@@ -279,3 +291,69 @@ class AllergenDetector:
             'average_risk_score': avg_risk_score,
             'reviews_analyzed': len([r for r in reviews if len(r.get('text', '')) >= Config.REVIEW_MIN_LENGTH])
         }
+
+    def analyze_reviews_enhanced(self,
+                                reviews: List[Dict],
+                                focus_allergen: str = None) -> Dict:
+        """
+        Enhanced review analysis using advanced NLP techniques.
+
+        Args:
+            reviews: List of review dictionaries with 'text' field
+            focus_allergen: Optional allergen to focus on
+
+        Returns:
+            Aggregated analysis results with NLP enhancements
+        """
+        if not reviews:
+            return self.analyze_reviews(reviews, focus_allergen)
+
+        # Step 1: Rank reviews by relevance (TF-IDF)
+        allergen_keywords = Config.get_allergen_list(focus_allergen)
+        ranked_reviews = self.review_ranker.filter_relevant_reviews(
+            reviews,
+            allergen_keywords,
+            min_relevance=0.05,
+            max_reviews=30
+        )
+
+        logger.info(f"Ranked reviews: {len(reviews)} -> {len(ranked_reviews)} relevant")
+
+        # Step 2: Run base allergen detection
+        base_analysis = self.analyze_reviews(ranked_reviews, focus_allergen)
+
+        # Step 3: Add sentiment analysis
+        sentiment_stats = self.sentiment_analyzer.batch_analyze_reviews(ranked_reviews)
+
+        # Step 4: Extract entities (if available)
+        entity_info = {}
+        if self.entity_extractor:
+            all_text = " ".join([r.get('text', '') for r in ranked_reviews])
+            entity_info = self.entity_extractor.extract_safety_mentions(all_text)
+
+        # Step 5: Calculate review credibility scores
+        credible_reviews = []
+        for review in ranked_reviews:
+            text = review.get('text', '')
+            if text:
+                sentiment = self.sentiment_analyzer.analyze_text(text)
+                credibility = self.sentiment_analyzer.calculate_review_credibility(
+                    sentiment.polarity,
+                    sentiment.subjectivity
+                )
+                if credibility > 0.5:
+                    credible_reviews.append(review)
+
+        logger.info(f"High-credibility reviews: {len(credible_reviews)}/{len(ranked_reviews)}")
+
+        # Combine all results
+        enhanced_analysis = {
+            **base_analysis,
+            'sentiment_stats': sentiment_stats,
+            'entity_info': entity_info,
+            'credible_review_count': len(credible_reviews),
+            'relevance_filtered': len(ranked_reviews) < len(reviews),
+            'nlp_enhancements_applied': True
+        }
+
+        return enhanced_analysis

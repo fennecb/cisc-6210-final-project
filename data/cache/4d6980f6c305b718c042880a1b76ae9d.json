@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-12-18T15:17:21.525954",
+  "key": "llm_assess:Great Wall:gluten:9181409808941121946",
+  "data": {
+    "safety_score": 85.0,
+    "reasoning": "The menu for Great Wall Chinese Restaurant contains numerous ingredients and dishes that inherently contain gluten, such as soy sauce (used in virtually all stir-fries, fried rice, lo mein, etc.), wheat-based noodles (Lo Mein, Chow Fun), wheat flour coatings (Fried Chicken Wings, Egg Rolls, Dumplings, Wontons), and potentially malt vinegar or wheat-based thickeners. There is no explicit mention of gluten-free options, dedicated preparation areas, or staff training regarding celiac disease. The high volume of fried items and shared cooking surfaces (woks) poses a significant cross-contact risk. The absence of any positive safety indicators or allergen statements necessitates a high-risk rating for celiac disease.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "Ubiquitous use of soy sauce (contains wheat) in standard Chinese cooking (Fried Rice, Lo Mein, Stir-fries).",
+      "Menu items use wheat noodles (Lo Mein, Chow Fun).",
+      "Appetizers (Egg Rolls, Wontons, Dumplings, Fried items) are typically made with wheat flour wrappers or batters.",
+      "No stated gluten-free menu or dedicated preparation protocols.",
+      "High risk of cross-contact due to shared woks, fryers, and utensils common in high-volume Chinese restaurants."
+    ],
+    "safe_alternatives": [
+      "Steamed dishes (Healthy Choice Steamed Dishes D1-D6) *only* if the customer can confirm the sauce (usually brown sauce) served on the side is 100% gluten-free (e.g., thickened only with cornstarch, using tamari/GF soy sauce). This requires direct inquiry and confirmation.",
+      "Plain White Rice or Brown Rice, provided they are not cooked in contaminated woks.",
+      "Beverages (Soda, Snapple)."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 85,\n  \"confidence\": 0.7,\n  \"reasoning\": \"The menu for Great Wall Chinese Restaurant contains numerous ingredients and dishes that inherently contain gluten, such as soy sauce (used in virtually all stir-fries, fried rice, lo mein, etc.), wheat-based noodles (Lo Mein, Chow Fun), wheat flour coatings (Fried Chicken Wings, Egg Rolls, Dumplings, Wontons), and potentially malt vinegar or wheat-based thickeners. There is no explicit mention of gluten-free options, dedicated preparation areas, or staff training regarding celiac disease. The high volume of fried items and shared cooking surfaces (woks) poses a significant cross-contact risk. The absence of any positive safety indicators or allergen statements necessitates a high-risk rating for celiac disease.\",\n  \"risk_factors\": [\n    \"Ubiquitous use of soy sauce (contains wheat) in standard Chinese cooking (Fried Rice, Lo Mein, Stir-fries).\",\n    \"Menu items use wheat noodles (Lo Mein, Chow Fun).\",\n    \"Appetizers (Egg Rolls, Wontons, Dumplings, Fried items) are typically made with wheat flour wrappers or batters.\",\n    \"No stated gluten-free menu or dedicated preparation protocols.\",\n    \"High risk of cross-contact due to shared woks, fryers, and utensils common in high-volume Chinese restaurants.\"\n  ],\n  \"safe_alternatives\": [\n    \"Steamed dishes (Healthy Choice Steamed Dishes D1-D6) *only* if the customer can confirm the sauce (usually brown sauce) served on the side is 100% gluten-free (e.g., thickened only with cornstarch, using tamari/GF soy sauce). This requires direct inquiry and confirmation.\",\n    \"Plain White Rice or Brown Rice, provided they are not cooked in contaminated woks.\",\n    \"Beverages (Soda, Snapple).\"\n  ]\n}\n```"
+  }
+}

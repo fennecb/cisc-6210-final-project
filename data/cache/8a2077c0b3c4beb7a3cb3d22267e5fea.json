@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-12-18T15:22:54.336172",
+  "key": "details:ChIJQ_4N7hNawokRxOz5_NjiNoA",
+  "data": {
+    "name": "Chipotle Mexican Grill",
+    "place_id": "ChIJQ_4N7hNawokRxOz5_NjiNoA",
+    "address": "2 Broadway, New York, NY 10004, USA",
+    "rating": 3.8,
+    "total_ratings": 1830,
+    "phone": "(212) 344-0941",
+    "website": "https://locations.chipotle.com/ny/new-york/2-broadway?utm_source=google&utm_medium=yext&utm_campaign=yext_listings",
+    "price_level": 1,
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author": "Shakema Suber",
+        "rating": 1,
+        "text": "You guys should just consider closing this location if you\u2019re not gonna hire enough people!! Waiting 10-15 minutes for food with one person serving, giving out delivery orders & managing the register is something I\u2019ve never seen in any restaurant!! Never have cheese, barely give you enough food when paying $13 or more! On top of waiting over 10 minutes for Isabel to make my food she then asks me can I wait for her to serve the customer behind me before she checks me out!! I think the look on my face said more than what came out of my mouth & I had to put my food in the bag myself!! I\u2019m NEVER going to this location again!! Shame on you Chipotle!!!",
+        "time": 1760135733
+      },
+      {
+        "author": "YourBoiStephen",
+        "rating": 5,
+        "text": "Great Experience at Chipotle!\nChipotle never disappoints. The food is consistently fresh, flavorful, and satisfying. You can really taste the quality in every bite\u2014from the perfectly seasoned rice to the tender, juicy proteins and crisp toppings. The team was friendly and efficient, keeping the line moving quickly while still taking the time to get every order just right.\n\nThe restaurant itself was clean, well-stocked, and welcoming. I appreciate how Chipotle gives you so many options to customize your meal\u2014whether you\u2019re in the mood for a hearty burrito, a light bowl, or something vegetarian.\n\nOverall, it\u2019s a reliable spot for a quick, healthy meal that doesn\u2019t compromise on taste. Definitely one of my go-to places when I\u2019m craving something fresh and filling!",
+        "time": 1762870177
+      },
+      {
+        "author": "Scott Wessel",
+        "rating": 1,
+        "text": "This location needs to be visited by corporate. I've eaten at Chipotle all across the country and can always enjoy a consistent standard of food, service, and atmosphere. Tonight was the exception. My son was told \"we don't do quesadillas\", by a very annoyed employee despite it being on the menu (he left to get food from a street vendor instead). For my burrito bowl, I was lucky to get a half scoop of rice and meet. The fajita veggies were empty and I was told they don't have any, even though it was the middle of dinner time. I ordered chips and salsa and received a salsa container less than 50% full, with, at best, a handful of chips. Then, I asked for a soft drink, but the machine was broken. The lemonade machine had some liquid in it but the bubbler wasn't working and the liquid looked like it was dried and crusty on the sides. From there, we had to find a place to sit. There were two tables occupied in the entire restaurant and every single other table was disgusting. We huddled in a corner that was slightly less dirty to eat. In case you're thinking that they were short staffed, they weren't. Maybe they had a huge dinner rush before we came in? Perhaps. When we left, 25 minutes later, there was only one other patron in the restaurant and not a single table had been cleaned. There was plenty of socializing behind the counter though. When it came time to clean up after ourselves, I had to pile our garbage on top of the overflowing cans. This experience was unacceptable for any standard, let alone the standard set by the Chipotle brand.",
+        "time": 1750375644
+      },
+      {
+        "author": "riley",
+        "rating": 2,
+        "text": "Sad that employees can\u2019t show up. Just while i was there 50+ customers arrived and turned away because only online orders.  Maybe cancel online orders  and cater to the folks who actually are in front of you.  Sad state of business when people want your product but can\u2019t order",
+        "time": 1756781631
+      },
+      {
+        "author": "Wise Flower",
+        "rating": 1,
+        "text": "I would have given zero. They did not have salsa and salad for my burrito. I asked whether I can have guacamole instead of salad and salsa the guy said yes.\nThen they put EXTRA so I payed 14$\nAnd the guy says \u201cI told you it\u2019s extra, you misunderstood\u201d\nBut they guy said that I can have it.\nHORRIBLE CUSTOMER SERVICE.\nAnd they never have limonade. NEVER",
+        "time": 1752194136
+      }
+    ],
+    "photos": [
+      "AZLasHo_OP6PNlLZ2oK8G8J8ZXAJbOp2GTY1ogNuu8v5PMZUlAZvQrFoqqLb4JsDVOfMhdXYfAMTSZAqmYLFY3trFivNO4HH6XColucKi36LYxpqhAsnrbeL_Sk3r4PoI4ZLFgOyJQ6bboF9RdKDSau0zTi178VCgjeP9BBwIHy_zxD01JNadXNUCJECfLR3dOU3e3ZKDu8j7YZx-4aRf01ogquhaGbvQYsVxB2v7DjcNJIg9nLc6DDqih3vRNojG9qCF4xejqC1W5OCPqvI7DoLN1mU8igurgSM6TPkzcUpKwXIcqzmQmcQTwjwrvBEGIP51r2J5-VIrkj6_fdFn0E-GnpHKIuMzYqXNV6cQEPFioKXI8VFPukTiuWR4sAwTthAU99Q9qc3km8xtqyjJWtNHbcEMrbDc2zvYVzsvCwd5YXKzHLa3P8RzmuIav33M3XA",
+      "AZLasHo45N-h6bqhiYzmUnKsz_P7iIYzDRuWq1VOKnqXfhEXERbgqJbuzbS_lI5NLn861NW3tR9n_Op3CE0602EiMZ8bk3OMpaXHdP-7hH8Xj7azkMtYMkM1Z4gHzT7Nfr9bE82iihYzptCxVc1Yx6-gwAh-rxdqhURWYXo8U3G2LGJJnluHoHj7b9mzUXmC1UJN734sOkVo6ApFQ9cRQLJYxvsTtRLzXXESL3s9NE1G-x6p_WF2C54OnOa2P64wNLzf2yvSlQp779NLgeUQIHkOdhfFj4oipHTPzJ-4i-KLDwaqfA",
+      "AZLasHoAbzCykQmMfNB7aLLpnP2XaSaEU9rYIOQOApkzl2nkhf1VtpHJupR6nkXCFsfn0qo6yXqo7hjlJCEPhFJ-aJThUkAJE39SX9lU13dG8X40JzAxQvvOd4-T7iyxq1ooE6nnZxXoyyIQvHtlZEOZd44Yf99ke4YHI15PsvKAbQk-ugLJ2aVFG10DSkGHKJ8JbbdbB3AsWOaoesdBkS6RnvZd1rZgOWaedEpy_XXyX8PUBlt2Tc7jfsqrKGnORApr8N-TrVFMSq3IeEE11h45cwi3vZgfEO_P3tuAKdjw1G5a2g",
+      "AZLasHqjhO37K3fzAn_0zCRucJMfLJGjqxqcV_SZx8O46lGxBrBwbgXAlEmNVQRcCOUcEVfDe4Ib4NIJVHk8fmWhw6EGqcHXJI6d691_3AfnQ-jUwgN_O2yv_WRcINEghh6hW6Nk9Eb0pYIO1ZbHQ94vT6zB04xLDMcwSHqo4TavphSZPboWwJ2O_Zwmrh0gGXnwYkNCGPFwbi9wzacunEIOF1zTNL-os2GP2l5FNf-LUTKPApp-ZthAs16BB9t-mIa-Xgjen8Pk3KGib9I_40HuQ-mbHx_NFCzjvPwc2SgY6xHjUyeEhTTiM1Zem9e6zufPwS58mo-nNT7G1A9dkws6QCkSuzTy4a1VwrkmQ4GNtAKO0fVsKs0BLAlhPk8qEYBYPDeu7AbqooDYJYcPQqQ3011-SShLR64fRbPm6fWcQR_OSOHvsaElizrFblleeocD",
+      "AZLasHpk-HempUCrd0HVBLRhqxaI9fPHNUZ0-fR4M8-7qWDxjYyJNh6vxOQhGFcf6fWHyIZ6HoRuuLgatz7x0ojG1ddb25zGLcuN7_568DLRHb6_v5pDdNueGImtzyDpVPSsoAUhxN1444WbHcDtpkoupl1x89P9r7B76Lt2XyB8Ysp8fdAX16xx1_lyQdaSFJYftOGkJiEyNsKZI0dLHYKXVgmuc0zelK3bJfgXlPRbwHW2hyfP9NToGCcWQ55S_7mnajxPDSGO-4X6DZ6bWhhEz3EvrvME3PV5uNmFOjb3FF9eqUlOu342VqYqMG1J5wsp0kQC0UvJwxXQcbnaESKtHN_WlnqlxIAtjZXMsIozD-XAqpSTB5hgfCnMqFXk4AsAYzQiqKOCYATtV2Y1gxJAMsA5yRrVH-Y3WrWh7IJatC1mYa0f",
+      "AZLasHoDzhA04oA_MJPIFVknC0SniHjfeX6basWU8MNnh1EAP2CjB8bbLJyginYUltvnjklauFEf0uddYXADSPfAmp8AmMmKPWGSnvZY3hhaLQALEiGIWpumbTZiDhGoqZzzIdpNJukO5tZm9Y1Ka6TKmzkpkT250-rlMr3mhfO_2O9KIw9s_1DmQPZtYhPAAw1WbCTGsLhrPfV7nmlTs-ad4J2LI4HtNCvY59bEa79hJb3Ixwm2rNIhays_PiQxQwFqEPlPDqvvjaQvcWAjEa6nDkvTNoBZ3Ve83CiMpuUhxVZYU2qu8VA3iA4KzpAF5F_8Dj20s2tSW1GW9kFLvzFcJeaT2qy4xbr0-8ReJgumSH3NasJEkM-DhoS1TMn2KUTv7syqpbyV-FETfIBdeyTR13xu4WO_CcfV_OwZ_-1odjXKNzW3",
+      "AZLasHoj0crYA39MhvVxDDm7I1DsON30KxdzyPz6FdnuqdypqwKouC8yelUB-fIDLsNyzauJuN2OB3Dp2QIc_x2AJs4YYBKIK5wcACRcDIICkzzZBQkGZc2HinGvAibVhtOxFceYGFW7j9SDXSP3y4aeOVS3J-n4Z3sh3j4jyu7B3M0lZut-w0J-s0Fabzc5rJE4YNnt2uHNhZcKu8lQ-fAytZ-BqnedhxiPP8UMXp3A5RxHeYmPOFvWmymBr_ZdcqyZB05XlA5peDfMytS1uUBv2PmumvVI4ao9atuBH2jKBspFHg",
+      "AZLasHo2W7lMKgvH0KPaTZHNizT2Pggz88cpDIibGMOpj6uLIN5604xVA9ESmFpMnevcz2fIBnsYQJNfTWxw8CDwfW764DHBwrPsf7WBeOqurFRLxirDM9vf1UbxQEx8WyR1AQ-F5LfEB9x5qwCTYMFJ7yvtB8YTUJCg_3naYedA39wzMt3fnYpIPbVyC4oUs5X9BNM70-9nKMNKQ9w3Ne6yzBMYkmulQhNd_JoLUSkDRmvQ2_A9JPhC6RaHG0JokXkzIqK8Sjr8cKKumMRfihJDv5ffz17kMExQ6KLuhq24-Rt_PA",
+      "AZLasHqrJQX6h_KaEiTKVRXvQWVAFD_bgXCLMAS87l64Tt-_XBm_S1uuWFUX_UeBnmj8ViLfjm4Onan2NblAv9_XSkQUV40Iz7tVtgDCK5jXhv7_9gZDRBQT86F3rznu2rJ1RywI29PObMmUxnc31KtPTp2B_VEyyXoJv8RK6V7acrYiTemAsI4tvSOfsh2pr9aN0sOEQdVtI0KF70vUh7CxfZhIA9XpDg3NgUrGqYsb69hRqPyfF4dn9rP9JrhINqmMbyIbmyKaId3L-yE_gtG4UyoMn2nx-VR-5C2w2yFMj0mywA",
+      "AZLasHoa315TCC0MHGYkBdAyWZfF9OarU1EGVQ75SfwfWBJjwtpdXCBaZoDnxkAqlk-sDg2EzsdwfwN7JzxFVTuxzhbiM_r7X2SzGUqqzswc2aCNnozhshsmVT-TyI-2jle_WReBbq3prTCWNip5tl1sgqhwrmo03cmxbvZclcYKCponufACYTsRYo2n0jGNV4qa2GB44FgZkq81e13QbeuLjxnlHcCc-mj1sf7MHd9PZViaOPwS-jbGMhMAFaQqEijxFldPO_1Xu5po9UQApGXChsWpkYT_rgMRXg7kJZqIs1FwhA"
+    ]
+  }
+}

@@ -15,7 +15,7 @@ logger = setup_logger(__name__)
 @dataclass
 class LLMResponse:
     """Structured LLM response."""
-    safety_score: float  # 0-100
+    safety_score: float  # 0-100, higher is safer
     reasoning: str
     confidence: float  # 0-1
     risk_factors: List[str]
@@ -46,14 +46,10 @@ class LLMReasoner:
         """Initialize LLM client based on provider."""
         if self.provider == "gemini":
             try:
-                import google.generativeai as genai
-                genai.configure(api_key=Config.GOOGLE_GEMINI_API_KEY)
-                # print("Available Gemini models:")
-                # import pprint
-                # for model in genai.list_models():
-                #     pprint.pprint(model)
-                self.client = genai.GenerativeModel('gemini-flash-lite-latest')
-                logger.info("Initialized Gemini client")
+                from google import genai
+                self.client = genai.Client(api_key=Config.GOOGLE_GEMINI_API_KEY)
+                self.model_name = 'gemini-2.0-flash-exp'
+                logger.info("Initialized Gemini client (google-genai)")
             except Exception as e:
                 logger.error(f"Failed to initialize Gemini: {e}")
                 self.client = None
@@ -119,7 +115,7 @@ class LLMReasoner:
 
 **Output Format** (respond ONLY with valid JSON):
 {{
-  "safety_score": <number 0-100, where 0=completely safe, 100=extremely dangerous>,
+  "safety_score": <number 0-100, where 100=completely safe, 0=extremely dangerous>,
   "confidence": <number 0-1, your confidence in this assessment>,
   "reasoning": "<brief explanation of your assessment>",
   "risk_factors": ["<list of specific risk factors>"],
@@ -209,7 +205,10 @@ class LLMReasoner:
         try:
             # Call LLM based on provider
             if self.provider == "gemini":
-                response = self.client.generate_content(prompt)
+                response = self.client.models.generate_content(
+                    model=self.model_name,
+                    contents=prompt
+                )
                 raw_response = response.text
             
             elif self.provider == "openai":

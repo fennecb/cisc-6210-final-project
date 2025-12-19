@@ -1,33 +1,19 @@
 {
   "restaurant_name": "Great Wall",
   "allergen_type": "gluten",
-  "overall_safety_score": 85.0,
-  "confidence_score": 0.7,
-  "risk_factors": [
-    "Heavy reliance on soy sauce (contains wheat) in sauces, marinades, and seasonings across almost all categories (Fried Rice, Lo Mein, Chow Fun, General Tso's, etc.).",
-    "Presence of wheat-based noodles (Lo Mein, Chow Mei Fun).",
-    "Fried items (Fried Wings, Egg Rolls, Fried Shrimp, Dumplings) are likely prepared in shared fryers or with wheat-containing batters.",
-    "No explicit gluten-free menu or labeling found in the provided data.",
-    "Standard Chinese kitchen environment implies high risk of cross-contact (shared woks, utensils, cutting boards)."
-  ],
-  "safety_indicators": [
-    "LLM identified safe options"
-  ],
+  "overall_safety_score": 45.5,
+  "confidence_score": 0.5,
+  "risk_factors": [],
+  "safety_indicators": [],
   "recommended_actions": [
-    "HIGH RISK - Not recommended for severe gluten allergies",
-    "Consider alternative restaurants",
-    "Key concerns: Heavy reliance on soy sauce (contains wheat) in sauces, marinades, and seasonings across almost all categories (Fried Rice, Lo Mein, Chow Fun, General Tso's, etc.)., Presence of wheat-based noodles (Lo Mein, Chow Mei Fun)."
+    "Unable to assess safety without LLM analysis"
   ],
-  "safe_menu_items": [
-    "The 'Healthy Choice Steamed Dishes' section *might* be modifiable (D1-D6) if prepared strictly with rice/cornstarch thickening and gluten-free soy sauce (tamari), but this requires explicit confirmation and rigorous kitchen protocols which are not confirmed here.",
-    "Plain steamed white rice or brown rice (if confirmed to be pure rice without added seasoning/sauce) are the only items potentially safe by default, but must be confirmed for cross-contact."
-  ],
+  "safe_menu_items": [],
   "data_sources_used": [
-    "llm_reasoning",
     "reviews",
     "menu"
   ],
   "reviews_analyzed": 5,
-  "menu_items_found": 5,
+  "menu_items_found": 6,
   "relevant_review_excerpts": []
 }

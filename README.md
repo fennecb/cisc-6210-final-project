@@ -90,6 +90,50 @@ Unlike simple LLM query tools, this system does the heavy lifting through:
 
 ---
 
+## 🧠 NLP Techniques Implemented
+
+### Classical NLP (YOUR Work - 40% of system)
+
+1. **Rule-Based Pattern Matching**
+   - Regex with word boundaries for allergen detection
+   - Context-aware confidence scoring
+   - Multi-pattern aggregation
+
+2. **Sentiment Analysis**
+   - Polarity detection (-1 to +1 scale)
+   - Subjectivity measurement
+   - Review credibility scoring
+   - Distinguishes "great gluten-free" from "no gluten-free"
+
+3. **TF-IDF Information Retrieval**
+   - Review relevance ranking
+   - Important term extraction
+   - Coverage analysis
+   - Filters noise from irrelevant reviews
+
+4. **Named Entity Recognition (NER)**
+   - Food item extraction from menus
+   - Ingredient identification
+   - Preparation method detection
+   - Safety equipment mentions
+
+### Strategic LLM Use (20% of system)
+
+5. **LLM Reasoning**
+   - Complex safety assessment
+   - Cross-contamination risk evaluation
+   - Prompt engineering for structured outputs
+
+### Expected Benefits
+
+The NLP enhancements provide:
+- **Better Review Filtering**: TF-IDF ranking prioritizes allergen-relevant reviews
+- **Sentiment Context**: Distinguishes positive/negative allergen mentions for nuanced understanding
+- **Credibility Scoring**: Weights objective reviews higher than subjective ones
+- **Structured Data**: Extracts entities like food items, ingredients, and safety equipment from unstructured text
+
+---
+
 ## 🚀 Installation & Setup
 
 ### Prerequisites

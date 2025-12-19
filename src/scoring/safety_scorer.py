@@ -18,7 +18,7 @@ class SafetyAssessment:
     allergen_type: str
 
     # LLM-based scores
-    overall_safety_score: float  # 0-100, lower is safer (from LLM)
+    overall_safety_score: float  # 0-100, higher is safer (from LLM)
     confidence_score: float  # 0-1 (from LLM)
 
     # Detailed findings (from LLM)
@@ -39,13 +39,13 @@ class SafetyAssessment:
 
     def get_rating(self) -> str:
         """Get human-readable safety rating."""
-        if self.overall_safety_score < 20:
+        if self.overall_safety_score >= 80:
             return "VERY SAFE"
-        elif self.overall_safety_score < 40:
+        elif self.overall_safety_score >= 60:
             return "GENERALLY SAFE"
-        elif self.overall_safety_score < 60:
+        elif self.overall_safety_score >= 40:
             return "MODERATE RISK"
-        elif self.overall_safety_score < 80:
+        elif self.overall_safety_score >= 20:
             return "HIGH RISK"
         else:
             return "VERY HIGH RISK"
@@ -115,10 +115,11 @@ class SafetyScorer:
                         reviews: List[Dict],
                         menu_items: List[str],
                         restaurant_name: str,
-                        allergen_type: str = "gluten") -> SafetyAssessment:
+                        allergen_type: str = "gluten",
+                        review_summary: Optional[Dict] = None) -> SafetyAssessment:
         """
-        Create assessment based on LLM response only.
-        Simplified to focus on LLM reasoning quality.
+        Create assessment based on LLM response with optional sentiment-aware adjustments.
+        Simplified to focus on LLM reasoning quality with NLP enhancements.
 
         Args:
             llm_response: LLMResponse object (or None)
@@ -126,6 +127,7 @@ class SafetyScorer:
             menu_items: List of menu items
             restaurant_name: Restaurant name
             allergen_type: Type of allergen
+            review_summary: Optional enhanced review analysis with sentiment data
 
         Returns:
             SafetyAssessment object
@@ -170,6 +172,14 @@ class SafetyScorer:
         else:
             logger.warning("LLM response not available - cannot generate assessment")
             recommendations = ["Unable to assess safety without LLM analysis"]
+
+        # Apply sentiment-aware score adjustments if NLP data available
+        if review_summary and review_summary.get('sentiment_stats'):
+            overall_score = self._apply_sentiment_adjustment(
+                overall_score,
+                review_summary,
+                confidence
+            )
 
         # Search reviews for relevant keywords
         allergen_keywords = Config.ALLERGEN_KEYWORDS.get(allergen_type, [])
@@ -231,21 +241,21 @@ class SafetyScorer:
             List of recommendations
         """
         recommendations = []
-        
-        if safety_score < 30:
+
+        if safety_score >= 70:
             recommendations.append(f"This restaurant appears relatively safe for {allergen_type} allergies")
             if safety_indicators:
                 recommendations.append("Look for menu items marked as allergen-free")
-        
-        elif safety_score < 60:
+
+        elif safety_score >= 40:
             recommendations.append(f"Exercise caution - moderate risk for {allergen_type} allergies")
             recommendations.append("Speak with server/manager about allergen handling")
             recommendations.append("Ask about dedicated preparation areas")
-        
+
         else:
             recommendations.append(f"HIGH RISK - Not recommended for severe {allergen_type} allergies")
             recommendations.append("Consider alternative restaurants")
-            
+
             if risk_factors:
                 recommendations.append("Key concerns: " + ", ".join(risk_factors[:2]))
         
@@ -254,7 +264,56 @@ class SafetyScorer:
             recommendations.append("No explicit allergen-free mentions found in reviews")
         
         return recommendations
-    
+
+    def _apply_sentiment_adjustment(self,
+                                    base_score: float,
+                                    review_summary: Dict,
+                                    confidence: float) -> float:
+        """
+        Apply sentiment-aware adjustments to the base LLM score.
+
+        Args:
+            base_score: Base safety score from LLM
+            review_summary: Enhanced review analysis with sentiment data
+            confidence: LLM confidence score
+
+        Returns:
+            Adjusted safety score
+        """
+        # Extract sentiment stats
+        sentiment_stats = review_summary.get('sentiment_stats', {})
+        avg_polarity = sentiment_stats.get('average_polarity', 0.0)
+        negative_count = sentiment_stats.get('negative_count', 0)
+        positive_count = sentiment_stats.get('positive_count', 0)
+
+        # Calculate sentiment risk penalty
+        sentiment_penalty = 0
+        if negative_count > positive_count:
+            sentiment_penalty = 15  # Lower safety score if more negative sentiment
+        elif avg_polarity < -0.2:
+            sentiment_penalty = 10
+
+        # Calculate sentiment bonus
+        sentiment_bonus = 0
+        if positive_count > negative_count and avg_polarity > 0.3:
+            sentiment_bonus = 10  # Raise safety score if very positive sentiment
+
+        # Credibility adjustment
+        credible_count = review_summary.get('credible_review_count', 0)
+        total_analyzed = review_summary.get('reviews_analyzed', 1)
+        credibility_factor = credible_count / max(total_analyzed, 1)
+
+        # Apply adjustments (higher score = safer)
+        adjusted_score = base_score - sentiment_penalty + sentiment_bonus
+
+        # Weight by credibility (high credibility = trust the adjustments more)
+        final_score = adjusted_score * (0.7 + 0.3 * credibility_factor)
+
+        logger.info(f"Sentiment-enhanced score: {base_score:.1f} -> {final_score:.1f} "
+                   f"(credibility: {credibility_factor:.2f})")
+
+        return max(0.0, min(100.0, final_score))
+
     def export_assessment(self, assessment: SafetyAssessment, filepath: str) -> bool:
         """
         Export assessment to JSON file.

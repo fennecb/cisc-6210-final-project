@@ -115,10 +115,32 @@ class AllergenSafetyPipeline:
                 logger.info(f"[OK] Collected {len(yelp_reviews)} reviews from Yelp")
         
         logger.info(f"Total reviews collected: {len(all_reviews)}")
-        
-        # Step 3: Store reviews for LLM analysis and keyword search
-        logger.info(f"\nSTEP 3: Prepared {len(all_reviews)} reviews for LLM analysis")
-        
+
+        # Step 3: Enhanced NLP-based allergen detection
+        logger.info("\nSTEP 3: Running enhanced NLP allergen detection...")
+        logger.info("  - TF-IDF review ranking")
+        logger.info("  - Sentiment analysis")
+        logger.info("  - Named entity recognition")
+
+        review_summary = self.allergen_detector.analyze_reviews_enhanced(
+            all_reviews,
+            focus_allergen=allergen_type
+        )
+
+        logger.info(f"[OK] Analyzed {review_summary.get('reviews_analyzed', 0)} reviews")
+
+        # Log NLP enhancements
+        if review_summary.get('sentiment_stats'):
+            sentiment = review_summary['sentiment_stats']
+            logger.info(f"  Average sentiment polarity: {sentiment.get('average_polarity', 0):.2f}")
+            logger.info(f"  Positive reviews: {sentiment.get('positive_count', 0)}")
+            logger.info(f"  Negative reviews: {sentiment.get('negative_count', 0)}")
+
+        if review_summary.get('entity_info'):
+            entities = review_summary['entity_info']
+            logger.info(f"  Safety terms found: {len(entities.get('safety_terms_found', []))}")
+            logger.info(f"  Equipment mentions: {len(entities.get('equipment_mentions', []))}")
+
         # Step 4: Extract menu information
         logger.info("\nSTEP 4: Extracting menu information...")
         menu_items = []
@@ -180,16 +202,10 @@ class AllergenSafetyPipeline:
         if use_llm and self.llm_reasoner:
             logger.info("\nSTEP 5: Running LLM reasoning...")
             try:
-                # Create a simple review summary for LLM (just count and text)
-                review_texts = [r.get('text', '') for r in all_reviews if r.get('text')]
-                simple_review_summary = {
-                    'reviews_analyzed': len(review_texts),
-                    'review_texts': review_texts[:20]  # Pass up to 20 reviews to LLM
-                }
-
+                # Use the enhanced review summary with NLP insights
                 llm_response = self.llm_reasoner.assess_safety(
                     menu_items,
-                    simple_review_summary,
+                    review_summary,
                     allergen_type,
                     restaurant_data.name
                 )
@@ -206,14 +222,15 @@ class AllergenSafetyPipeline:
             logger.info("\nSTEP 5: Skipping LLM reasoning (disabled or unavailable)")
             logger.warning("WARNING: LLM reasoning is required for meaningful assessment")
 
-        # Step 6: Create LLM-based assessment
-        logger.info("\nSTEP 6: Creating LLM-based assessment...")
+        # Step 6: Create LLM-based assessment with NLP enhancements
+        logger.info("\nSTEP 6: Creating LLM-based assessment with NLP enhancements...")
         assessment = self.scorer.aggregate_scores(
             llm_response=llm_response,
             reviews=all_reviews,
             menu_items=menu_items,
             restaurant_name=restaurant_data.name,
-            allergen_type=allergen_type
+            allergen_type=allergen_type,
+            review_summary=review_summary
         )
         
         # Print summary

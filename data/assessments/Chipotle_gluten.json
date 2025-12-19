@@ -1,35 +1,33 @@
 {
   "restaurant_name": "Chipotle Mexican Grill",
   "allergen_type": "gluten",
-  "overall_safety_score": 14.0,
-  "confidence_score": 0.5875,
-  "rule_based_score": 0.0,
-  "llm_safety_score": 40.0,
-  "review_sentiment_score": 0,
-  "menu_analysis_score": 0,
+  "overall_safety_score": 35.0,
+  "confidence_score": 0.6,
   "risk_factors": [
-    "Insufficient data provided for a thorough analysis.",
-    "High inherent risk of cross-contact due to open assembly line preparation (scoops, shared surfaces).",
-    "No specific review mentions confirming staff training or successful allergen mitigation."
+    "Cross-contamination from flour tortillas",
+    "Shared preparation areas",
+    "Lack of dedicated gluten-free equipment",
+    "Unknown staff training regarding gluten allergies"
   ],
-  "safety_indicators": [],
+  "safety_indicators": [
+    "LLM identified safe options"
+  ],
   "recommended_actions": [
-    "This restaurant appears relatively safe for gluten allergies",
-    "No explicit allergen-free mentions found in reviews"
+    "Exercise caution - moderate risk for gluten allergies",
+    "Speak with server/manager about allergen handling",
+    "Ask about dedicated preparation areas"
   ],
   "safe_menu_items": [
-    "Steak/Chicken/Carnitas/Sofritas (check for marinade ingredients/potential shared fryers if applicable, though meats are usually safe)",
-    "Rice (Cilantro-Lime or Brown)",
-    "Beans (Black or Pinto)",
-    "Lettuce (as a wrap base)",
-    "Salsa/Guacamole (must verify specific preparation/scoop handling)"
+    "Burrito Bowl with corn tortillas (if available and confirmed)",
+    "Lifestyle Bowls labeled 'Gluten Free' (ensure no modifications that introduce gluten)",
+    "Salad with appropriate toppings (confirm no cross-contamination during preparation)"
   ],
   "data_sources_used": [
-    "rule_based_analysis",
     "llm_reasoning",
     "reviews",
     "menu"
   ],
   "reviews_analyzed": 5,
-  "menu_items_found": 1
+  "menu_items_found": 6,
+  "relevant_review_excerpts": []
 }

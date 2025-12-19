@@ -79,6 +79,24 @@ class Config:
         "menu_analysis": 0.10
     }
     
+    # NLP Configuration
+    NLP_ENABLED = True
+    USE_SENTIMENT_ANALYSIS = True
+    USE_TFIDF_RANKING = True
+    USE_NER = True
+
+    # TF-IDF settings
+    TFIDF_MAX_FEATURES = 100
+    TFIDF_MIN_RELEVANCE = 0.05
+    TFIDF_MAX_REVIEWS = 30
+
+    # Sentiment settings
+    SENTIMENT_CREDIBILITY_THRESHOLD = 0.5
+    SENTIMENT_POLARITY_THRESHOLD = 0.1
+
+    # NER settings
+    NER_MIN_ENTITY_LENGTH = 3
+
     @classmethod
     def get_allergen_list(cls, allergen_type: str = None) -> List[str]:
         """Get list of allergen keywords."""
@@ -89,7 +107,7 @@ class Config:
         for keywords in cls.ALLERGEN_KEYWORDS.values():
             all_allergens.extend(keywords)
         return all_allergens
-    
+
     @classmethod
     def validate_api_keys(cls) -> Dict[str, bool]:
         """Check which API keys are configured."""

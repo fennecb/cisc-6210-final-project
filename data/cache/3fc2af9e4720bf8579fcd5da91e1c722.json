@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-12-18T15:17:25.180498",
+  "key": "llm_assess:sweetgreen - Healthy Salads, Bowls and Plates:gluten:7262632719218996184",
+  "data": {
+    "safety_score": 50.0,
+    "reasoning": "Sweetgreen generally offers many naturally gluten-free ingredients (salads, bowls) suitable for celiac disease. However, the menu explicitly lists items containing gluten: 'garlic breadcrumbs' (Buffalo Chicken), 'zaatar breadcrumbs' (Chicken Pesto Parm), and 'Rosemary Focaccia'. Breadcrumbs and focaccia pose a very high risk of cross-contact in a salad/bowl assembly line. No explicit gluten-free certification or dedicated preparation area is mentioned, relying solely on ingredient checks. The presence of multiple high-risk gluten items necessitates a moderate safety score.",
+    "confidence": 0.6,
+    "risk_factors": [
+      "Presence of breadcrumbs (garlic breadcrumbs in Buffalo Chicken, zaatar breadcrumbs in Chicken Pesto Parm) which are high risk for cross-contact.",
+      "Presence of Rosemary Focaccia, indicating wheat flour is handled on-site.",
+      "Lack of confirmation regarding dedicated preparation procedures for gluten-free orders.",
+      "Shared preparation surfaces typical of fast-casual assembly lines."
+    ],
+    "safe_alternatives": [
+      "Most basic greens, vegetables, proteins (chicken, tofu), nuts, seeds, and vinaigrettes (must confirm specific vinaigrette ingredients, e.g., Miso Sesame Ginger, Balsamic Vinaigrette) are likely safe if contamination risks are managed.",
+      "Roasted Sweet Potatoes (if ranch/mustard condiments are verified gluten-free)."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 50,\n  \"confidence\": 0.6,\n  \"reasoning\": \"Sweetgreen generally offers many naturally gluten-free ingredients (salads, bowls) suitable for celiac disease. However, the menu explicitly lists items containing gluten: 'garlic breadcrumbs' (Buffalo Chicken), 'zaatar breadcrumbs' (Chicken Pesto Parm), and 'Rosemary Focaccia'. Breadcrumbs and focaccia pose a very high risk of cross-contact in a salad/bowl assembly line. No explicit gluten-free certification or dedicated preparation area is mentioned, relying solely on ingredient checks. The presence of multiple high-risk gluten items necessitates a moderate safety score.\",\n  \"risk_factors\": [\n    \"Presence of breadcrumbs (garlic breadcrumbs in Buffalo Chicken, zaatar breadcrumbs in Chicken Pesto Parm) which are high risk for cross-contact.\",\n    \"Presence of Rosemary Focaccia, indicating wheat flour is handled on-site.\",\n    \"Lack of confirmation regarding dedicated preparation procedures for gluten-free orders.\",\n    \"Shared preparation surfaces typical of fast-casual assembly lines.\"\n  ],\n  \"safe_alternatives\": [\n    \"Most basic greens, vegetables, proteins (chicken, tofu), nuts, seeds, and vinaigrettes (must confirm specific vinaigrette ingredients, e.g., Miso Sesame Ginger, Balsamic Vinaigrette) are likely safe if contamination risks are managed.\",\n    \"Roasted Sweet Potatoes (if ranch/mustard condiments are verified gluten-free).\"\n  ]\n}\n```"
+  }
+}

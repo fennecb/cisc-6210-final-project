@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-12-18T15:08:25.656304",
+  "key": "llm_assess:Great Wall:gluten:-8268484851635875902",
+  "data": {
+    "safety_score": 85.0,
+    "reasoning": "This is a standard American Chinese restaurant menu, which presents a very high inherent risk for celiac disease due to the near-universal use of wheat flour/soy sauce (containing wheat) in most dishes, preparation methods, and deep fryers. The menu data itself provides no specific gluten-free information, allergen matrices, or indications of dedicated preparation areas. Dishes like Egg Rolls, Fried Rice, Lo Mein, Chow Fun/Mei Fun, and most sauces (soy sauce) are presumptive gluten sources. The only items that might be inherently gluten-free are Plain Steamed Dishes (if ordered without sauces), White Rice, and beverages. The lack of any specific safety indicators or dedicated GF options suggests a high risk of cross-contact.",
+    "confidence": 0.9,
+    "risk_factors": [
+      "Ubiquitous use of soy sauce (containing wheat) in nearly all savory dishes (Fried Rice, Lo Mein, Sauces, Marinades).",
+      "Use of wheat-based thickeners (cornstarch/flour) in many sauces and coatings.",
+      "Appetizers (Egg Rolls, Fried Wontons, Dumplings) are made with wheat wrappers/dough.",
+      "Shared fryers are highly likely for items like French Fries, Fried Shrimp, Fried Chicken Wings, etc., risking cross-contact with battered items.",
+      "Lack of explicit 'Gluten-Free' or 'Celiac-Safe' communication on the menu or in the provided data.",
+      "Lo Mein and Chow Fun/Mei Fun noodles are wheat-based (Lo Mein/Chow Fun) or require clarification (Mei Fun is rice-based but sauces are the issue)."
+    ],
+    "safe_alternatives": [
+      "White Rice (Plain) - Must be confirmed if cooked separately from fried rice.",
+      "Brown Rice (Plain) - Must be confirmed if cooked separately from fried rice.",
+      "Beverages (Soda, Snapple).",
+      "Healthy Choice Steamed Dishes (D1-D6) - ONLY IF ordered completely plain, with no added sauce (sauce on the side must be confirmed as GF, which is unlikely for standard Chinese brown sauce). Requires direct staff consultation to ensure no flour/soy sauce is used in the steaming process or on the protein marinade."
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 85,\n  \"confidence\": 0.9,\n  \"reasoning\": \"This is a standard American Chinese restaurant menu, which presents a very high inherent risk for celiac disease due to the near-universal use of wheat flour/soy sauce (containing wheat) in most dishes, preparation methods, and deep fryers. The menu data itself provides no specific gluten-free information, allergen matrices, or indications of dedicated preparation areas. Dishes like Egg Rolls, Fried Rice, Lo Mein, Chow Fun/Mei Fun, and most sauces (soy sauce) are presumptive gluten sources. The only items that might be inherently gluten-free are Plain Steamed Dishes (if ordered without sauces), White Rice, and beverages. The lack of any specific safety indicators or dedicated GF options suggests a high risk of cross-contact.\",\n  \"risk_factors\": [\n    \"Ubiquitous use of soy sauce (containing wheat) in nearly all savory dishes (Fried Rice, Lo Mein, Sauces, Marinades).\",\n    \"Use of wheat-based thickeners (cornstarch/flour) in many sauces and coatings.\",\n    \"Appetizers (Egg Rolls, Fried Wontons, Dumplings) are made with wheat wrappers/dough.\",\n    \"Shared fryers are highly likely for items like French Fries, Fried Shrimp, Fried Chicken Wings, etc., risking cross-contact with battered items.\",\n    \"Lack of explicit 'Gluten-Free' or 'Celiac-Safe' communication on the menu or in the provided data.\",\n    \"Lo Mein and Chow Fun/Mei Fun noodles are wheat-based (Lo Mein/Chow Fun) or require clarification (Mei Fun is rice-based but sauces are the issue).\"\n  ],\n  \"safe_alternatives\": [\n    \"White Rice (Plain) - Must be confirmed if cooked separately from fried rice.\",\n    \"Brown Rice (Plain) - Must be confirmed if cooked separately from fried rice.\",\n    \"Beverages (Soda, Snapple).\",\n    \"Healthy Choice Steamed Dishes (D1-D6) - ONLY IF ordered completely plain, with no added sauce (sauce on the side must be confirmed as GF, which is unlikely for standard Chinese brown sauce). Requires direct staff consultation to ensure no flour/soy sauce is used in the steaming process or on the protein marinade.\"\n  ]\n}\n```"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-12-18T15:08:28.054684",
+  "key": "llm_assess:sweetgreen - Healthy Salads, Bowls and Plates:gluten:-7995745843980520673",
+  "data": {
+    "safety_score": 65.0,
+    "reasoning": "The menu explicitly lists items containing gluten (Rosemary Focaccia, garlic breadcrumbs in Buffalo Chicken, zaatar breadcrumbs in Chicken Pesto Parm). The Kale Caesar likely contains gluten in the Caesar dressing and parmesan crisps, though this isn't confirmed by the ingredients list provided. Since the restaurant uses visible gluten ingredients and the preparation environment is shared (standard fast-casual setup implied by the menu structure), there is a high inherent risk of cross-contact, even if no dedicated gluten-free protocol is known. No dedicated gluten-free protocols or staff training information was provided in the data to mitigate this risk.",
+    "confidence": 0.75,
+    "risk_factors": [
+      "Presence of Rosemary Focaccia (contains wheat/gluten)",
+      "Presence of Buffalo Chicken containing 'garlic breadcrumbs' (likely wheat/gluten)",
+      "Presence of Chicken Pesto Parm containing 'zaatar breadcrumbs' (likely wheat/gluten)",
+      "High probability of gluten in the standard Caesar dressing (Kale Caesar)",
+      "Lack of evidence regarding dedicated allergen preparation areas or procedures (high risk of cross-contact in a mixed-use kitchen)."
+    ],
+    "safe_alternatives": [
+      "Roasted Sweet Potatoes (if choice of dipping sauce is confirmed gluten-free)",
+      "HIBISCUS CLOVER TEA",
+      "Shroomami (Verify if miso sesame ginger dressing is gluten-free and confirm no cross-contact occurs during preparation)"
+    ],
+    "raw_response": "```json\n{\n  \"safety_score\": 65,\n  \"confidence\": 0.75,\n  \"reasoning\": \"The menu explicitly lists items containing gluten (Rosemary Focaccia, garlic breadcrumbs in Buffalo Chicken, zaatar breadcrumbs in Chicken Pesto Parm). The Kale Caesar likely contains gluten in the Caesar dressing and parmesan crisps, though this isn't confirmed by the ingredients list provided. Since the restaurant uses visible gluten ingredients and the preparation environment is shared (standard fast-casual setup implied by the menu structure), there is a high inherent risk of cross-contact, even if no dedicated gluten-free protocol is known. No dedicated gluten-free protocols or staff training information was provided in the data to mitigate this risk.\",\n  \"risk_factors\": [\n    \"Presence of Rosemary Focaccia (contains wheat/gluten)\",\n    \"Presence of Buffalo Chicken containing 'garlic breadcrumbs' (likely wheat/gluten)\",\n    \"Presence of Chicken Pesto Parm containing 'zaatar breadcrumbs' (likely wheat/gluten)\",\n    \"High probability of gluten in the standard Caesar dressing (Kale Caesar)\",\n    \"Lack of evidence regarding dedicated allergen preparation areas or procedures (high risk of cross-contact in a mixed-use kitchen).\"\n  ],\n  \"safe_alternatives\": [\n    \"Roasted Sweet Potatoes (if choice of dipping sauce is confirmed gluten-free)\",\n    \"HIBISCUS CLOVER TEA\",\n    \"Shroomami (Verify if miso sesame ginger dressing is gluten-free and confirm no cross-contact occurs during preparation)\"\n  ]\n}\n```"
+  }
+}
